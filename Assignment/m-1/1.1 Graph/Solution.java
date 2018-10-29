@@ -75,6 +75,7 @@ class Solution {
 						System.out.print(0+" ");
 					}
 					m++;
+					System.out.println();
 				}
 			}
 		}
