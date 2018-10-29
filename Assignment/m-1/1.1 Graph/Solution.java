@@ -63,15 +63,18 @@ class Solution {
 				}
 				String s = matrix.toString();
 				String[] numVer = s.split("\\r?\\n");
+				System.out.println(numVer[0]);
 				int k = 0;
 				for (int i = 0; i < vertices; i++) {
-					String[] c = numVer[i++].replaceAll("[:,]",";").split(";");
+					int m = 1;
+					String[] c = numVer[m].replaceAll("[:,]",";").split(";");
 					for (int j = 0; j < edges; j++) {
 						if(Integer.parseInt(c[k]) == j) {
 							System.out.print(1+" ");
 						}
 						System.out.print(0+" ");
 					}
+					m++;
 				}
 			}
 		}
