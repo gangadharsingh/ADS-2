@@ -17,32 +17,19 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges 
-Andhra Pradesh Andhra Pradesh: 
-Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh 
-Arunachal Pradesh Arunachal Pradesh: 
-Arunachal Pradesh 
-Assam Assam: 
-Assam 
-Bihar Bihar: 
-Bihar Bihar 
-Chandigarh Chandigarh: 
-Chandigarh Chandigarh Chandigarh 
-Chhattisgarh Chhattisgarh: 
-Chhattisgarh Chhattisgarh Chhattisgarh 
-Dadra and Nagar Haveli Dadra and Nagar Haveli: 
-Dadra and Nagar Haveli Dadra and Nagar Haveli 
-Daman and Diu Daman and Diu: 
-Daman and Diu 
-Delhi Delhi: 
-Delhi 
-Goa Goa: 
-Goa Goa Goa Goa Goa Goa 
-Gujarat Gujarat Gujarat: 
-Gujarat 
-Haryana Haryana Haryana: 
-Haryana Haryana Haryana 
-null null null: 
-null null null
+Andhra Pradesh Andhra Pradesh: Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh 
+Arunachal Pradesh Arunachal Pradesh: Arunachal Pradesh 
+Assam Assam: Assam 
+Bihar Bihar: Bihar Bihar 
+Chandigarh Chandigarh: Chandigarh Chandigarh Chandigarh 
+Chhattisgarh Chhattisgarh: Chhattisgarh Chhattisgarh Chhattisgarh 
+Dadra and Nagar Haveli Dadra and Nagar Haveli: Dadra and Nagar Haveli Dadra and Nagar Haveli 
+Daman and Diu Daman and Diu: Daman and Diu 
+Delhi Delhi: Delhi 
+Goa Goa: Goa Goa Goa Goa Goa Goa 
+Gujarat Gujarat Gujarat: Gujarat 
+Haryana Haryana Haryana: Haryana Haryana Haryana 
+null null null: null null null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -121,76 +108,41 @@ West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
 36 vertices, 36 edges 
-Andhra Pradesh Andhra Pradesh: 
-Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh 
-Arunachal Pradesh Arunachal Pradesh: 
-Arunachal Pradesh Arunachal Pradesh Arunachal Pradesh 
-Assam Assam: 
-Assam Assam Assam 
-Bihar Bihar: 
-Bihar Bihar Bihar Bihar Bihar Bihar 
-Chandigarh Chandigarh: 
-Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh 
-Chhattisgarh Chhattisgarh: 
-Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh 
-Dadra and Nagar Haveli Dadra and Nagar Haveli: 
-Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli 
-Daman and Diu Daman and Diu: 
-Daman and Diu 
-Delhi Delhi: 
-Delhi Delhi Delhi 
-Goa Goa: 
-Goa Goa Goa Goa Goa Goa Goa Goa Goa Goa 
-Gujarat Gujarat Gujarat: 
-Gujarat Gujarat Gujarat Gujarat Gujarat Gujarat Gujarat 
-Haryana Haryana Haryana: 
-Haryana Haryana Haryana Haryana Haryana Haryana Haryana Haryana 
-Himachal Pradesh Himachal Pradesh Himachal Pradesh: 
-Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh 
-Jammu and Kashmir Jammu and Kashmir Jammu and Kashmir: 
-Jammu and Kashmir 
-Jharkhand Jharkhand Jharkhand: 
-Jharkhand Jharkhand Jharkhand 
-Karnataka Karnataka Karnataka: 
-Karnataka Karnataka Karnataka 
-Kerala Kerala Kerala: 
-Kerala Kerala 
-Lakshadweep Lakshadweep Lakshadweep: 
-Lakshadweep 
+Andhra Pradesh Andhra Pradesh: Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh 
+Arunachal Pradesh Arunachal Pradesh: Arunachal Pradesh Arunachal Pradesh Arunachal Pradesh 
+Assam Assam: Assam Assam Assam 
+Bihar Bihar: Bihar Bihar Bihar Bihar Bihar Bihar 
+Chandigarh Chandigarh: Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh Chandigarh 
+Chhattisgarh Chhattisgarh: Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh Chhattisgarh 
+Dadra and Nagar Haveli Dadra and Nagar Haveli: Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli Dadra and Nagar Haveli 
+Daman and Diu Daman and Diu: Daman and Diu 
+Delhi Delhi: Delhi Delhi Delhi 
+Goa Goa: Goa Goa Goa Goa Goa Goa Goa Goa Goa Goa 
+Gujarat Gujarat Gujarat: Gujarat Gujarat Gujarat Gujarat Gujarat Gujarat Gujarat 
+Haryana Haryana Haryana: Haryana Haryana Haryana Haryana Haryana Haryana Haryana Haryana 
+Himachal Pradesh Himachal Pradesh Himachal Pradesh: Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh Himachal Pradesh 
+Jammu and Kashmir Jammu and Kashmir Jammu and Kashmir: Jammu and Kashmir 
+Jharkhand Jharkhand Jharkhand: Jharkhand Jharkhand Jharkhand 
+Karnataka Karnataka Karnataka: Karnataka Karnataka Karnataka 
+Kerala Kerala Kerala: Kerala Kerala 
+Lakshadweep Lakshadweep Lakshadweep: Lakshadweep 
 Madhya Pradesh Madhya Pradesh Madhya Pradesh: 
-
-Maharashtra Maharashtra Maharashtra: 
-Maharashtra Maharashtra Maharashtra Maharashtra Maharashtra Maharashtra 
-Manipur Manipur Manipur: 
-Manipur 
-Meghalaya Meghalaya Meghalaya: 
-Meghalaya Meghalaya 
-Mizoram Mizoram Mizoram: 
-Mizoram Mizoram Mizoram 
+Maharashtra Maharashtra Maharashtra: Maharashtra Maharashtra Maharashtra Maharashtra Maharashtra Maharashtra 
+Manipur Manipur Manipur: Manipur 
+Meghalaya Meghalaya Meghalaya: Meghalaya Meghalaya 
+Mizoram Mizoram Mizoram: Mizoram Mizoram Mizoram 
 Nagaland Nagaland Nagaland: 
-
 Odisha Odisha Odisha: 
-
 Puducherry Puducherry Puducherry: 
-
 Punjab Punjab Punjab: 
-
 Rajasthan Rajasthan Rajasthan: 
-
 Sikkim Sikkim Sikkim: 
-
 Tamil Nadu Tamil Nadu Tamil Nadu: 
-
 Telangana Telangana Telangana: 
-
 Tripura Tripura Tripura: 
-
 Uttar Pradesh Uttar Pradesh Uttar Pradesh: 
-
 Uttarakhand Uttarakhand Uttarakhand: 
-
 West Bengal West Bengal West Bengal: 
-
 null null null:
 ----------------------------------------
 
