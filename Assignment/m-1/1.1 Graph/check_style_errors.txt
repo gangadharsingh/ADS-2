@@ -63,8 +63,10 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:72:34: Parameter v should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:84:23: Parameter v should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:93: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:101:36: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:101:37: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:5: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
