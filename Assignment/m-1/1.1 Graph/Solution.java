@@ -40,21 +40,22 @@ class Solution {
 				System.out.println(numVer[0]);
 				for (int i = 1; i < numVer.length; i++) {
 					int j = 0;
-					String[] c = numVer[i].split("");
+					String[] c = numVer[i].split("[0-9]");
 					for(int k = 0; k < c.length; k ++) {
+						System.out.println(c[k]);
 						// c = Integer.parseInt("c");
-						try {
-							int a = Integer.parseInt(c[k]);
-							// System.out.print(c+ ":");
-							if (j == 0) {
-								System.out.print(map.get(a)+": ");
-							} else {
-								System.out.print(map.get(a)+" ");
-							}
-							j++;
-						} catch(NumberFormatException e) {
-						}
-						System.out.print(" $ "+c[k]);
+						// try {
+						// 	int a = Integer.parseInt(c[k]);
+						// 	// System.out.print(c+ ":");
+						// 	if (j == 0) {
+						// 		System.out.print(map.get(a)+": ");
+						// 	} else {
+						// 		System.out.print(map.get(a)+" ");
+						// 	}
+						// 	j++;
+						// } catch(NumberFormatException e) {
+						// }
+						// System.out.print(" $ "+c[k]);
 					}
 					System.out.println();
 				}

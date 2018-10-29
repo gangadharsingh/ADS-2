@@ -17,19 +17,78 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges 
-Andaman and Nicobar:  $ 0 $ :Chhattisgarh  $ 6 $ ,Arunachal Pradesh  $ 2 $ ,Andhra Pradesh  $ 1 $ ,Chandigarh  $ 5 $ ,
-Andhra Pradesh:  $ 1 $ :Andaman and Nicobar  $ 0 $ ,
-Arunachal Pradesh:  $ 2 $ :Andaman and Nicobar  $ 0 $ ,
-Assam:  $ 3 $ :Chandigarh  $ 5 $ ,Bihar  $ 4 $ ,
-Bihar:  $ 4 $ :Chandigarh  $ 5 $ ,Chhattisgarh  $ 6 $ ,Assam  $ 3 $ ,
-Chandigarh:  $ 5 $ :Assam  $ 3 $ ,Bihar  $ 4 $ ,Andaman and Nicobar  $ 0 $ ,
-Chhattisgarh:  $ 6 $ :Andaman and Nicobar  $ 0 $ ,Bihar  $ 4 $ ,
-Dadra and Nagar Haveli:  $ 7 $ :Daman and Diu  $ 8 $ ,
-Daman and Diu:  $ 8 $ :Dadra and Nagar Haveli  $ 7 $ ,
-Delhi:  $ 9 $ :Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Andhra Pradesh:  $ 1Andaman and Nicobar  $ 0 $ :Delhi  $ 9 $ ,
-Andhra Pradesh:  $ 1Andhra Pradesh  $ 1 $ :Delhi  $ 9 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Andhra Pradesh:  $ 1Arunachal Pradesh  $ 2 $ :Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Delhi  $ 9 $ ,
+
+:
+,
+,
+,
+,
+
+
+:
+,
+
+
+:
+,
+
+
+:
+,
+,
+
+
+:
+,
+,
+,
+
+
+:
+,
+,
+,
+
+
+:
+,
+,
+
+
+:
+,
+
+
+:
+,
+
+
+:
+
+,
+
+,
+
+,
+
+
+
+:
+,
+
+
+
+:
+,
+
+,
+
+
+
+:
+
+,
+,
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -108,42 +167,244 @@ West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
 36 vertices, 36 edges 
-Andaman and Nicobar:  $ 0 $ :Andhra Pradesh  $ 1Chhattisgarh  $ 6 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Andhra Pradesh  $ 1Chandigarh  $ 5 $ ,Chhattisgarh  $ 6 $ ,Arunachal Pradesh  $ 2 $ ,Andhra Pradesh  $ 1 $ ,Chandigarh  $ 5 $ ,
-Andhra Pradesh:  $ 1 $ :Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andaman and Nicobar  $ 0 $ ,
-Arunachal Pradesh:  $ 2 $ :Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andaman and Nicobar  $ 0 $ ,
-Assam:  $ 3 $ :Andhra Pradesh  $ 1Chandigarh  $ 5 $ ,Andhra Pradesh  $ 1Bihar  $ 4 $ ,Chandigarh  $ 5 $ ,Bihar  $ 4 $ ,
-Bihar:  $ 4 $ :Andhra Pradesh  $ 1Assam  $ 3 $ ,Andhra Pradesh  $ 1Chandigarh  $ 5 $ ,Andhra Pradesh  $ 1Chhattisgarh  $ 6 $ ,Chandigarh  $ 5 $ ,Chhattisgarh  $ 6 $ ,Assam  $ 3 $ ,
-Chandigarh:  $ 5 $ :Andhra Pradesh  $ 1Bihar  $ 4 $ ,Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Assam  $ 3 $ ,Bihar  $ 4 $ ,Andaman and Nicobar  $ 0 $ ,
-Chhattisgarh:  $ 6 $ :Andhra Pradesh  $ 1Bihar  $ 4 $ ,Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andaman and Nicobar  $ 0 $ ,Bihar  $ 4 $ ,
-Dadra and Nagar Haveli:  $ 7 $ :Daman and Diu  $ 8 $ ,
-Daman and Diu:  $ 8 $ :Andhra Pradesh  $ 1Dadra and Nagar Haveli  $ 7 $ ,Dadra and Nagar Haveli  $ 7 $ ,
-Delhi:  $ 9 $ :Arunachal Pradesh  $ 2Andaman and Nicobar  $ 0 $ ,Arunachal Pradesh  $ 2Arunachal Pradesh  $ 2 $ ,Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Andhra Pradesh:  $ 1Andaman and Nicobar  $ 0 $ :Chhattisgarh  $ 6 $ ,Andhra Pradesh  $ 1Delhi  $ 9 $ ,Arunachal Pradesh  $ 2 $ ,Andhra Pradesh  $ 1 $ ,Chandigarh  $ 5 $ ,Delhi  $ 9 $ ,
-Andhra Pradesh:  $ 1Andhra Pradesh  $ 1 $ :Arunachal Pradesh  $ 2Arunachal Pradesh  $ 2 $ ,Andaman and Nicobar  $ 0 $ ,Andhra Pradesh  $ 1Delhi  $ 9 $ ,Delhi  $ 9 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Andhra Pradesh:  $ 1Arunachal Pradesh  $ 2 $ :Andaman and Nicobar  $ 0 $ ,Arunachal Pradesh  $ 2Andhra Pradesh  $ 1 $ ,Andhra Pradesh  $ 1Delhi  $ 9 $ ,Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Delhi  $ 9 $ ,
-Andhra Pradesh:  $ 1Assam  $ 3 $ :Bihar  $ 4 $ ,
-Andhra Pradesh:  $ 1Bihar  $ 4 $ :Chandigarh  $ 5 $ ,Chhattisgarh  $ 6 $ ,Assam  $ 3 $ ,
-Andhra Pradesh:  $ 1Chandigarh  $ 5 $ :Andaman and Nicobar  $ 0 $ ,Assam  $ 3 $ ,Bihar  $ 4 $ ,
-Andhra Pradesh:  $ 1Chhattisgarh  $ 6 $ :Andaman and Nicobar  $ 0 $ ,Bihar  $ 4 $ ,
-Andhra Pradesh:  $ 1Dadra and Nagar Haveli  $ 7 $ :Daman and Diu  $ 8 $ ,
-Andhra Pradesh:  $ 1Daman and Diu  $ 8 $ :
-Andhra Pradesh:  $ 1Delhi  $ 9 $ :Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Andhra Pradesh  $ 1Andaman and Nicobar  $ 0 $ ,Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Arunachal Pradesh:  $ 2Andaman and Nicobar  $ 0 $ :Delhi  $ 9 $ ,
-Arunachal Pradesh:  $ 2Andhra Pradesh  $ 1 $ :Andhra Pradesh  $ 1Arunachal Pradesh  $ 2 $ ,
-Arunachal Pradesh:  $ 2Arunachal Pradesh  $ 2 $ :Andhra Pradesh  $ 1Andhra Pradesh  $ 1 $ ,Delhi  $ 9 $ ,
-Arunachal Pradesh:  $ 2Assam  $ 3 $ :
-Arunachal Pradesh:  $ 2Bihar  $ 4 $ :
-Arunachal Pradesh:  $ 2Chandigarh  $ 5 $ :
-Arunachal Pradesh:  $ 2Chhattisgarh  $ 6 $ :
-Arunachal Pradesh:  $ 2Dadra and Nagar Haveli  $ 7 $ :
-Arunachal Pradesh:  $ 2Daman and Diu  $ 8 $ :
-Arunachal Pradesh:  $ 2Delhi  $ 9 $ :
-Assam:  $ 3Andaman and Nicobar  $ 0 $ :
-Assam:  $ 3Andhra Pradesh  $ 1 $ :
-Assam:  $ 3Arunachal Pradesh  $ 2 $ :
-Assam:  $ 3Assam  $ 3 $ :
-Assam:  $ 3Bihar  $ 4 $ :
-Assam:  $ 3Chandigarh  $ 5 $ :
+
+:
+
+,
+
+,
+
+,
+
+,
+,
+,
+,
+,
+
+
+:
+
+,
+,
+
+
+:
+
+,
+,
+
+
+:
+
+,
+
+,
+,
+,
+
+
+:
+
+,
+
+,
+
+,
+,
+,
+,
+
+
+:
+
+,
+
+,
+,
+,
+,
+
+
+:
+
+,
+
+,
+,
+,
+
+
+:
+,
+
+
+:
+
+,
+,
+
+
+:
+
+,
+
+,
+
+,
+
+,
+
+,
+
+
+
+:
+,
+
+,
+,
+,
+,
+,
+
+
+
+:
+
+,
+,
+
+,
+,
+
+,
+
+
+
+:
+,
+
+,
+
+,
+
+,
+,
+
+
+
+:
+,
+
+
+
+:
+,
+,
+,
+
+
+
+:
+,
+,
+,
+
+
+
+:
+,
+,
+
+
+
+:
+,
+
+
+
+:
+
+
+
+:
+
+,
+
+,
+
+,
+
+
+
+:
+,
+
+
+
+:
+
+,
+
+
+
+:
+
+,
+,
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
+
+
+
+:
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
