@@ -17,19 +17,19 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges 
-Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
+Andaman and Nicobar: 
+Andhra Pradesh: 
+Arunachal Pradesh: 
+Assam: 
+Bihar: 
+Chandigarh: 
+Chhattisgarh: 
+Dadra and Nagar Haveli: 
+Daman and Diu: 
+Delhi: 
 Andhra Pradesh: Andaman and Nicobar 
-Arunachal Pradesh: Andaman and Nicobar 
-Assam: Chandigarh Bihar 
-Bihar: Chandigarh Chhattisgarh Assam 
-Chandigarh: Assam Bihar Andaman and Nicobar 
-Chhattisgarh: Andaman and Nicobar Bihar 
-Dadra and Nagar Haveli: Daman and Diu 
-Daman and Diu: Dadra and Nagar Haveli 
-Delhi: Andhra Pradesh Andhra Pradesh Andhra Pradesh Andaman and Nicobar Andhra Pradesh Arunachal Pradesh 
-Andhra Pradesh: Andaman and Nicobar Delhi 
-Andhra Pradesh: Andhra Pradesh Delhi Andhra Pradesh Arunachal Pradesh 
-Andhra Pradesh: Arunachal Pradesh Andhra Pradesh Andhra Pradesh Delhi
+Andhra Pradesh: Andhra Pradesh 
+Andhra Pradesh: Arunachal Pradesh
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -108,29 +108,29 @@ West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
 36 vertices, 36 edges 
-Andaman and Nicobar: Andhra Pradesh Chhattisgarh Andhra Pradesh Arunachal Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Chandigarh Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
-Andhra Pradesh: Andhra Pradesh Andaman and Nicobar Andaman and Nicobar 
-Arunachal Pradesh: Andhra Pradesh Andaman and Nicobar Andaman and Nicobar 
-Assam: Andhra Pradesh Chandigarh Andhra Pradesh Bihar Chandigarh Bihar 
-Bihar: Andhra Pradesh Assam Andhra Pradesh Chandigarh Andhra Pradesh Chhattisgarh Chandigarh Chhattisgarh Assam 
-Chandigarh: Andhra Pradesh Bihar Andhra Pradesh Andaman and Nicobar Assam Bihar Andaman and Nicobar 
-Chhattisgarh: Andhra Pradesh Bihar Andhra Pradesh Andaman and Nicobar Andaman and Nicobar Bihar 
-Dadra and Nagar Haveli: Daman and Diu 
-Daman and Diu: Andhra Pradesh Dadra and Nagar Haveli Dadra and Nagar Haveli 
-Delhi: Arunachal Pradesh Andaman and Nicobar Arunachal Pradesh Arunachal Pradesh Andhra Pradesh Andhra Pradesh Andhra Pradesh Andaman and Nicobar Andhra Pradesh Arunachal Pradesh 
-Andhra Pradesh: Andaman and Nicobar Chhattisgarh Andhra Pradesh Delhi Arunachal Pradesh Andhra Pradesh Chandigarh Delhi 
-Andhra Pradesh: Andhra Pradesh Arunachal Pradesh Arunachal Pradesh Andaman and Nicobar Andhra Pradesh Delhi Delhi Andhra Pradesh Arunachal Pradesh 
-Andhra Pradesh: Arunachal Pradesh Andaman and Nicobar Arunachal Pradesh Andhra Pradesh Andhra Pradesh Delhi Andhra Pradesh Andhra Pradesh Delhi 
-Andhra Pradesh: Assam Bihar 
-Andhra Pradesh: Bihar Chandigarh Chhattisgarh Assam 
-Andhra Pradesh: Chandigarh Andaman and Nicobar Assam Bihar 
-Andhra Pradesh: Chhattisgarh Andaman and Nicobar Bihar 
-Andhra Pradesh: Dadra and Nagar Haveli Daman and Diu 
+Andaman and Nicobar: 
+Andhra Pradesh: 
+Arunachal Pradesh: 
+Assam: 
+Bihar: 
+Chandigarh: 
+Chhattisgarh: 
+Dadra and Nagar Haveli: 
+Daman and Diu: 
+Delhi: 
+Andhra Pradesh: Andaman and Nicobar 
+Andhra Pradesh: Andhra Pradesh 
+Andhra Pradesh: Arunachal Pradesh 
+Andhra Pradesh: Assam 
+Andhra Pradesh: Bihar 
+Andhra Pradesh: Chandigarh 
+Andhra Pradesh: Chhattisgarh 
+Andhra Pradesh: Dadra and Nagar Haveli 
 Andhra Pradesh: Daman and Diu 
-Andhra Pradesh: Delhi Andhra Pradesh Andhra Pradesh Andhra Pradesh Andaman and Nicobar Andhra Pradesh Arunachal Pradesh 
-Arunachal Pradesh: Andaman and Nicobar Delhi 
-Arunachal Pradesh: Andhra Pradesh Andhra Pradesh Arunachal Pradesh 
-Arunachal Pradesh: Arunachal Pradesh Andhra Pradesh Andhra Pradesh Delhi 
+Andhra Pradesh: Delhi 
+Arunachal Pradesh: Andaman and Nicobar 
+Arunachal Pradesh: Andhra Pradesh 
+Arunachal Pradesh: Arunachal Pradesh 
 Arunachal Pradesh: Assam 
 Arunachal Pradesh: Bihar 
 Arunachal Pradesh: Chandigarh 

@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.regex.Pattern;
 class Solution {
 	private Solution() { }
 	public static void main(String[] args) {
@@ -39,16 +40,20 @@ class Solution {
 				System.out.println(numVer[0]);
 				for (int i = 1; i < numVer.length; i++) {
 					int j = 0;
-					for(char c: numVer[i].toCharArray()) {
+					String[] c = numVer[i].split("");
+					for(int k = 0; k < c.length; k ++) {
 						// c = Integer.parseInt("c");
-						if(Character.isDigit(c)) {
+						try {
+							int a = Integer.parseInt(c[k]);
 							// System.out.print(c+ ":");
 							if (j == 0) {
-								System.out.print(map.get(Character.getNumericValue(c))+": ");
+								System.out.print(map.get(a)+": ");
 							} else {
-								System.out.print(map.get(Character.getNumericValue(c))+" ");
+								System.out.print(map.get(a)+" ");
 							}
 							j++;
+						} catch(NumberFormatException e) {
+							break;
 						}
 					}
 					System.out.println();
