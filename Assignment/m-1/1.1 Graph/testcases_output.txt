@@ -17,78 +17,19 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges 
-
-:
-,
-,
-,
-,
-
-
-:
-,
-
-
-:
-,
-
-
-:
-,
-,
-
-
-:
-,
-,
-,
-
-
-:
-,
-,
-,
-
-
-:
-,
-,
-
-
-:
-,
-
-
-:
-,
-
-
-:
-
-,
-
-,
-
-,
-
-
-
-:
-,
-
-
-
-:
-,
-
-,
-
-
-
-:
-
-,
-,
+Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
+Andhra Pradesh: Andaman and Nicobar 
+Arunachal Pradesh: Andaman and Nicobar 
+Assam: Chandigarh Bihar 
+Bihar: Chandigarh Chhattisgarh Assam 
+Chandigarh: Assam Bihar Andaman and Nicobar 
+Chhattisgarh: Andaman and Nicobar Bihar 
+Dadra and Nagar Haveli: Daman and Diu 
+Daman and Diu: Dadra and Nagar Haveli 
+Delhi: Gujarat Goa Haryana 
+Goa: Delhi 
+Gujarat: Delhi Haryana 
+Haryana: Gujarat Delhi
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -167,244 +108,42 @@ West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
 36 vertices, 36 edges 
-
-:
-
-,
-
-,
-
-,
-
-,
-,
-,
-,
-,
-
-
-:
-
-,
-,
-
-
-:
-
-,
-,
-
-
-:
-
-,
-
-,
-,
-,
-
-
-:
-
-,
-
-,
-
-,
-,
-,
-,
-
-
-:
-
-,
-
-,
-,
-,
-,
-
-
-:
-
-,
-
-,
-,
-,
-
-
-:
-,
-
-
-:
-
-,
-,
-
-
-:
-
-,
-
-,
-
-,
-
-,
-
-,
-
-
-
-:
-,
-
-,
-,
-,
-,
-,
-
-
-
-:
-
-,
-,
-
-,
-,
-
-,
-
-
-
-:
-,
-
-,
-
-,
-
-,
-,
-
-
-
-:
-,
-
-
-
-:
-,
-,
-,
-
-
-
-:
-,
-,
-,
-
-
-
-:
-,
-,
-
-
-
-:
-,
-
-
-
-:
-
-
-
-:
-
-,
-
-,
-
-,
-
-
-
-:
-,
-
-
-
-:
-
-,
-
-
-
-:
-
-,
-,
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
-
-
-
-:
+Andaman and Nicobar: Karnataka Haryana Gujarat Jharkhand Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
+Andhra Pradesh: Goa Andaman and Nicobar 
+Arunachal Pradesh: Goa Andaman and Nicobar 
+Assam: Jharkhand Jammu and Kashmir Chandigarh Bihar 
+Bihar: Himachal Pradesh Jharkhand Karnataka Chandigarh Chhattisgarh Assam 
+Chandigarh: Jammu and Kashmir Goa Assam Bihar Andaman and Nicobar 
+Chhattisgarh: Jammu and Kashmir Goa Andaman and Nicobar Bihar 
+Dadra and Nagar Haveli: Daman and Diu 
+Daman and Diu: Kerala Dadra and Nagar Haveli 
+Delhi: Maharashtra Meghalaya Gujarat Goa Haryana 
+Goa: Chhattisgarh Madhya Pradesh Arunachal Pradesh Andhra Pradesh Chandigarh Delhi 
+Gujarat: Meghalaya Andaman and Nicobar Madhya Pradesh Delhi Haryana 
+Haryana: Andaman and Nicobar Manipur Madhya Pradesh Gujarat Delhi 
+Himachal Pradesh: Bihar 
+Jammu and Kashmir: Chandigarh Chhattisgarh Assam 
+Jharkhand: Andaman and Nicobar Assam Bihar 
+Karnataka: Andaman and Nicobar Bihar 
+Kerala: Daman and Diu 
+Lakshadweep: 
+Madhya Pradesh: Gujarat Goa Haryana 
+Maharashtra: Delhi 
+Manipur: Haryana 
+Meghalaya: Gujarat Delhi 
+Mizoram: 
+Nagaland: 
+Odisha: 
+Puducherry: 
+Punjab: 
+Rajasthan: 
+Sikkim: 
+Tamil Nadu: 
+Telangana: 
+Tripura: 
+Uttar Pradesh: 
+Uttarakhand: 
+West Bengal:
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
