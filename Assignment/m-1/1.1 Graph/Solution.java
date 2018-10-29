@@ -34,6 +34,7 @@ class Solution {
 					graph.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
 				}
 				String s = graph.toString();
+				System.out.println(s);
 			} else if (type.equals("Matrix")) {
 				for (int i = 0; i < vertices; i++) {
 					String[] vert = scan.nextLine().split(" ");
@@ -41,6 +42,7 @@ class Solution {
 					map.put(i, cities[i]);
 				}
 				String s = matrix.toString();
+				System.out.println(s);
 			}
 		}
 	}

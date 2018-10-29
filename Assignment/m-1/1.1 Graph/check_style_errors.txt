@@ -31,8 +31,8 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:24: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:32: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:34: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:39: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:40: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:40: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:41: Line is longer than 80 characters (found 109). [LineLength]
 Audit done.
 Checkstyle ends with 14 errors.
 Starting audit...
