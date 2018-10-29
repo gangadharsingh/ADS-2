@@ -45,8 +45,9 @@ class Solution {
 							// System.out.print(c+ ":");
 							if (j == 0) {
 								System.out.print(map.get(Character.getNumericValue(c))+": ");
+							} else {
+								System.out.print(map.get(Character.getNumericValue(c))+" ");
 							}
-							System.out.print(map.get(Character.getNumericValue(c))+" ");
 							j++;
 						}
 					}
