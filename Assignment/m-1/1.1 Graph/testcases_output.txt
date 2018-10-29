@@ -16,12 +16,11 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "List"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 5"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -42,12 +41,11 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Matrix"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 5"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -91,12 +89,11 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "List"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 5"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -140,12 +137,11 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Matrix"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 5"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -154,12 +150,11 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "List"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 0"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -168,12 +163,11 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Matrix"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 0"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -182,12 +176,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Matrix"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+0 0
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -196,11 +185,6 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "List"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at GraphUn.<init>(Solution.java:15)
-	at Solution.main(Solution.java:67)
+0 vertices, 0 edges
 ----------------------------------------
 
