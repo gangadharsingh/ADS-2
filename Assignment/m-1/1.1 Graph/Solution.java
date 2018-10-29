@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.HashMap;
-class Solution{
+class Solution {
 	private Solution() { }
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -10,23 +10,32 @@ class Solution{
 		HashMap<Integer, String> map = new HashMap<>();
 		AdjMatrixGraph matrix = new AdjMatrixGraph(vertices);
 		ListGraph graph = new ListGraph(vertices);
+		if(vertices == 0) {
+			System.out.println("No edges");
+			return;
+		} else if (edges == 0) {
+			System.out.println("No edges");
+			return;
+		} else if (vertices == 0 && edges == 0) {
+			System.out.println("No edges");
+			return;
+		} else {
 		String[] cities = scan.nextLine().split(",");
 		if (type.equals("List")) {
 			for (int i = 0; i < edges; i++) {
-				int v = Integer.parseInt(scan.nextLine());
-				int w = Integer.parseInt(scan.nextLine());
+				String[] vert = scan.nextLine().split(" ");
 				map.put(i, cities[i]);
-				graph.addEdge(v, w);
+				graph.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
 			}
-			System.out.println(graph);
+			String s = graph.toString();
 		} else if (type.equals("Matrix")) {
 			for (int i = 0; i < edges; i++) {
-				int v = Integer.parseInt(scan.nextLine());
-				int w = Integer.parseInt(scan.nextLine());
-				matrix.addEdge(v, w);	
+				String[] vert = scan.nextLine().split(" ");
+				matrix.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
 				map.put(i, cities[i]);
 			}
-			System.out.println(matrix);
+			String s = matrix.toString();
+		}
 		}
 	}
 }
