@@ -39,9 +39,9 @@ class Solution {
 				for (int i = 1; i < numVer.length; i++) {
 					for(char c: numVer[i].toCharArray()) {
 						if(c == (':')) {
-							System.out.println(map.get(c)+": ");
+							System.out.println(map.get(i)+": ");
 						} else if (c != ',') {
-							System.out.print(map.get(c) + " ");
+							System.out.print(map.get(i) + " ");
 						}
 					}
 					System.out.println();
