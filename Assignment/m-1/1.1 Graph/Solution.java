@@ -35,8 +35,16 @@ class Solution {
 				}
 				String s = graph.toString();
 				String[] numVer = s.split("\\r?\\n");
-				for (String str: numVer) {
-					System.out.println(str);
+				System.out.println(numVer[0]);
+				for (int i = 1; i < numVer.length; i++) {
+					for(char c: numVer[i].toCharArray()) {
+						if(c == (':')) {
+							System.out.println(map.get(c)+": ");
+						} else if (c != ',') {
+							System.out.print(map.get(c) + " ");
+						}
+					}
+					System.out.println();
 				}
 
 			} else if (type.equals("Matrix")) {
