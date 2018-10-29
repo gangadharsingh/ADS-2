@@ -34,14 +34,20 @@ class Solution {
 					graph.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
 				}
 				String s = graph.toString();
+				// System.out.println(s);
 				String[] numVer = s.split("\\r?\\n");
 				System.out.println(numVer[0]);
 				for (int i = 1; i < numVer.length; i++) {
+					int j = 0;
 					for(char c: numVer[i].toCharArray()) {
-						if(c == (':')) {
-							System.out.print(map.get(i)+": ");
-						} else if (c != ',') {
-							System.out.print(map.get(i) + " ");
+						// c = Integer.parseInt("c");
+						if(Character.isDigit(c)) {
+							// System.out.print(c+ ":");
+							if (j == 0) {
+								System.out.print(map.get(Character.getNumericValue(c))+": ");
+							}
+							System.out.print(map.get(Character.getNumericValue(c))+" ");
+							j++;
 						}
 					}
 					System.out.println();
