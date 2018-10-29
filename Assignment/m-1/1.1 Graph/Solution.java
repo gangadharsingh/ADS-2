@@ -35,7 +35,10 @@ class Solution {
 				}
 				String s = graph.toString();
 				String[] numVer = s.split("\\r?\\n");
-				System.out.println(numVer[0]);
+				for (String str: numVer) {
+					System.out.println(str);
+				}
+
 			} else if (type.equals("Matrix")) {
 				for (int i = 0; i < vertices; i++) {
 					String[] vert = scan.nextLine().split(" ");
@@ -43,7 +46,10 @@ class Solution {
 					map.put(i, "i");
 				}
 				String s = matrix.toString();
-				System.out.println(s);
+				String[] numVer = s.split("\\r?\\n");
+				for (String str: numVer) {
+					System.out.println(str);
+				}
 			}
 		}
 	}

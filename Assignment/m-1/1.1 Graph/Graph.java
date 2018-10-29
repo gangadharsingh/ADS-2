@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for ListGraph.
  */
-class ListGraph {
+class ListGraph{
     private static final String NEWLINE = System.getProperty("line.separator");
     private final int V;
     private int E;
@@ -95,13 +95,13 @@ class ListGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + 2 * E + " edges " + NEWLINE);
+        s.append(V + " vertices, " + E + " edges " + NEWLINE);
         for (int v = 0; v < V; v++) {
             s.append(v + ":");
             for (int w : adj[v]) {
                 s.append(w + ",");
             }
-            s.append("--");
+            s.append(NEWLINE);
         }
         return s.toString();
     }
