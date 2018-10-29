@@ -8,7 +8,7 @@ public class AdjMatrixGraph {
     private final int V;
     private int E;
     private boolean[][] adj;
-    
+
     // empty graph with V vertices
     public AdjMatrixGraph(int V) {
         if (V < 0) throw new IllegalArgumentException("Too few vertices");
@@ -75,12 +75,16 @@ public class AdjMatrixGraph {
     // string representation of Graph - takes quadratic time
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + NEWLINE);
+        s.append(V + " vertices, " + 2 * E + " edges " + NEWLINE);
         for (int v = 0; v < V; v++) {
             s.append(v + ":");
-            for (int w : adj(v)) {
+            for (int w = 0; w < E() - 1; w++) {
                 s.append(w + ",");
             }
+            s.append(E());
+            // for (int w : adj(v)) {
+            //     s.append(w + ",");
+            // }
             s.append("--");
         }
         return s.toString();
