@@ -53,8 +53,8 @@ class Solution {
 							}
 							j++;
 						} catch(NumberFormatException e) {
-							break;
 						}
+						System.out.print(" $ "+c[k]);
 					}
 					System.out.println();
 				}

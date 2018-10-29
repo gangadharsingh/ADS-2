@@ -44,10 +44,12 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:52:93: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:55: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:55:56: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:57:71: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:57:72: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:64: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:65: Line is longer than 80 characters (found 109). [LineLength]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:2:8: Unused import - java.util.Scanner. [UnusedImports]
