@@ -77,6 +77,7 @@ class Solution {
 					}
 					System.out.println();
 					System.out.println(numVer[j++]);
+					j=j+1;
 				}
 				// int k = 0;
 				// for (int i = 0; i < vertices; i++) {
