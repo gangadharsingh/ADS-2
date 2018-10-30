@@ -19,19 +19,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:3:8: Unused import - java.util.regex.Pattern. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:8: Class Solution should be declared as final. [FinalClass]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:57:52: '++' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:24:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:26:25: Expected @param tag for 'vert'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:60:43: Expected @param tag for 'v'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:52:14: '++' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 2 errors.

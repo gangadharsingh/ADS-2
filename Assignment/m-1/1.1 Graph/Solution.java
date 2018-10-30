@@ -1,11 +1,10 @@
 import java.util.Scanner;
 import java.util.HashMap;
-import java.util.regex.Pattern;
 
 /**.
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**.
      * Constructs the object.
      */
@@ -54,7 +53,7 @@ class Solution {
                     int j = 0;
                     String[] c = numVer[i].replaceAll(
                                      "[:,]", ";").split(";");
-                    for (int k = 0; k < c.length; k ++) {
+                    for (int k = 0; k < c.length; k++) {
                         int a = Integer.parseInt(c[k]);
                         if (j == 0) {
                             System.out.print(map.get(a) + ": ");

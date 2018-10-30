@@ -1,4 +1,3 @@
-import java.util.NoSuchElementException;
 /**.
  * Class for adj matrix graph.
  */
@@ -49,7 +48,7 @@ class AdjMatrixGraph {
         }
         matrix[v][w] = 1;
         matrix[w][v] = 1;
-        edges ++;
+        edges++;
     }
     /**.
      * adj.

@@ -21,7 +21,7 @@ class ListGraph {
     /**.
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      vert  The vertices.
      */
     ListGraph(final int vert) {
         if (vert < 0) {
@@ -54,8 +54,8 @@ class ListGraph {
     }
 
     /**.
-     * { item_description }
-     * throw an IllegalArgumentException unless {@code 0 <= v < V}
+     *
+     * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
