@@ -1,4 +1,3 @@
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**.
  * Class for adj matrix graph.
@@ -67,7 +66,7 @@ class AdjMatrixGraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
+    public int vertices() {
         return this.vertices;
     }
     /**.
@@ -75,7 +74,7 @@ class AdjMatrixGraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
+    public int edges() {
         return this.edges;
     }
     /**.

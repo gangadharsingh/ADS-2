@@ -21,52 +21,17 @@ Checkstyle ends with 17 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:3:8: Unused import - java.util.regex.Pattern. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:8: Class Solution should be declared as final. [FinalClass]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:27: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:32: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:37: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:45: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:47: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:54: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:55:72: '++' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:58: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:60: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:68: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:70: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:71: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:73: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:57:52: '++' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:2:8: Unused import - java.util.Scanner. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:6:16: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:9:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:16:25: 'V' hides a field. [HiddenField]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:16:25: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:17: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:17: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:30:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:39:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:44:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:45: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:46: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:54: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:56:25: Parameter v should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:56:32: Parameter w should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:93: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:24:8: Unused @param tag for 'V'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:26:25: Expected @param tag for 'vert'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:60:43: Expected @param tag for 'v'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:53:14: '++' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:70:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:78:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:52:14: '++' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
