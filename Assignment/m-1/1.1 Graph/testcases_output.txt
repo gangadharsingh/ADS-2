@@ -51,8 +51,11 @@ Expected Output:
 
 Your Output: 
 13 13
-0: 1 2 5 6 
-1: 0
+1 Exception in thread "main" java.lang.NumberFormatException: For input string: " 1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:638)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -177,8 +180,11 @@ Expected Output:
 
 Your Output: 
 36 36
-0: 1 2 5 6 11 12 15 16 
-1: 0 10
+1 Exception in thread "main" java.lang.NumberFormatException: For input string: " 1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:638)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########

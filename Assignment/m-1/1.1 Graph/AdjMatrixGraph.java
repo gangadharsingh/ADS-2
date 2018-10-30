@@ -77,9 +77,9 @@ public class AdjMatrixGraph {
         StringBuilder s = new StringBuilder();
         s.append(V + " " + E + NEWLINE);
         for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
+            s.append(v + ", ");
             for (int w : adj(v)) {
-                s.append(w + " ");
+                s.append(w + ",");
             }
             s.append(NEWLINE);
         }

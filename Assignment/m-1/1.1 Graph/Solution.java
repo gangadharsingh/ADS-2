@@ -59,13 +59,23 @@ class Solution {
 				for (int i = 0; i < vertices; i++) {
 					String[] vert = scan.nextLine().split(" ");
 					matrix.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
-					map.put(i, "i");
+					// map.put(i, "i");
 				}
 				String s = matrix.toString();
 				String[] numVer = s.split("\\r?\\n");
 				System.out.println(numVer[0]);
-				System.out.println(numVer[1]);
-				System.out.println(numVer[2]);
+				for (int i = 0; i < vertices; i++) {
+					int j = 1;
+					String[] n =  numVer[j++].split(",");
+					for (int k = 0; k < vertices; k++) {
+						if(Integer.parseInt(n[k])==k) {
+							System.out.print(1+" ");
+						} else {
+							System.out.print(0+" ");
+						}
+					}
+					System.out.println();
+				}
 				// int k = 0;
 				// for (int i = 0; i < vertices; i++) {
 				// 	String[] c = numVer[i].replaceAll("[:,]",";").split(";");
