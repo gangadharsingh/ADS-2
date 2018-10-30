@@ -44,15 +44,9 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:60: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:61: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:70: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:70:82: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:72: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:72:51: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:73:75: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:73:76: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:75:67: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:75:68: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Graph.java:2:8: Unused import - java.util.Scanner. [UnusedImports]
@@ -128,5 +122,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:69:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:76:5: Class 'AdjMatrixGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AdjMatrixGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:76:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:81:36: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/AdjMatrixGraph.java:81:37: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 44 errors.
+Checkstyle ends with 46 errors.
