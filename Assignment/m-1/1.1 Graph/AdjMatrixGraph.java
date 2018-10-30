@@ -1,31 +1,33 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-
-public class AdjMatrixGraph {    /**
+/**.
+ * Class for adj matrix graph.
+ */
+class AdjMatrixGraph {
+    /**.
      * cities list.
      */
     private String[] cities;
-    /**
+    /**.
      * matix.
      */
     private int[][] matrix;
-    /**
+    /**.
      * no of vertices.
      */
     private int vertices;
-    /**
+    /**.
      * edges count.
      */
     private int edges;
-    /**
+    /**.
      * Constructs the object.
      *
      * @param      v     { parameter_description }
      * @param      e     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public AdjMatrixGraph(final int v, final int e, final String[] c) {
+    AdjMatrixGraph(final int v, final int e, final String[] c) {
         cities = c;
         matrix = new int[v][v];
         this.vertices = v;
@@ -36,7 +38,7 @@ public class AdjMatrixGraph {    /**
             }
         }
     }
-    /**
+    /**.
      * Adds an edge.
      *
      * @param      v     { parameter_description }
@@ -50,7 +52,7 @@ public class AdjMatrixGraph {    /**
         matrix[w][v] = 1;
         edges ++;
     }
-    /**
+    /**.
      * adj.
      *
      * @param      v     { parameter_description }
@@ -60,7 +62,7 @@ public class AdjMatrixGraph {    /**
     public int[] adj(final int v) {
         return matrix[v];
     }
-    /**
+    /**.
      * no of vertices.
      *
      * @return     { description_of_the_return_value }
@@ -68,7 +70,7 @@ public class AdjMatrixGraph {    /**
     public int V() {
         return this.vertices;
     }
-    /**
+    /**.
      * no of edges.
      *
      * @return     { description_of_the_return_value }
@@ -76,7 +78,7 @@ public class AdjMatrixGraph {    /**
     public int E() {
         return this.edges;
     }
-    /**
+    /**.
      * Determines if it has edge.
      *
      * @param      v     { parameter_description }
@@ -87,7 +89,7 @@ public class AdjMatrixGraph {    /**
     public boolean hasEdge(final int v, final int w) {
         return matrix[v][w] == 1;
     }
-    /**
+    /**.
      * prints.
      */
     public void print() {

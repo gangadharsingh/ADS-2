@@ -1,9 +1,22 @@
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.regex.Pattern;
+
+/**.
+ * Class for solution.
+ */
 class Solution {
+	/**.
+	 * Constructs the object.
+	 */
 	private Solution() { }
-	public static void main(String[] args) {
+
+	/**.
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String type = scan.nextLine();
 		int vertices = Integer.parseInt(scan.nextLine());
@@ -53,12 +66,12 @@ class Solution {
 
 			} else if (type.equals("Matrix")) {
 				AdjMatrixGraph m = new AdjMatrixGraph(vertices, edges, cities);
-            for (int k = 0; k < edges; k++) {
-                String[] tokens = scan.nextLine().split(" ");
-                m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
-            }
-            System.out.println(m.V() + " vertices, " + m.E() + " edges");
-            m.print();
+				for (int k = 0; k < edges; k++) {
+					String[] tokens = scan.nextLine().split(" ");
+					m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+				}
+				System.out.println(m.V() + " vertices, " + m.E() + " edges");
+				m.print();
 			}
 		}
 	}
