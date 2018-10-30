@@ -43,8 +43,8 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:51:85: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:60: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:61: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:70: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:72: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:71: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-1/1.1 Graph/Solution.java:73: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
 Checkstyle ends with 26 errors.
 Starting audit...

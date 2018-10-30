@@ -64,7 +64,8 @@ class Solution {
 				String s = matrix.toString();
 				String[] numVer = s.split("\\r?\\n");
 				System.out.println(numVer[0]);
-
+				System.out.println(numVer[1]);
+				System.out.println(numVer[2]);
 				// int k = 0;
 				// for (int i = 0; i < vertices; i++) {
 				// 	String[] c = numVer[i].replaceAll("[:,]",";").split(";");
