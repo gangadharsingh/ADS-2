@@ -20,7 +20,9 @@ class ListGraph {
     private Bag<Integer>[] adj;
     /**.
      * Constructs the object.
-     *
+     * Best: V
+     * Avergae: V
+     * Wrost: O(V)
      * @param      vert  The vertices.
      */
     ListGraph(final int vert) {
@@ -37,7 +39,9 @@ class ListGraph {
     }
     /**.
      * Returns the number of vertices in this ListGraph.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @return the number of vertices in this ListGraph
      */
     public int vertices() {
@@ -46,7 +50,9 @@ class ListGraph {
 
     /**.
      * Returns the number of edges in this ListGraph.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @return the number of edges in this ListGraph
      */
     public int edges() {
@@ -54,7 +60,9 @@ class ListGraph {
     }
 
     /**.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
@@ -66,7 +74,9 @@ class ListGraph {
 
     /**.
      * Adds the undirected edge v-w to this ListGraph.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param      v     one vertex in the edge
      * @param      w     the other vertex in the edge
      */
@@ -81,7 +91,9 @@ class ListGraph {
 
     /**.
      * Returns the vertices adjacent to vertex {@code v}.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(V)
      * @param  v the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -93,7 +105,9 @@ class ListGraph {
 
     /**.
      * Returns the degree of vertex {@code v}.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param  v the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -106,7 +120,9 @@ class ListGraph {
 
     /**.
      * Returns a string representation of this ListGraph.
-     *
+     * Best: V
+     * Avergae: V
+     * Wrost: O(V)
      * @return     String representation of the object.
      */
     public String toString() {

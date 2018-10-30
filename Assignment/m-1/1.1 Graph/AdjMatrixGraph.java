@@ -1,4 +1,6 @@
-/**.
+/**. Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
  * Class for adj matrix graph.
  */
 class AdjMatrixGraph {
@@ -20,7 +22,9 @@ class AdjMatrixGraph {
     private int edges;
     /**.
      * Constructs the object.
-     *
+     * Best: V^2
+     * Avergae: V^2
+     * Wrost: O(V^2)
      * @param      v     { parameter_description }
      * @param      e     { parameter_description }
      * @param      c     { parameter_description }
@@ -38,7 +42,9 @@ class AdjMatrixGraph {
     }
     /**.
      * Adds an edge.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
@@ -52,7 +58,9 @@ class AdjMatrixGraph {
     }
     /**.
      * adj.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
@@ -62,7 +70,9 @@ class AdjMatrixGraph {
     }
     /**.
      * no of vertices.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @return     { description_of_the_return_value }
      */
     public int vertices() {
@@ -78,7 +88,9 @@ class AdjMatrixGraph {
     }
     /**.
      * Determines if it has edge.
-     *
+     * Best: 1
+     * Avergae: 1
+     * Wrost: O(1)
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -89,6 +101,9 @@ class AdjMatrixGraph {
     }
     /**.
      * prints.
+     * Best: V^2
+     * Avergae: V^2
+     * Wrost: O(V^2)
      */
     public void print() {
         if (edges == 0) {
