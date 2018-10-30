@@ -40,15 +40,15 @@ class Solution {
 				System.out.println(numVer[0]);
 				for (int i = 1; i < numVer.length; i++) {
 					int j = 0;
-					String[] c = numVer[i].replaceAll("[:,]",";").split(";");
+					String[] c = numVer[i].replaceAll("[:,]", ";").split(";");
 
 					for (int k = 0; k < c.length; k ++) {
 						int a = Integer.parseInt(c[k]);
 						// System.out.print(c+ ":");
 						if (j == 0) {
-							System.out.print(map.get(a)+": ");
+							System.out.print(map.get(a) + ": ");
 						} else {
-							System.out.print(map.get(a)+" ");
+							System.out.print(map.get(a) + " ");
 						}
 						j++;
 					}
@@ -68,11 +68,12 @@ class Solution {
 					int j = 1;
 					String[] n =  numVer[j++].split(",");
 					for (int k = 0; k < vertices; k++) {
-						if(Integer.parseInt(n[k])==k) {
-							System.out.print(1+" ");
-						} else {
-							System.out.print(0+" ");
-						}
+						// if (Integer.parseInt(n[k]) == k) {
+						// 	System.out.print(1 + " ");
+						// } else {
+						// 	System.out.print(0 + " ");
+						// }
+						System.out.print(0+" ");
 					}
 					System.out.println();
 				}
