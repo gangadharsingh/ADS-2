@@ -79,7 +79,7 @@ public class AdjMatrixGraph {
         for (int v = 0; v < V; v++) {
             s.append(v + " ");
             for (int w = 0; w < E()-1; w++) {
-                s.append(w + " ");
+                s.append(w + ":");
             }
             // s.append(E());
             for (int w : adj(v)) {
