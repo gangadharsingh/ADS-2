@@ -51,10 +51,7 @@ Expected Output:
 
 Your Output: 
 13 13
-1 Exception in thread "main" java.lang.NumberFormatException: For input string: " 1"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:638)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+1 1 1 0 0 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 
@@ -180,10 +177,7 @@ Expected Output:
 
 Your Output: 
 36 36
-1 Exception in thread "main" java.lang.NumberFormatException: For input string: " 1"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:638)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+1 1 1 0 0 0 0 0 0 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 
