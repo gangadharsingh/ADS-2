@@ -9,7 +9,6 @@ class Solution {
 		int vertices = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
 		HashMap<Integer, String> map = new HashMap<>();
-		AdjMatrixGraph matrix = new AdjMatrixGraph(vertices);
 		ListGraph graph = new ListGraph(vertices);
 		if (vertices == 0 && edges != 0) {
 			System.out.println(vertices + " vertices, " + edges + " edges");
@@ -35,16 +34,13 @@ class Solution {
 					graph.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
 				}
 				String s = graph.toString();
-				// System.out.println(s);
 				String[] numVer = s.split("\\r?\\n");
 				System.out.println(numVer[0]);
 				for (int i = 1; i < numVer.length; i++) {
 					int j = 0;
 					String[] c = numVer[i].replaceAll("[:,]", ";").split(";");
-
 					for (int k = 0; k < c.length; k ++) {
 						int a = Integer.parseInt(c[k]);
-						// System.out.print(c+ ":");
 						if (j == 0) {
 							System.out.print(map.get(a) + ": ");
 						} else {
@@ -56,39 +52,13 @@ class Solution {
 				}
 
 			} else if (type.equals("Matrix")) {
-				for (int i = 0; i < vertices; i++) {
-					String[] vert = scan.nextLine().split(" ");
-					matrix.addEdge(Integer.parseInt(vert[0]), Integer.parseInt(vert[1]));
-					// map.put(i, "i");
-				}
-				String s = matrix.toString();
-				String[] numVer = s.split("\\r?\\n");
-				System.out.println(numVer[0]);
-				for (int i = 0; i < vertices; i++) {
-					int j = 1;
-					// String[] n =  numVer[j++].split(",");
-					for (int k = 0; k < vertices; k++) {
-						// if (Integer.parseInt(n[k]) == k) {
-						// 	System.out.print(1 + " ");
-						// } else {
-						// 	System.out.print(0 + " ");
-						// }
-						System.out.print(0+" ");
-					}
-					System.out.println();
-					System.out.println(numVer[j++]);
-					j=j+1;
-				}
-				// int k = 0;
-				// for (int i = 0; i < vertices; i++) {
-				// 	String[] c = numVer[i].replaceAll("[:,]",";").split(";");
-				// 	for (int j = 0; j < edges; j++) {
-				// 		if(Integer.parseInt(c[k]) == j) {
-				// 			System.out.print(1+" ");
-				// 		}
-				// 		System.out.print(0+" ");
-				// 	}
-				// }
+				AdjMatrixGraph m = new AdjMatrixGraph(vertices, edges, cities);
+            for (int k = 0; k < edges; k++) {
+                String[] tokens = scan.nextLine().split(" ");
+                m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+            }
+            System.out.println(m.V() + " vertices, " + m.E() + " edges");
+            m.print();
 			}
 		}
 	}

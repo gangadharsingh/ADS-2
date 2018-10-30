@@ -2,87 +2,110 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 
-public class AdjMatrixGraph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
-    private final int V;
-    private int E;
-    private boolean[][] adj;
-    
-    // empty graph with V vertices
-    public AdjMatrixGraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Too few vertices");
-        this.V = V;
-        this.E = 0;
-        this.adj = new boolean[V][V];
-    }
-    // number of vertices and edges
-    public int V() { return V; }
-    public int E() { return E; }
-
-
-    // add undirected edge v-w
-    public void addEdge(int v, int w) {
-        if (!adj[v][w]) E++;
-        adj[v][w] = true;
-        adj[w][v] = true;
-    }
-
-    // does the graph contain the edge v-w?
-    public boolean contains(int v, int w) {
-        return adj[v][w];
-    }
-
-    // return list of neighbors of v
-    public Iterable<Integer> adj(int v) {
-        return new AdjIterator(v);
-    }
-
-    // support iteration over graph vertices
-    private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
-        private int v;
-        private int w = 0;
-
-        AdjIterator(int v) {
-            this.v = v;
-        }
-
-        public Iterator<Integer> iterator() {
-            return this;
-        }
-
-        public boolean hasNext() {
-            while (w < V) {
-                if (adj[v][w]) return true;
-                w++;
+public class AdjMatrixGraph {    /**
+     * cities list.
+     */
+    private String[] cities;
+    /**
+     * matix.
+     */
+    private int[][] matrix;
+    /**
+     * no of vertices.
+     */
+    private int vertices;
+    /**
+     * edges count.
+     */
+    private int edges;
+    /**
+     * Constructs the object.
+     *
+     * @param      v     { parameter_description }
+     * @param      e     { parameter_description }
+     * @param      c     { parameter_description }
+     */
+    public AdjMatrixGraph(final int v, final int e, final String[] c) {
+        cities = c;
+        matrix = new int[v][v];
+        this.vertices = v;
+        this.edges = 0;
+        for (int i = 0; i < v; i++) {
+            for (int j = 0; j < v; j++) {
+                matrix[i][j] = 0;
             }
-            return false;
-        }
-
-        public Integer next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            return w++;
-        }
-
-        public void remove()  {
-            throw new UnsupportedOperationException();
         }
     }
-
-
-    // string representation of Graph - takes quadratic time
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(v + ",");
-            for (int w : adj(v)) {
-                s.append(w + ",");
-            }
-            s.append(NEWLINE);
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    public void addEdge(final int v, final int w) {
+        if (v == w || hasEdge(v, w)) {
+            return;
         }
-        return s.toString();
+        matrix[v][w] = 1;
+        matrix[w][v] = 1;
+        edges ++;
+    }
+    /**
+     * adj.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] adj(final int v) {
+        return matrix[v];
+    }
+    /**
+     * no of vertices.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int V() {
+        return this.vertices;
+    }
+    /**
+     * no of edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int E() {
+        return this.edges;
+    }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
+        return matrix[v][w] == 1;
+    }
+    /**
+     * prints.
+     */
+    public void print() {
+        if (edges == 0) {
+            System.out.println("No edges");
+        } else {
+            for (int i = 0; i < vertices - 1; i++) {
+                String s = "";
+                for (int each : matrix[i]) {
+                    s += each + " ";
+                }
+                System.out.println(s);
+            }
+            String s = "";
+            for (int each : matrix[vertices - 1]) {
+                s += each + " ";
+            }
+            System.out.println(s.substring(0, s.length() - 1));
+        }
     }
 }
