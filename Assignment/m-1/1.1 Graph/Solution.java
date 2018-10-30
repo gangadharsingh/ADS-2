@@ -66,7 +66,7 @@ class Solution {
 				System.out.println(numVer[0]);
 				for (int i = 0; i < vertices; i++) {
 					int j = 1;
-					String[] n =  numVer[j++].split(",");
+					// String[] n =  numVer[j++].split(",");
 					for (int k = 0; k < vertices; k++) {
 						// if (Integer.parseInt(n[k]) == k) {
 						// 	System.out.print(1 + " ");
@@ -76,6 +76,7 @@ class Solution {
 						System.out.print(0+" ");
 					}
 					System.out.println();
+					System.out.println(numVer[j++]);
 				}
 				// int k = 0;
 				// for (int i = 0; i < vertices; i++) {
