@@ -9,7 +9,7 @@ public final class Solution {
     private Solution() { }
     /**.
      * { function_description }
-     *
+     * Complexity: O(E + V)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

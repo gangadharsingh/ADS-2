@@ -22,7 +22,7 @@ class DirectedCycle {
     /**.
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
-     *
+     *Complexity: O(V)
      * @param      graph  the digraph
      */
     DirectedCycle(final Digraph graph) {
@@ -40,7 +40,7 @@ class DirectedCycle {
     //order or finds a directed cycle
     /**.
      * { function_description }
-     *
+     *Complexity: O(E+V)
      * @param      graph  The graph
      * @param      v      { parameter_description }
      */
@@ -70,7 +70,7 @@ class DirectedCycle {
 
     /**.
      * Does the digraph have a directed cycle?
-     *
+     *Complexity: O(1)
      * @return     {@code true} if the digraph has a directed cycle
      * {@code false} otherwise
      */
@@ -80,7 +80,7 @@ class DirectedCycle {
 
     /**.
      * Returns a directed cycle if the digraph has a directed cycle,
-     *
+     *Complexity: O(E+V)
      * @return     a directed cycle (as an iterable) if the digraph has a
      *             directed cycle, and {@code null} otherwise
      */
@@ -90,7 +90,7 @@ class DirectedCycle {
     // certify that digraph has a directed cycle if it reports one
     /**.
      * { function_description }
-     *
+     *Complexity: O(E+V)
      * @return     { description_of_the_return_value }
      */
     private boolean check() {

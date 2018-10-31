@@ -32,6 +32,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Create an empty stack.
+      * Complexity: O(1)
       */
     public Stack() {
         first = null;
@@ -40,7 +41,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Is the stack empty?
-      *
+      * Complexity: O(1)
       * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
@@ -49,7 +50,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Return the number of items in the stack.
-      *
+      * Complexity: O(1)
       * @return     { description_of_the_return_value }
       */
     public int size() {
@@ -58,7 +59,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Add the item to the stack.
-      *
+      * Complexity: O(1)
       * @param      item  The item
       */
     public void push(final Item item) {
@@ -72,7 +73,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**.
       * Delete and return the item most recently added to the stack. Throw an
       * exception if no such item exists because the stack is empty.
-      *
+      * Complexity: O(1)
       * @return     { description_of_the_return_value }
       */
     public Item pop() {
@@ -89,7 +90,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**.
       * Return the item most recently added to the stack. Throw an exception if
       * no such item exists because the stack is empty.
-      *
+      * Complexity: O(1)
       * @return     { description_of_the_return_value }
       */
     public Item peek() {
@@ -101,7 +102,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Return string representation.
-      *
+      * Complexity: O(size)
       * @return     String representation of the object.
       */
     public String toString() {
@@ -116,7 +117,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**.
       * Return an iterator to the stack that iterates through the items in
       * LIFO order.
-      *
+      * Complexity: O(size)
       * @return     { description_of_the_return_value }
       */
     public Iterator<Item> iterator()  {

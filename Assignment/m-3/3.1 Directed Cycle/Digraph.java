@@ -25,7 +25,7 @@ class Digraph {
 
     /**.
      * Initializes an empty digraph with <em>V</em> vertices.
-     *
+     *Complexity: O(V)
      * @param      vert  The vertices
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
@@ -44,7 +44,7 @@ class Digraph {
     }
     /**.
      * Returns the number of vertices in this digraph.
-     *
+     *Complexity: O(1)
      * @return the number of vertices in this digraph
      */
     public int vertices() {
@@ -53,7 +53,7 @@ class Digraph {
 
     /**.
      * Returns the number of edges in this digraph.
-     *
+     *Complexity: O(1)
      * @return the number of edges in this digraph
      */
     public int edges() {
@@ -63,7 +63,7 @@ class Digraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**.
      * { function_description }
-     *
+     *Complexity: O(1)
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
@@ -76,7 +76,7 @@ class Digraph {
 
     /**.
      * Adds the directed edge v→w to this digraph.
-     *
+     *Complexity: O(1)
      * @param      v     the tail vertex
      * @param      w     the head vertex
      * @throws     IllegalArgumentException  unless both
@@ -91,7 +91,7 @@ class Digraph {
 
     /**.
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
-     *
+     *Complexity: O(E)
      * @param      v     the vertex
      *
      * @return     the vertices adjacent from vertex {@code v} in this digraph,
@@ -106,7 +106,7 @@ class Digraph {
     /**.
      * Returns the number of directed edges incident from vertex {@code v}.
      * This is known as the <em>outdegree</em> of vertex {@code v}.
-     *
+     *Complexity: O(1)
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -119,7 +119,7 @@ class Digraph {
     /**.
      * Returns the number of directed edges incident to vertex {@code v}. This
      * is known as the <em>indegree</em> of vertex {@code v}.
-     *
+     *Complexity: O(1)
      * @param      v     the vertex
      *
      * @return     the indegree of vertex {@code v}
@@ -132,7 +132,7 @@ class Digraph {
 
     /**.
      * Returns the reverse of the digraph.
-     *
+     *Complexity: O(E+V)
      * @return     the reverse of the digraph
      */
     public Digraph reverse() {
@@ -147,7 +147,7 @@ class Digraph {
 
     /**.
      * Returns a string representation of the graph.
-     *
+     *Complexity: O(E+V)
      * @return     the number of vertices <em>V</em>, followed by the number of
      *             edges <em>E</em>, followed by the <em>V</em> adjacency lists
      */
