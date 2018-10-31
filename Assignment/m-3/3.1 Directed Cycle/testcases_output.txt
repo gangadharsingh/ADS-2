@@ -1,128 +1,64 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle exists.
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
-	at Bag.add(Bag.java:60)
-	at Digraph.addEdge(Solution.java:191)
-	at Solution.main(Solution.java:122)
-Caused by: java.lang.ClassNotFoundException: Bag$Node
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 3 more
+Cycle exists.
 ----------------------------------------
 
