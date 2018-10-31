@@ -3,11 +3,15 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "2 3 "
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -15,11 +19,15 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "2 3 "
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -27,11 +35,15 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "4 2"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -39,11 +51,15 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 0"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -51,11 +67,15 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -63,11 +83,15 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "4 2"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -75,11 +99,15 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -87,10 +115,14 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:119)
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag$Node
+	at Bag.add(Bag.java:60)
+	at Digraph.addEdge(Solution.java:191)
+	at Solution.main(Solution.java:122)
+Caused by: java.lang.ClassNotFoundException: Bag$Node
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 3 more
 ----------------------------------------
 

@@ -116,9 +116,10 @@ public final class Solution{
         int edge = Integer.parseInt(scan.nextLine());
         Digraph graph = new Digraph(vertex);
         for (int i = 0; i < edge; i++) {
-            int ver = Integer.parseInt(scan.nextLine());
-            int edg = Integer.parseInt(scan.nextLine());
-            graph.addEdge(ver, edg);
+            String[] inp = scan.nextLine().split(" ");
+            // int ver = Integer.parseInt(scan.nextLine());
+            // int edg = Integer.parseInt(scan.nextLine());
+            graph.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
         }
         DirectedCycle cycledetect = new DirectedCycle(graph);
         if(cycledetect.hasCycle()) {
