@@ -34,9 +34,9 @@ class Digraph {
             "Number of vertices in a Digraph must be nonnegative");
         this.vertices = vert;
         this.edges = 0;
-        indegree = new int[vertices];
-        adj = (Bag<Integer>[]) new Bag[vertices];
-        for (int v = 0; v < vertices; v++) {
+        indegree = new int[vert];
+        adj = (Bag<Integer>[]) new Bag[vert];
+        for (int v = 0; v < vert; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
