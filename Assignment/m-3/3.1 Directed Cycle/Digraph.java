@@ -26,12 +26,14 @@ class Digraph {
     /**.
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param      vertices  The vertices
+     * @param      vert  The vertices
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
     Digraph(final int vert) {
-        if (vert < 0) throw new IllegalArgumentException(
-            "Number of vertices in a Digraph must be nonnegative");
+        if (vert < 0) {
+            throw new IllegalArgumentException(
+                "Number of vertices in a Digraph must be nonnegative");
+        }
         this.vertices = vert;
         this.edges = 0;
         indegree = new int[vert];
@@ -65,10 +67,11 @@ class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= vertices)
+        if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException(
                 "vertex " + v + " is not between 0 and " + (
                     vertices - 1));
+        }
     }
 
     /**.

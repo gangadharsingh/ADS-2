@@ -1,33 +1,17 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Solution.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:20: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:27:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:27:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:31: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:35: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:42:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:48: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:102: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:106: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:32: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:38: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:53:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:59:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/DirectedCycle.java:106: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:29:8: Unused @param tag for 'vertices'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:32:23: Expected @param tag for 'vert'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:68: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:79: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:94: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 3 errors.

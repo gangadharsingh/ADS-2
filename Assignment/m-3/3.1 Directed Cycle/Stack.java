@@ -9,7 +9,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**.
      * { var_description }
      */
-    private int N;          // size of the stack
+    private int size;          // size of the stack
     /**.
      * { var_description }
      */
@@ -35,7 +35,7 @@ public class Stack<Item> implements Iterable<Item> {
       */
     public Stack() {
         first = null;
-        N = 0;
+        size = 0;
     }
 
     /**.
@@ -53,7 +53,7 @@ public class Stack<Item> implements Iterable<Item> {
       * @return     { description_of_the_return_value }
       */
     public int size() {
-        return N;
+        return size;
     }
 
     /**.
@@ -66,7 +66,7 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        size++;
     }
 
     /**.
@@ -76,10 +76,12 @@ public class Stack<Item> implements Iterable<Item> {
       * @return     { description_of_the_return_value }
       */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        size--;
         return item;                   // return the saved item
     }
 
@@ -91,7 +93,9 @@ public class Stack<Item> implements Iterable<Item> {
       * @return     { description_of_the_return_value }
       */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
 
