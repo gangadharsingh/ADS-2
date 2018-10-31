@@ -19,38 +19,15 @@ Starting audit...
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:12:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:32:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:32:30: 'V' hides a field. [HiddenField]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:32:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:29:8: Unused @param tag for 'vertices'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:32:23: Expected @param tag for 'vert'. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:33: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:47:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:56:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:67: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:68: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:76: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:90: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:120:25: Parameter v should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:143: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Digraph.java:68: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:23:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:24:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:38: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:45: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:52:33: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:64: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:77: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:85: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:87: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:94: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:96: Expected @return tag. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:96:39: '{' at column 39 should have line break after. [LeftCurly]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:79: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-3/3.1 Directed Cycle/Stack.java:94: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 3 errors.

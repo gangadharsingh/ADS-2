@@ -20,7 +20,13 @@ public class Stack<Item> implements Iterable<Item> {
      * Class for node.
      */
     private class Node {
+        /**.
+         * { var_description }
+         */
         private Item item;
+        /**.
+         * { var_description }
+         */
         private Node next;
     }
 
@@ -34,6 +40,8 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Is the stack empty?
+      *
+      * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
         return first == null;
@@ -41,6 +49,8 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Return the number of items in the stack.
+      *
+      * @return     { description_of_the_return_value }
       */
     public int size() {
         return N;
@@ -48,6 +58,8 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Add the item to the stack.
+      *
+      * @param      item  The item
       */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -58,8 +70,10 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     /**.
-      * Delete and return the item most recently added to the stack.
-      * Throw an exception if no such item exists because the stack is empty.
+      * Delete and return the item most recently added to the stack. Throw an
+      * exception if no such item exists because the stack is empty.
+      *
+      * @return     { description_of_the_return_value }
       */
     public Item pop() {
         if (isEmpty()) throw new RuntimeException("Stack underflow");
@@ -71,8 +85,10 @@ public class Stack<Item> implements Iterable<Item> {
 
 
     /**.
-      * Return the item most recently added to the stack.
-      * Throw an exception if no such item exists because the stack is empty.
+      * Return the item most recently added to the stack. Throw an exception if
+      * no such item exists because the stack is empty.
+      *
+      * @return     { description_of_the_return_value }
       */
     public Item peek() {
         if (isEmpty()) throw new RuntimeException("Stack underflow");
@@ -81,19 +97,27 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**.
       * Return string representation.
+      *
+      * @return     String representation of the object.
       */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
 
 
     /**.
-      * Return an iterator to the stack that iterates through the items in LIFO order.
+      * Return an iterator to the stack that iterates through the items in
+      * LIFO order.
+      *
+      * @return     { description_of_the_return_value }
       */
-    public Iterator<Item> iterator()  { return new ListIterator();  }
+    public Iterator<Item> iterator()  {
+        return new ListIterator();
+    }
     // an iterator, doesn't implement remove() since it's optional
 
     /**.
