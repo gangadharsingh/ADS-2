@@ -3,8 +3,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "2 3 "
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -12,8 +15,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "2 3 "
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,8 +27,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "4 2"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -30,8 +39,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 0"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,8 +51,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -48,8 +63,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "4 2"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -57,8 +75,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -66,7 +87,10 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: "0 1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 

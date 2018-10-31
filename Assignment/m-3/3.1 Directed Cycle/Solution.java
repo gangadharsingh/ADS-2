@@ -85,28 +85,6 @@ class DirectedCycle {
 
         return true;
     }
-
-    /**
-     * Unit tests the {@code DirectedCycle} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int vertex = Integer.parseInt(scan.nextLine());
-        int edge = Integer.parseInt(scan.nextLine());
-        Digraph graph = new Digraph(vertex);
-        for (int i = 0; i < edge; i++) {
-            int ver = Integer.parseInt(scan.nextLine());
-            int edg = Integer.parseInt(scan.nextLine());
-            graph.addEdge(ver, edg);
-        }
-        DirectedCycle cycledetect = new DirectedCycle(graph);
-        if(cycledetect.hasCycle()) {
-            System.out.println("Cycle exists.");
-        } else {
-            System.out.println("Cycle doesn't exists.");
-        }
         // Scanner in = new Scanner(args[0]);
         // Digraph G = new Digraph(in);
 
@@ -123,10 +101,33 @@ class DirectedCycle {
         //     System.out.println("No directed cycle");
         // }
         // System.out.println();
-    }
 
 }
-
+public final class Solution{
+    private Solution() { }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int vertex = Integer.parseInt(scan.nextLine());
+        int edge = Integer.parseInt(scan.nextLine());
+        Digraph graph = new Digraph(vertex);
+        for (int i = 0; i < edge; i++) {
+            int ver = Integer.parseInt(scan.nextLine());
+            int edg = Integer.parseInt(scan.nextLine());
+            graph.addEdge(ver, edg);
+        }
+        DirectedCycle cycledetect = new DirectedCycle(graph);
+        if(cycledetect.hasCycle()) {
+            System.out.println("Cycle exists.");
+        } else {
+            System.out.println("Cycle doesn't exists.");
+        }
+    }
+}
 class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
