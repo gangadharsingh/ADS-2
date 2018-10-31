@@ -36,7 +36,7 @@ class DirectedCycle {
         }
     }
 
-    // check that algorithm computes either the topological 
+    // check that algorithm computes either the topological
     //order or finds a directed cycle
     /**.
      * { function_description }
