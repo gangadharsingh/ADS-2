@@ -5,19 +5,19 @@ class DirectedCycle {
     /**.
      * { var_description }
      */
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
+    private boolean[] marked;
     /**.
      * { var_description }
      */
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
+    private int[] edgeTo;
     /**.
      * { var_description }
      */
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
+    private boolean[] onStack;
     /**.
      * { var_description }
      */
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    private Stack<Integer> cycle;
 
     /**.
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
@@ -29,13 +29,15 @@ class DirectedCycle {
         marked  = new boolean[graph.vertices()];
         onStack = new boolean[graph.vertices()];
         edgeTo  = new int[graph.vertices()];
-        for (int v = 0; v < graph.vertices(); v++)
+        for (int v = 0; v < graph.vertices(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(graph, v);
             }
+        }
     }
 
-    // check that algorithm computes either the topological order or finds a directed cycle
+    // check that algorithm computes either the topological 
+    //order or finds a directed cycle
     /**.
      * { function_description }
      *
@@ -50,16 +52,10 @@ class DirectedCycle {
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(graph, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -103,7 +99,9 @@ class DirectedCycle {
             // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
-                if (first == -1) first = v;
+                if (first == -1) {
+                    first = v;
+                }
                 last = v;
             }
             if (first != last) {
