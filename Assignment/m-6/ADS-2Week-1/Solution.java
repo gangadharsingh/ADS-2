@@ -47,6 +47,7 @@ class PageRank {
 		StringBuilder str = new StringBuilder();
 		for (int i  = 0 ; i < dg.V() ; i++) {
 			str.append(i+" - "+prevPR.get(i));
+			str.append("\n");
 		}
 		str.toString();
 		return str.toString();
@@ -73,10 +74,10 @@ public class Solution {
 		}
 		// String s =  dig.toString();
 		System.out.println(dig);
-		System.out.println();
+		// System.out.println();
 		PageRank pr = new PageRank(dig);
 		// HashMap<Integer, Double> prVert = new HashMap<Integer, Double>();
-		// prVert.put(0, pr.getPR(0));
+		pr.getPR(0);
 		System.out.println(pr);
 		// to read the adjacency list from std input
 		// and build the graph
