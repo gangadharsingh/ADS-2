@@ -1,32 +1,55 @@
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.Arrays;
 class PageRank {
 	Digraph dg;
-	HashMap<Integer, Double> map;
+	HashMap<Integer, Double> prevPR;
 	public static int iterator = 1000;
 	PageRank(Digraph g) {
 		dg = new Digraph(g);
-		map = new HashMap<Integer, Double>();
+		prevPR = new HashMap<Integer, Double>();
 	}
-	double getPR(int vert) {
+	HashMap<Integer, Double> getPR(int vert) {
 		double initialPR = 1/dg.V();
-		HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
-		int[] adj=new int[dg.outdegree(vert)];
+		//key is vertices, value is ranking.
+		// HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
+		// int[] adj=new int[dg.outdegree(vert)];
 		int size = 0;
-		for (int i: dg.adj(vert)) {
-			adj[size++] = i;
+		// for (int i: dg.adj(vert)) {
+		// 	adj[size++] = i;
+		// }
+		for (int j = 0; j < dg.V(); j++) {
+			prevPR.put(j, initialPR);	
 		}
+		Double x = 0.0;
 		while(iterator > 0) {
-			for (int j = 0; j < dg.V(); j++) {
-				prevPR.put(j, initialPR);	
+			Double calc = 0.0;
+			for (int i = 0; i < dg.V(); i++) {
+				x = Math.round(calc * 1e12) / 1e12;
+				String[] resultsStr = dg.indegree(i).split(",");
+				int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
+				for (int j: array) {
+					calc += prevPR.get(j)/dg.outdegree(j);
+				}
+				System.out.println(calc);
+				prevPR.put(i, calc);
+			}
+			if(iterator > 50) {
+				if (x ==  calc) {
+					break;
+				}
 			}
 			iterator--;
 		}
-		return 0.0;
+		return prevPR;
 	}
 	public String toString() {
 		StringBuilder str = new StringBuilder();
-		return "";
+		for (int i  = 0 ; i < dg.V() ; i++) {
+			str.append(i+" - "+prevPR.get(i));
+		}
+		str.toString();
+		return str.toString();
 	}
 }
 
@@ -42,15 +65,19 @@ public class Solution {
 			String[] edge = scan.nextLine().split(" ");
 			if (edge.length > 1) {
 				for (int j = 1; j < edge.length; j++) {
-					dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[i]));
+					dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[j]));
 				}
 			} else {
 				dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[1]));
 			}
 		}
-		dig.toString();
+		// String s =  dig.toString();
+		System.out.println(dig);
+		System.out.println();
 		PageRank pr = new PageRank(dig);
-		pr.getPR(vert);
+		// HashMap<Integer, Double> prVert = new HashMap<Integer, Double>();
+		// prVert.put(0, pr.getPR(0));
+		System.out.println(pr);
 		// to read the adjacency list from std input
 		// and build the graph
 		
@@ -62,7 +89,7 @@ public class Solution {
 		// This part is only for the final test case
 		
 		// File path to the web content
-		String file = "WebContent.txt";
+		// String file = "WebContent.txt";
 		
 		// instantiate web search object
 		// and pass the page rank object and the file path to the constructor

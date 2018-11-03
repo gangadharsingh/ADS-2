@@ -12,8 +12,14 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+4 vertices, 5 edges 
+0: 2 1 
+1: 2 
+2: 0 
+3: 2 
+
+
+0 - null1 - null2 - null3 - null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -30,8 +36,14 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at Solution.main(Solution.java:45)
+4 vertices, 6 edges 
+0: 1 
+1: 2 0 
+2: 3 0 
+3: 0 
+
+
+0 - null1 - null2 - null3 - null
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -48,8 +60,14 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at Solution.main(Solution.java:45)
+4 vertices, 8 edges 
+0: 1 
+1: 2 0 
+2: 3 1 0 
+3: 2 0 
+
+
+0 - null1 - null2 - null3 - null
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -74,8 +92,18 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+8 vertices, 14 edges 
+0: 3 2 1 
+1: 0 
+2: 0 
+3: 7 6 5 4 0 
+4: 0 
+5: 0 
+6: 0 
+7: 0 
+
+
+0 - null1 - null2 - null3 - null4 - null5 - null6 - null7 - null
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -96,8 +124,8 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -122,8 +150,8 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -140,8 +168,14 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+4 vertices, 4 edges 
+0: 1 
+1: 2 
+2: 3 
+3: 0 
+
+
+0 - null1 - null2 - null3 - null
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -162,8 +196,8 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -180,11 +214,14 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.outdegree(Digraph.java:195)
-	at PageRank.getPR(Solution.java:14)
-	at Solution.main(Solution.java:53)
+4 vertices, 12 edges 
+0: 3 2 1 
+1: 3 2 0 
+2: 3 1 0 
+3: 2 1 0 
+
+
+0 - null1 - null2 - null3 - null
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -205,8 +242,8 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at Solution.main(Solution.java:45)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -219,11 +256,12 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.outdegree(Digraph.java:195)
-	at PageRank.getPR(Solution.java:14)
-	at Solution.main(Solution.java:53)
+2 vertices, 2 edges 
+0: 1 
+1: 0 
+
+
+0 - null1 - null
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -261,7 +299,21 @@ Expected Output:
 0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:45)
+12 vertices, 22 edges 
+0: 3 2 1 
+1: 0 
+2: 0 
+3: 11 10 9 8 7 6 5 4 0 
+4: 0 
+5: 0 
+6: 0 
+7: 0 
+8: 0 
+9: 0 
+10: 0 
+11: 0 
+
+
+0 - null1 - null2 - null3 - null4 - null5 - null6 - null7 - null8 - null9 - null10 - null11 - null
 ----------------------------------------
 
