@@ -26,18 +26,18 @@ class PageRank {
                 String[] resultsStr = dg.indegree(i).split(",");
                 int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
                 for (int j : array) {
-                    d = prevPR.get(j) / dg.outdegree(j);
-                    // System.out.println(prevPR.get(j)+" get");
-                    // System.out.println(dg.outdegree(j)+" out");
+                    // System.out.println(prevPR.get(j)+" prevPR.get(j), outdegree "+dg.outdegree(j));
+                    d += prevPR.get(j) / dg.outdegree(j);
                 }
-                // prevPR.put(i, Math.floor(d));
-                // d = 0.0;
+                // System.out.println(d+" d, i "+i);
+                prevPR.put(i,d);
             }
-            if (iterator > 100) {
-                if (x ==  d) {
-                    break;
-                }
-            }
+            // if (iterator > 5) {
+            //     if (x ==  d) {
+            //         System.out.println(x+" X");
+            //         // break;
+            //     }
+            // }
             iterator--;
         }
         return prevPR;
