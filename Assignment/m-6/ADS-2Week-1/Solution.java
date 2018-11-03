@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 class PageRank {
     Digraph dg;
     HashMap<Integer, Double> prevPR;
-    public static int iterator = 1000;
+    public static int iterator = 10;
     PageRank(Digraph g) {
         dg = new Digraph(g);
         prevPR = new HashMap<Integer, Double>();
@@ -22,19 +22,17 @@ class PageRank {
         Double d = 0.0;
         while (iterator > 0) {
             for (int i = 0; i < dg.V(); i++) {
-                x = d;
+                x = Math.floor(d);
                 String[] resultsStr = dg.indegree(i).split(",");
                 int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
                 for (int j : array) {
-                    // System.out.println(prevPR.get(j)+" prevPR.get(j), outdegree "+dg.outdegree(j));
-                    d += prevPR.get(j) / dg.outdegree(j);
+                    d = prevPR.get(j) / dg.outdegree(j);
+                    System.out.print(d+" ");
                 }
-                // System.out.println(d+" d, i "+i);
-                prevPR.put(i,d);
             }
-            if (iterator > 50) {
-                if (x == d) {
-                    // System.out.println(x+" X");
+            if (iterator > 5) {
+                if (x ==  d) {
+                    System.out.println(x+" X");
                     break;
                 }
             }
