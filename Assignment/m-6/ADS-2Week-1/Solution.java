@@ -37,7 +37,7 @@ class PageRank {
                     // System.out.println(prevPR.get(j)+" get");
                     // System.out.println(dg.outdegree(j)+" out");
                 }
-                // prevPR.put(i, Math.floor(d));
+                prevPR.put(i, d);
                 // d = 0.0;
             }
             if (iterator > 50) {
