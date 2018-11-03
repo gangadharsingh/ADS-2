@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Arrays;
+import java.lang.Math;
 class PageRank {
 	Digraph dg;
 	HashMap<Integer, Double> prevPR;
@@ -26,7 +27,7 @@ class PageRank {
 		Double calc = 0.0;
 		while(iterator > 0) {
 			for (int i = 0; i < dg.V(); i++) {
-				x = Math.round(calc * 1e12) / 1e12;
+				x = Math.floor(calc);
 				String[] resultsStr = dg.indegree(i).split(",");
 				int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
 				for (int j: array) {
@@ -34,7 +35,7 @@ class PageRank {
 					// System.out.println(prevPR.get(j)+" get");
 					// System.out.println(dg.outdegree(j)+" out");
 				}
-				prevPR.put(i, calc);
+				prevPR.put(i, Math.floor(calc));
 				calc = 0.0;
 			}
 			if(iterator > 50) {
