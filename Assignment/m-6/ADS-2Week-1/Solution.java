@@ -22,7 +22,7 @@ class PageRank {
         Double d = 0.0;
         while (iterator > 0) {
             for (int i = 0; i < dg.V(); i++) {
-                x = Math.floor(d);
+                x = d;
                 String[] resultsStr = dg.indegree(i).split(",");
                 int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
                 for (int j : array) {
@@ -33,9 +33,9 @@ class PageRank {
                 prevPR.put(i,d);
             }
             if (iterator > 50) {
-                if (x ==  d) {
-                    System.out.println(x+" X");
-                    // break;
+                if (x == d) {
+                    // System.out.println(x+" X");
+                    break;
                 }
             }
             iterator--;
