@@ -4,13 +4,14 @@ import java.util.Arrays;
 class PageRank {
 	Digraph dg;
 	HashMap<Integer, Double> prevPR;
-	public static int iterator = 1000;
+	public static int iterator = 5;
 	PageRank(Digraph g) {
 		dg = new Digraph(g);
 		prevPR = new HashMap<Integer, Double>();
 	}
 	HashMap<Integer, Double> getPR(int vert) {
-		double initialPR = 1/dg.V();
+		double initialPR = 1%dg.V();
+		System.out.println(initialPR);
 		//key is vertices, value is ranking.
 		// HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
 		// int[] adj=new int[dg.outdegree(vert)];
@@ -22,19 +23,21 @@ class PageRank {
 			prevPR.put(j, initialPR);	
 		}
 		Double x = 0.0;
+		Double calc = 0.0;
 		while(iterator > 0) {
-			Double calc = 0.0;
 			for (int i = 0; i < dg.V(); i++) {
 				x = Math.round(calc * 1e12) / 1e12;
 				String[] resultsStr = dg.indegree(i).split(",");
 				int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
 				for (int j: array) {
-					calc += prevPR.get(j)/dg.outdegree(j);
+					calc = prevPR.get(j)/dg.outdegree(j);
+					// System.out.println(prevPR.get(j)+" get");
+					// System.out.println(dg.outdegree(j)+" out");
 				}
-				System.out.println(calc);
 				prevPR.put(i, calc);
+				calc = 0.0;
 			}
-			if(iterator > 50) {
+			if(iterator > 2) {
 				if (x ==  calc) {
 					break;
 				}
