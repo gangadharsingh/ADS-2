@@ -137,7 +137,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:78)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -163,7 +163,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:78)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
@@ -211,7 +211,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:78)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -259,7 +259,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:78)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
 ########## Testcase 10: Passed ##########

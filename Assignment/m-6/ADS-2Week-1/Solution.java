@@ -7,21 +7,14 @@ import java.text.DecimalFormat;
 class PageRank {
     Digraph dg;
     HashMap<Integer, Double> prevPR;
-    public static int iterator = 100;
+    public static int iterator = 1000;
     PageRank(Digraph g) {
         dg = new Digraph(g);
         prevPR = new HashMap<Integer, Double>();
     }
     HashMap<Integer, Double> getPR(int vert) {
         double initialPR = 1.0 / dg.V();
-        // System.out.println(initialPR);
-        //key is vertices, value is ranking.
-        // HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
-        // int[] adj=new int[dg.outdegree(vert)];
         int size = 0;
-        // for (int i: dg.adj(vert)) {
-        //  adj[size++] = i;
-        // }
         for (int j = 0; j < dg.V(); j++) {
             prevPR.put(j, initialPR);
         }
@@ -40,7 +33,7 @@ class PageRank {
                 // prevPR.put(i, Math.floor(d));
                 // d = 0.0;
             }
-            if (iterator > 50) {
+            if (iterator > 100) {
                 if (x ==  d) {
                     break;
                 }
