@@ -13,8 +13,8 @@ class PageRank {
         prevPR = new HashMap<Integer, Double>();
     }
     HashMap<Integer, Double> getPR(int vert) {
-        double initialPR = 1 % dg.V();
-        System.out.println(initialPR);
+        double initialPR = 1.0 / dg.V();
+        // System.out.println(initialPR);
         //key is vertices, value is ranking.
         // HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
         // int[] adj=new int[dg.outdegree(vert)];
@@ -37,8 +37,8 @@ class PageRank {
                     // System.out.println(prevPR.get(j)+" get");
                     // System.out.println(dg.outdegree(j)+" out");
                 }
-                prevPR.put(i, Math.floor(d));
-                d = 0.0;
+                // prevPR.put(i, Math.floor(d));
+                // d = 0.0;
             }
             if (iterator > 50) {
                 if (x ==  d) {
