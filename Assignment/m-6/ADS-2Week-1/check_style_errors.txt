@@ -169,7 +169,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:6:34: Variable 'prevPR' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:7:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:7:27: Variable 'iterator' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:7:38: '5' is a magic number. [MagicNumber]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:7:38: '100' is a magic number. [MagicNumber]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:8:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:8:18: Parameter g should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:12:9: Missing a Javadoc comment. [JavadocMethod]
@@ -187,6 +187,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:34: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:35: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:40:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:40:39: '50' is a magic number. [MagicNumber]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:49:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:51:32: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:51:45: ';' is preceded with whitespace. [NoWhitespaceBefore]
@@ -220,7 +221,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:113:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:113:29: Parameter query should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 58 errors.
+Checkstyle ends with 59 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:33: Line has trailing spaces. [RegexpSingleline]

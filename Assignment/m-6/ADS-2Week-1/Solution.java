@@ -4,7 +4,7 @@ import java.util.Arrays;
 class PageRank {
 	Digraph dg;
 	HashMap<Integer, Double> prevPR;
-	public static int iterator = 5;
+	public static int iterator = 100;
 	PageRank(Digraph g) {
 		dg = new Digraph(g);
 		prevPR = new HashMap<Integer, Double>();
@@ -37,7 +37,7 @@ class PageRank {
 				prevPR.put(i, calc);
 				calc = 0.0;
 			}
-			if(iterator > 2) {
+			if(iterator > 50) {
 				if (x ==  calc) {
 					break;
 				}
