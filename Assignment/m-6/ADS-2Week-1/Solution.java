@@ -32,12 +32,12 @@ class PageRank {
                 // System.out.println(d+" d, i "+i);
                 prevPR.put(i,d);
             }
-            // if (iterator > 5) {
-            //     if (x ==  d) {
-            //         System.out.println(x+" X");
-            //         // break;
-            //     }
-            // }
+            if (iterator > 50) {
+                if (x ==  d) {
+                    System.out.println(x+" X");
+                    // break;
+                }
+            }
             iterator--;
         }
         return prevPR;
