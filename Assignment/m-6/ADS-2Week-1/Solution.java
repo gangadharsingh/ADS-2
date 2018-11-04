@@ -6,61 +6,34 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 class PageRank {
     Digraph dg;
-    HashMap<Integer, Double> prevPR;
+    double[] prevPR;
+    double[] newPR;
     public static int iterator = 100;
     PageRank(Digraph g) {
+        prevPR = new double[dg.V()];
+        newPR  = new double[dg.V()];
         dg = new Digraph(g);
-        prevPR = new HashMap<Integer, Double>();
-    }
-    HashMap<Integer, Double> getPR(int vert) {
-        double initialPR = 1.0 / dg.V();
-        // System.out.println(initialPR);
-        //key is vertices, value is ranking.
-        // HashMap<Integer, Double> prevPR = new HashMap<Integer, Double>();
-        // int[] adj=new int[dg.outdegree(vert)];
-        int size = 0;
-        // for (int i: dg.adj(vert)) {
-        //  adj[size++] = i;
-        // }
         for (int j = 0; j < dg.V(); j++) {
-            prevPR.put(j, initialPR);
-        }
-        Double x = 0.0;
-        Double d = 0.0;
-        while (iterator > 0) {
-            for (int i = 0; i < dg.V(); i++) {
-                x = Math.floor(d);
-                String s = dg.indegree(i);
-                String[] resultsStr = new String[50];
-                if(s.length() > 1) {
-                    resultsStr = dg.indegree(i).split(",");
-                } else {
-                    resultsStr[0] = dg.indegree(i);
-                }
-                // System.out.println(resultsStr[0]+" Batman");
-                int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
-                for (int j : array) {
-                    d = prevPR.get(j) / dg.outdegree(j);
-                    d = (double)Math.round(d * 100000d) / 100000d;
-                    System.out.println(d+" d");
-                    // System.out.println(dg.outdegree(j)+" out");
-                }
-                prevPR.put(i, d);
-                d = 0.0;
-                if (iterator > 50) {
-                    if (x ==  d) {
-                        break;
+            if (dg.outdegree(j) == 0) {
+                for (int k = 0; k < dg.V(); k++) {
+                    if (k != j) {
+                        dg.addEdge(j, k);
                     }
                 }
             }
-            iterator--;
+                
         }
-        return prevPR;
+        System.out.println("Graph");
+        System.out.println(dg);
+    }
+    double getPR(int v) {
+
+        return 0.0;
     }
     public String toString() {
         StringBuilder str = new StringBuilder();
         for (int i  = 0 ; i < dg.V() ; i++) {
-            str.append(i + " - " + prevPR.get(i));
+            // str.append(i + " - " + prevPR.get(i));
             str.append("\n");
         }
         str.toString();
@@ -84,18 +57,12 @@ public class Solution {
                 }
             } else if (edge.length == 2) {
                 dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[1]));
-            } else {
-                for (int k = 0; k < vert; k++) {
-                        if(k != Integer.parseInt(edge[0])) {
-                            dig.addEdge(Integer.parseInt(edge[0]), k);        
-                        }
-                    }    
             }
         }
         // String s =  dig.toString();
         System.out.println(dig);
-        // System.out.println();
-        // PageRank pr = new PageRank(dig);
+        System.out.println();
+        PageRank pr = new PageRank(dig);
         // HashMap<Integer, Double> prVert = new HashMap<Integer, Double>();
         // pr.getPR(0);
         // System.out.println(pr);
