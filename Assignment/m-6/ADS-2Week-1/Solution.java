@@ -30,19 +30,27 @@ class PageRank {
         while (iterator > 0) {
             for (int i = 0; i < dg.V(); i++) {
                 x = Math.floor(d);
-                String[] resultsStr = dg.indegree(i).split(",");
+                String s = dg.indegree(i);
+                String[] resultsStr = new String[50];
+                if(s.length() > 1) {
+                    resultsStr = dg.indegree(i).split(",");
+                } else {
+                    resultsStr[0] = dg.indegree(i);
+                }
+                // System.out.println(resultsStr[0]+" Batman");
                 int[] array = Arrays.stream(resultsStr).mapToInt(Integer::parseInt).toArray();
                 for (int j : array) {
                     d = prevPR.get(j) / dg.outdegree(j);
-                    // System.out.println(prevPR.get(j)+" get");
+                    d = (double)Math.round(d * 100000d) / 100000d;
+                    System.out.println(d+" d");
                     // System.out.println(dg.outdegree(j)+" out");
                 }
-                // prevPR.put(i, Math.floor(d));
-                // d = 0.0;
-            }
-            if (iterator > 50) {
-                if (x ==  d) {
-                    break;
+                prevPR.put(i, d);
+                d = 0.0;
+                if (iterator > 50) {
+                    if (x ==  d) {
+                        break;
+                    }
                 }
             }
             iterator--;
@@ -74,7 +82,7 @@ public class Solution {
                 for (int j = 1; j < edge.length; j++) {
                     dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[j]));
                 }
-            } else {
+            } else if (edge.length == 2) {
                 dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[1]));
             }
         }
