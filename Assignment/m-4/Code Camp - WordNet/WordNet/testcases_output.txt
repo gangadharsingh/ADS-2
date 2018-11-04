@@ -18,8 +18,7 @@ Expected Output:
 14: 13
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,8 +27,7 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -42,8 +40,7 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -53,8 +50,7 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -66,8 +62,7 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -84,8 +79,7 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -99,8 +93,7 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -117,8 +110,7 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -134,8 +126,7 @@ Expected Output:
 7:
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -143,8 +134,7 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -152,26 +142,23 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -195,8 +182,7 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -204,7 +190,6 @@ Expected Output:
 Cycle detected
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+IllegalArgumentException
 ----------------------------------------
 
