@@ -1,4 +1,4 @@
-public class BreadthFirstDirectedPaths {
+class BreadthFirstDirectedPaths {
     private static final int INFINITY = Integer.MAX_VALUE;
     private boolean[] marked;  // marked[v] = is there an s->v path?
     private int[] edgeTo;      // edgeTo[v] = last edge on shortest s->v path
@@ -10,7 +10,7 @@ public class BreadthFirstDirectedPaths {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(Digraph G, int s) {
+    BreadthFirstDirectedPaths(Digraph G, int s) {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
         edgeTo = new int[G.V()];

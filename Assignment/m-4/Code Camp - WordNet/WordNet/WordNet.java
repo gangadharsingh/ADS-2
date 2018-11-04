@@ -1,221 +1,216 @@
-class LinearProbingHashST<Key, Value> {
-    private static final int INIT_CAPACITY = 4;
-
-    private int n;           // number of key-value pairs in the symbol table
-    private int m;           // size of linear probing table
-    private Key[] keys;      // the keys
-    private Value[] vals;    // the values
-
-
+/**
+ * importing scanner.
+ */
+import java.util.Scanner;
+/**
+ * importing array list.
+ */
+import java.util.ArrayList;
+import java.io.File;
+/**
+ * WordNet class.
+ */
+public class WordNet {
     /**
-     * Initializes an empty symbol table.
+     * digraph g.
      */
-    LinearProbingHashST() {
-        this(INIT_CAPACITY);
-    }
-
+    private Digraph g;
     /**
-     * Initializes an empty symbol table with the specified initial capacity.
-     *
-     * @param capacity the initial capacity
+     * hash ST ht.
      */
-    public LinearProbingHashST(int capacity) {
-        m = capacity;
-        n = 0;
-        keys = (Key[])   new Object[m];
-        vals = (Value[]) new Object[m];
-    }
-
+private LinearProbingHashST<String, ArrayList<Integer>> ht;
     /**
-     * Returns the number of key-value pairs in this symbol table.
-     *
-     * @return the number of key-value pairs in this symbol table
+     * hash ST ht.
      */
-    public int size() {
-        return n;
-    }
-
+    private LinearProbingHashST<Integer, String> ht1;
     /**
-     * Returns true if this symbol table is empty.
-     *
-     * @return {@code true} if this symbol table is empty;
-     *         {@code false} otherwise
+     * v variable.
      */
-    public boolean isEmpty() {
-        return size() == 0;
-    }
-
+    private int v;
     /**
-     * Returns true if this symbol table contains the specified key.
-     *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key};
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * SAP.
      */
-    public boolean contains(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
-        return get(key) != null;
+    private SAP sap;
+    /**
+     * flag of bool.
+     */
+    private boolean flag = false;
+    /**
+     * constructor.
+     * @param synsets synsets.
+     * @param hypernyms hypernyms.
+     * @throws Exception if null.
+     */
+    public WordNet(final String synsets, final String hypernyms)
+    throws Exception {
+        buildht(synsets);
+        buildg(hypernyms);
     }
-
-    // hash function for keys - returns value between 0 and M-1
-    private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
-    }
-
-    // resizes the hash table to the given capacity by re-hashing all of the keys
-    private void resize(int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
-        for (int i = 0; i < m; i++) {
-            if (keys[i] != null) {
-                temp.put(keys[i], vals[i]);
+    /**
+     * building graph.
+     * @param hypernyms [description]
+     * @throws Exception if null.
+     */
+    private void buildg(final String hypernyms)throws Exception {
+        g = new Digraph(v);
+        Scanner sc = new Scanner(new File(hypernyms));
+        while (sc.hasNextLine()) {
+            String[] tokens = sc.nextLine().split(",");
+            if (tokens.length > 1) {
+                for (int i = 1; i < tokens.length; i++) {
+                    g.addEdge(Integer.parseInt(tokens[0]),
+                        Integer.parseInt(tokens[i]));
+                }
             }
         }
-        keys = temp.keys;
-        vals = temp.vals;
-        m    = temp.m;
+        isrooteddigraph(g);
+        iscycle(g);
     }
-
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
-     * if the specified value is {@code null}.
-     *
-     * @param  key the key
-     * @param  val the value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * flag check.
+     * @return bool[description]
      */
-    public void put(Key key, Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
-
-        if (val == null) {
-            delete(key);
+    private boolean isflag() {
+        return flag;
+    }
+    /**
+     * checks for cycles.
+     * @param g1 [description]
+     */
+    private void iscycle(final Digraph g1) {
+        DirectedCycle obj = new DirectedCycle(g1);
+        if (obj.hasCycle()) {
+            System.out.println("Cycle detected");
+            flag = true;
             return;
         }
-
-        // double table size if 50% full
-        if (n >= m/2) resize(2*m);
-
-        int i;
-        for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
-            if (keys[i].equals(key)) {
-                vals[i] = val;
+    }
+    /**
+     * rooted digraph check.
+     * @param g2 [description]
+     */
+    private void isrooteddigraph(final Digraph g2) {
+        int count = 0;
+        for (int i = 0; i < g.V(); i++) {
+            if (g2.outdegree(i) == 0) {
+                count++;
+            }
+            if (count > 1) {
+                System.out.println("Multiple roots");
+                flag = true;
                 return;
             }
         }
-        keys[i] = key;
-        vals[i] = val;
-        n++;
+    }
+    /**
+     * build hash table.
+     * @param synsets [description]
+     * @throws Exception if null.
+     */
+    private void buildht(final String synsets)throws Exception {
+        ht = new LinearProbingHashST<String, ArrayList<Integer>>();
+        ht1 = new LinearProbingHashST<Integer, String>();
+        Scanner sc = new Scanner(new File(synsets));
+        while (sc.hasNextLine()) {
+            String[] tokens = sc.nextLine().split(",");
+            ht1.put(Integer.parseInt(tokens[0]), tokens[1]);
+            String[] input = tokens[1].split(" ");
+            for (int i = 0; i < input.length; i++) {
+                if (ht.contains(input[i])) {
+                    ArrayList<Integer> list = ht.get(input[i]);
+                    list.add(Integer.parseInt(tokens[0]));
+                    ht.put(input[i], list);
+                } else {
+                    ArrayList<Integer> list = new ArrayList<Integer>();
+                    list.add(Integer.parseInt(tokens[0]));
+                    ht.put(input[i], list);
+                }
+
+            }
+            v++;
+        }
     }
 
     /**
-     * Returns the value associated with the specified key.
-     * @param key the key
-     * @return the value associated with {@code key};
-     *         {@code null} if no such value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     *  returns all WordNet nouns.
+     * @return [description]
      */
-    public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-            if (keys[i].equals(key))
-                return vals[i];
+    public Iterable<String> nouns() {
         return null;
     }
-
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
-     *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * // is the word a WordNet noun?.
+     * @param word [description]
+     * @return [description]
      */
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-        if (!contains(key)) return;
-
-        // find position i of key
-        int i = hash(key);
-        while (!key.equals(keys[i])) {
-            i = (i + 1) % m;
-        }
-
-        // delete key and associated value
-        keys[i] = null;
-        vals[i] = null;
-
-        // rehash all keys in same cluster
-        i = (i + 1) % m;
-        while (keys[i] != null) {
-            // delete keys[i] an vals[i] and reinsert
-            Key   keyToRehash = keys[i];
-            Value valToRehash = vals[i];
-            keys[i] = null;
-            vals[i] = null;
-            n--;
-            put(keyToRehash, valToRehash);
-            i = (i + 1) % m;
-        }
-
-        n--;
-
-        // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m/8) resize(m/2);
-
-        assert check();
+    public boolean isNoun(final String word) {
+        return false;
     }
-
     /**
-     * Returns all keys in this symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
+     * distance between nounA and nounB (defined below).
+     * @param nounA [description]
+     * @param nounB [description]
      *
-     * @return all keys in this symbol table
+     * @return int [description]
      */
-    public Iterable<Key> keys() {
-        Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++)
-            if (keys[i] != null) queue.enqueue(keys[i]);
-        return queue;
+    public int distance(final String nounA, final String nounB) {
+        sap = new SAP(g);
+        int dist = sap.length(ht.get(nounA), ht.get(nounB));
+        return dist;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * a synset (second field of synsets.txt)
+     * that is the common ancestor of nounA and nounB
+     * in a shortest ancestral path (defined below)
+     * @param nounA [description]
+     * @param nounB [description]
+     * @return String[description]
+     */
 
-    // integrity check - don't check after each put() because
-    // integrity not maintained during a delete()
-    private boolean check() {
+    public String sap(final String nounA, final String nounB) {
+        sap = new SAP(g);
+        String str = "";
+        int id = sap.ancestor(ht.get(nounA), ht.get(nounB));
+        return ht1.get(id);
+    }
+    /**
+     * prints.
+     */
 
-        // check that hash table is at most 50% full
-        if (m < 2*n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
-            return false;
-        }
+    public void print() {
+        System.out.println(g);
+    }
+    /**
+     * do unit testing of this class.
+     * @param args [description]
+     */
 
-        // check that each key in table can be found by get()
-        for (int i = 0; i < m; i++) {
-            if (keys[i] == null) continue;
-            else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
-                return false;
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String file1 = "Files" + "\\" + sc.nextLine();
+        String file2 = "Files" + "\\" + sc.nextLine();
+        String input = sc.nextLine();
+        try {
+            WordNet obj = new WordNet(file1, file2);
+            if (input.equals("Graph")) {
+                if (!obj.isflag()) {
+                    obj.print();
+                }
+            } else if (input.equals("Queries")) {
+                while (sc.hasNextLine()) {
+                    String[] tokens = sc.nextLine().split(" ");
+                    String str = obj.sap(tokens[0], tokens[1]);
+                    int dis = obj.distance(tokens[0], tokens[1]);
+                    System.out.println("distance = " + dis
+                        + ", ancestor = " + str);
+
+                }
             }
+        } catch (Exception e) {
+            System.out.println("IllegalArgumentException");
         }
-        return true;
-    }
 
-
-    /**
-     * Unit tests the {@code LinearProbingHashST} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        // LinearProbingHashST<String, Integer> st = new LinearProbingHashST<String, Integer>();
-        // for (int i = 0; !StdIn.isEmpty(); i++) {
-        //     String key = StdIn.readString();
-        //     st.put(key, i);
-        // }
-
-        // // print keys
-        // for (String s : st.keys())
-        //     StdOut.println(s + " " + st.get(s));
     }
 }
