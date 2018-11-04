@@ -21,14 +21,29 @@ class PageRank {
                     }
                 }
             }
-                
+            prevPR[j] = 1.0 / dg.V();
         }
-        System.out.println("Graph");
-        System.out.println(dg);
     }
     double getPR(int v) {
-
-        return 0.0;
+        double pr = 0.0;
+        while(iterator > 0) {
+            String[] s = dg.indegree(v).split(",");
+            int[] array = Arrays.asList(s).stream().mapToInt(Integer::parseInt).toArray();
+            for (int j: array) {
+                pr += prevPR[j] / dg.outdegree(j);
+            }
+            newPR[v] = pr;
+            if(iterator == 10) {
+                prevPR[v] = pr;
+            }
+            if (iterator == 100) {
+                if (prevPR[v] == newPR[v]) {
+                    break;
+                }
+            }
+            iterator--;
+        }
+        return newPR[v];
     }
     public String toString() {
         StringBuilder str = new StringBuilder();
@@ -64,7 +79,7 @@ public class Solution {
         System.out.println();
         PageRank pr = new PageRank(dig);
         // HashMap<Integer, Double> prVert = new HashMap<Integer, Double>();
-        // pr.getPR(0);
+        pr.getPR(0);
         // System.out.println(pr);
         // to read the adjacency list from std input
         // and build the graph

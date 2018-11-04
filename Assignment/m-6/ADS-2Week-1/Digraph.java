@@ -168,10 +168,11 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         if(!indegree.containsKey(v)) {
+            String a = Integer.toString(w) + ",";
             indegree.put(v, Integer.toString(w));
         } else {
             String a = indegree.get(v);
-            a += ","+w;
+            a += w + ",";
             indegree.put(v, a);
         }
         E++;
