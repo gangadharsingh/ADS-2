@@ -195,15 +195,18 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:73:29: Parameter args should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:83: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:86: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:120: Missing a Javadoc comment. [JavadocType]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:121:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:121:15: Parameter Pr should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:121:22: Name 'Pr' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:121:26: Parameter filename should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:124:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:124:25: Parameter query should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:89:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:90: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:92: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:126: Missing a Javadoc comment. [JavadocType]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:127:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:127:15: Parameter Pr should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:127:22: Name 'Pr' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:127:26: Parameter filename should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:130:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:130:25: Parameter query should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 44 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:33: Line has trailing spaces. [RegexpSingleline]

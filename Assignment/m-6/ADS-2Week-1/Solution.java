@@ -84,15 +84,21 @@ public class Solution {
                 }
             } else if (edge.length == 2) {
                 dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[1]));
+            } else {
+                for (int k = 0; k < vert; k++) {
+                        if(k != Integer.parseInt(edge[0])) {
+                            dig.addEdge(Integer.parseInt(edge[0]), k);        
+                        }
+                    }    
             }
         }
         // String s =  dig.toString();
         System.out.println(dig);
         // System.out.println();
-        PageRank pr = new PageRank(dig);
+        // PageRank pr = new PageRank(dig);
         // HashMap<Integer, Double> prVert = new HashMap<Integer, Double>();
-        pr.getPR(0);
-        System.out.println(pr);
+        // pr.getPR(0);
+        // System.out.println(pr);
         // to read the adjacency list from std input
         // and build the graph
 
