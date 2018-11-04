@@ -10,9 +10,9 @@ class PageRank {
     double[] newPR;
     public static int iterator = 100;
     PageRank(Digraph g) {
+        dg = new Digraph(g);
         prevPR = new double[dg.V()];
         newPR  = new double[dg.V()];
-        dg = new Digraph(g);
         for (int j = 0; j < dg.V(); j++) {
             if (dg.outdegree(j) == 0) {
                 for (int k = 0; k < dg.V(); k++) {
