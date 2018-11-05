@@ -1,0 +1,60 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+614708.00000
+
+Your Output: 
+
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+1.81000
+
+Your Output: 
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+10.46351
+
+Your Output: 
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+37.00000
+
+Your Output: 
+
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+19.00000
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
+	at Solution.find(Solution.java:19)
+	at Solution.main(Solution.java:36)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+2.00000
+
+Your Output: 
+
+----------------------------------------
+
