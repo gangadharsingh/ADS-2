@@ -21,8 +21,7 @@ class Edge implements Comparable<Edge> {
      * @param      vert       The vertical
      * @param      otherVert  The other vertical
      * @param      wt         the other vertex
-     * @throws     IllegalArgumentException  if either {@code v} or {@code w} is a
-     *                                       negative integer
+     * @throws     IllegalArgumentException  if negative integer
      * @throws     IllegalArgumentException  if {@code weight} is {@code NaN}
      */
     Edge(final int vert, final int otherVert, final double wt) {
