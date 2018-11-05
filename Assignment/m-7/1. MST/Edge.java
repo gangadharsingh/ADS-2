@@ -15,15 +15,15 @@ class Edge implements Comparable<Edge> {
      */
     private final double weight;
     /**.
-     * Initializes an edge between vertices {@code v} and {@code w} of
-     * the given {@code weight}.
+     * Initializes an edge between vertices {@code v} and {@code w} of the
+     * given {@code weight}.
      *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @param  weight the weight of this edge
-     * @throws IllegalArgumentException if either {@code v} or {@code w}
-     *         is a negative integer
-     * @throws IllegalArgumentException if {@code weight} is {@code NaN}
+     * @param      vert       The vertical
+     * @param      otherVert  The other vertical
+     * @param      wt         the other vertex
+     * @throws     IllegalArgumentException  if either {@code v} or {@code w} is a
+     *                                       negative integer
+     * @throws     IllegalArgumentException  if {@code weight} is {@code NaN}
      */
     Edge(final int vert, final int otherVert, final double wt) {
         if (vert < 0) {
@@ -31,7 +31,8 @@ class Edge implements Comparable<Edge> {
             "vertex index must be a nonnegative integer");
         }
         if (otherVert < 0) {
-            throw new IllegalArgumentException("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
         }
         if (Double.isNaN(wt)) {
             throw new IllegalArgumentException("Weight is NaN");
@@ -60,7 +61,8 @@ class Edge implements Comparable<Edge> {
     }
 
     /**.
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * Returns the endpoint of this edge that is
+     * different from the given vertex.
      *
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge

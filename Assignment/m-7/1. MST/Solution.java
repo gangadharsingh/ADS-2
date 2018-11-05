@@ -9,9 +9,10 @@ public final class Solution {
     private Solution() { }
     /**.
      * { item_description }
-     * @param args.
+     *
+     * @param      args  The arguments
      */
-    public static void main(String args[]) {
+    public static void main(final String[] args) {
         Scanner in = new Scanner(System.in);
         int vert = Integer.parseInt(in.nextLine());
         int testcases = Integer.parseInt(in.nextLine());

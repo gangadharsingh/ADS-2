@@ -28,21 +28,22 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     private Key[] keys;      // keys[i] = priority of i
 
     /**.
-     * Initializes an empty indexed priority queue with indices between {@code 0}
+     * Initializes an empty indexed priority
+     * queue with indices between {@code 0}
      * and {@code maxN - 1}.
      * @param  maxN the keys on this priority queue are index from {@code 0}
      *         {@code maxN - 1}
      * @throws IllegalArgumentException if {@code maxN < 0}
      */
-    public IndexMinPQ(final int maxN) {
-        if (maxN < 0) {
+    IndexMinPQ(final int maxNum) {
+        if (maxNum < 0) {
             throw new IllegalArgumentException();
         }
-        this.maxN = maxN;
+        this.maxN = maxNum;
         n = 0;
-        keys = (Key[]) new Comparable[maxN + 1];    // make this of length maxN??
+        keys = (Key[]) new Comparable[maxN + 1];
         pq   = new int[maxN + 1];
-        qp   = new int[maxN + 1];                   // make this of length maxN??
+        qp   = new int[maxN + 1];
         for (int i = 0; i <= maxN; i++) {
             qp[i] = -1;
         }
@@ -169,7 +170,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         if (!contains(i)) {
             throw new NoSuchElementException(
                 "index is not in the priority queue");
-        } else return keys[i];
+        } else {
+            return keys[i];
+        }
     }
 
     /**.
@@ -225,7 +228,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
         if (keys[i].compareTo(key) <= 0) {
             throw new IllegalArgumentException(
-                "Calling decreaseKey() with given argument would not strictly decrease the key");
+                "Calling decreaseKey() with given argument");
         }
         keys[i] = key;
         swim(qp[i]);
@@ -245,10 +248,12 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException("index is not in the priority queue");
+            throw new NoSuchElementException(
+                "index is not in the priority queue");
         }
         if (keys[i].compareTo(key) >= 0) {
-            throw new IllegalArgumentException("Calling increaseKey() with given argument would not strictly increase the key");
+            throw new IllegalArgumentException(
+                "Calling increaseKey() with given argument would not strictly increase the key");
         }
         keys[i] = key;
         sink(qp[i]);
@@ -266,7 +271,8 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
             throw new IllegalArgumentException();
         }
         if (!contains(i)) {
-            throw new NoSuchElementException("index is not in the priority queue");
+            throw new NoSuchElementException(
+                "index is not in the priority queue");
         }
         int index = qp[i];
         exch(index, n--);
@@ -275,12 +281,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         keys[i] = null;
         qp[i] = -1;
     }
-
-
-    /**.*************************************************************************
-     * General helper functions.
-     ***************************************************************************/
-
     /**.
      * { function_description }
      *
@@ -306,12 +306,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         qp[pq[i]] = i;
         qp[pq[j]] = j;
     }
-
-
-    /**.*************************************************************************
-     * Heap helper functions.
-     ***************************************************************************/
-
     /**.
      * { function_description }
      *
@@ -345,11 +339,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
     }
 
-
-    /**.*************************************************************************
-     * Iterators.
-     ***************************************************************************/
-
     /**.
      * Returns an iterator that iterates over the keys on the
      * priority queue in ascending order.
@@ -376,10 +365,11 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         /**.
          * Constructs the object.
          */
-        public HeapIterator() {
+        HeapIterator() {
             copy = new IndexMinPQ<Key>(pq.length - 1);
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i], keys[pq[i]]);
+            }
         }
 
         /**.

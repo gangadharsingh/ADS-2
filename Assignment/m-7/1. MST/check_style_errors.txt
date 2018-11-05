@@ -1,62 +1,23 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:14:29: Parameter args should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:14:36: Expected @param tag for 'args'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:14:40: Array brackets at illegal position. [ArrayTypeStyle]
+Audit done.
+Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:24: Line is longer than 80 characters (found 82). [LineLength]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:34:8: Unused @param tag for 'maxN'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:38:26: Expected @param tag for 'maxNum'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:256: Line is longer than 80 characters (found 97). [LineLength]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:21:8: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:22:8: Unused @param tag for 'w'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:23:8: Unused @param tag for 'weight'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:28:20: Expected @param tag for 'vert'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:28:36: Expected @param tag for 'otherVert'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:28:60: Expected @param tag for 'wt'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:34: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:63: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:24: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:32: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:46:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 8 errors.
-Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:31: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:37:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:37:33: 'maxN' hides a field. [HiddenField]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:43: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:45: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:172: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:228: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:248: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:251: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:269: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:280: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:282: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:311: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:313: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:349: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:351: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:379:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:381: 'for' construct must use '{}'s. [NeedBraces]
-Audit done.
-Checkstyle ends with 18 errors.
-Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:24: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:26:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:29:33: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:30: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:30: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:42:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:44:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:44:54: Expected @param tag for 'graph'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:65:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:74:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:79:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:142:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
