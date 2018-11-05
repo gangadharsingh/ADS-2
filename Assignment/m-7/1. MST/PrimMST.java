@@ -74,7 +74,7 @@ class PrimMST {
         double weight = 0.0;
         for (Edge e : edges())
             weight += e.weight();
-        return weight;
+        return weight/1.0000;
     }
 
 
