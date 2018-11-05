@@ -30,17 +30,17 @@ public class EdgeWeightedGraph {
      * @throws IllegalArgumentException if {@code V < 0}
      * @throws IllegalArgumentException if {@code E < 0}
      */
-    public EdgeWeightedGraph(int V, int E) {
-        this(V);
-        if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-        for (int i = 0; i < E; i++) {
-            int v = StdRandom.uniform(V);
-            int w = StdRandom.uniform(V);
-            double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
-            Edge e = new Edge(v, w, weight);
-            addEdge(e);
-        }
-    }
+    // public EdgeWeightedGraph(int V, int E) {
+    //     this(V);
+    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
+    //     for (int i = 0; i < E; i++) {
+    //         int v = StdRandom.uniform(V);
+    //         int w = StdRandom.uniform(V);
+    //         double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
+    //         Edge e = new Edge(v, w, weight);
+    //         addEdge(e);
+    //     }
+    // }
 
     /**  
      * Initializes an edge-weighted graph from an input stream.
@@ -53,20 +53,20 @@ public class EdgeWeightedGraph {
      * @throws IllegalArgumentException if the endpoints of any edge are not in prescribed range
      * @throws IllegalArgumentException if the number of vertices or edges is negative
      */
-    public EdgeWeightedGraph(In in) {
-        this(in.readInt());
-        int E = in.readInt();
-        if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-        for (int i = 0; i < E; i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            validateVertex(v);
-            validateVertex(w);
-            double weight = in.readDouble();
-            Edge e = new Edge(v, w, weight);
-            addEdge(e);
-        }
-    }
+    // public EdgeWeightedGraph(In in) {
+    //     this(in.readInt());
+    //     int E = in.readInt();
+    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
+    //     for (int i = 0; i < E; i++) {
+    //         int v = in.readInt();
+    //         int w = in.readInt();
+    //         validateVertex(v);
+    //         validateVertex(w);
+    //         double weight = in.readDouble();
+    //         Edge e = new Edge(v, w, weight);
+    //         addEdge(e);
+    //     }
+    // }
 
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
