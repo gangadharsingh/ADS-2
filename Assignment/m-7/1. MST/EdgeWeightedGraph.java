@@ -21,7 +21,7 @@ class EdgeWeightedGraph {
     private Bag<Edge>[] adj;
 
     /**.
-     * Initializes an empty edge-weighted graph with 
+     * Initializes an empty edge-weighted graph with
      * {@code V} vertices and 0
      * edges.
      *
@@ -29,8 +29,10 @@ class EdgeWeightedGraph {
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
     EdgeWeightedGraph(final int v) {
-        if (v < 0) throw new IllegalArgumentException(
-            "Number of vertices must be nonnegative");
+        if (v < 0) {
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
+        }
         this.vert = v;
         this.edge = 0;
         adj = (Bag<Edge>[]) new Bag[v];
@@ -43,7 +45,7 @@ class EdgeWeightedGraph {
      *
      * @param      graph  The graph
      */
-    public EdgeWeightedGraph(final EdgeWeightedGraph graph) {
+    EdgeWeightedGraph(final EdgeWeightedGraph graph) {
         this(graph.vert());
         this.edge = graph.edge();
         for (int v = 0; v < graph.vert(); v++) {

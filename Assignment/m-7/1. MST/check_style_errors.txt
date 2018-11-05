@@ -7,17 +7,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:34:8: Unused @param tag for 'maxN'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:38:26: Expected @param tag for 'maxNum'. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/IndexMinPQ.java:256: Line is longer than 80 characters (found 97). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:46:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]

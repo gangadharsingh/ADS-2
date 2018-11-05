@@ -28,12 +28,12 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     private Key[] keys;      // keys[i] = priority of i
 
     /**.
-     * Initializes an empty indexed priority
-     * queue with indices between {@code 0}
-     * and {@code maxN - 1}.
-     * @param  maxN the keys on this priority queue are index from {@code 0}
-     *         {@code maxN - 1}
-     * @throws IllegalArgumentException if {@code maxN < 0}
+     * Initializes an empty indexed priority queue with indices between {@code
+     * 0} and {@code maxN - 1}.
+     *
+     * @param      maxNum  the keys on this priority queue are index from {@code
+     *                     0} {@code maxN - 1}
+     * @throws     IllegalArgumentException  if {@code maxN < 0}
      */
     IndexMinPQ(final int maxNum) {
         if (maxNum < 0) {
@@ -253,7 +253,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
         if (keys[i].compareTo(key) >= 0) {
             throw new IllegalArgumentException(
-                "Calling increaseKey() with given argument would not strictly increase the key");
+                "Calling increaseKey() not strictly increase the key");
         }
         keys[i] = key;
         sink(qp[i]);
