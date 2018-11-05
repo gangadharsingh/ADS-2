@@ -12,6 +12,6 @@ class Solution {
 		}
 		PrimMST p =  new PrimMST(wtEdge);
 		// System.out.println(p.edges());
-		System.out.println(p.weight());
+		System.out.println(p.weight()/1.0000);
 	}
 }
