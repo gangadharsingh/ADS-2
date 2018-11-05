@@ -47,7 +47,7 @@ class PageRank {
             }
             // System.out.println(Arrays.toString(prevPR));
             // System.out.println(Arrays.toString(prevPR));
-            newPR[k] = prevPR[k];
+            newPR[k] = prevPR[k-1];
         }
         return newPR;
     }
