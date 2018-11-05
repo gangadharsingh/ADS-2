@@ -40,7 +40,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:4:44: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:11: Line is longer than 80 characters (found 143). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:11: Line is longer than 80 characters (found 125). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:15:42: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 10 errors.
