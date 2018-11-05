@@ -3,13 +3,12 @@ import java.util.Arrays;
 class Solution {
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
-		int vert = in.nextInt();
-		int testcases = in.nextInt();
+		int vert = Integer.parseInt(in.nextLine());
+		int testcases = Integer.parseInt(in.nextLine());
 		EdgeWeightedGraph wtEdge = new EdgeWeightedGraph(vert);
 		for (int i = 0; i < testcases; i++) {
 			String[] inp = in.nextLine().split(" ");
-			int[] inp1 = Arrays.asList(inp).stream().mapToInt(Integer::parseInt).toArray();
-			wtEdge.addEdge(new Edge(inp1[0], inp1[1], Double.valueOf(inp1[3])));
+			wtEdge.addEdge(new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.valueOf(Integer.parseInt(inp[0]))));
 		}
 		PrimMST p =  new PrimMST(wtEdge);
 		System.out.println(p.edges());
