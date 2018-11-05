@@ -30,8 +30,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
-Checkstyle ends with 1 errors.
-Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:3: Missing a Javadoc comment. [JavadocType]
@@ -334,35 +332,3 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/UF.java:93:93: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 30 errors.
-Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:27: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:28: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:29: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:36: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:49:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:50:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:53: Missing a Javadoc comment. [JavadocType]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:54:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:55:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:89:22: Parameter item should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:126: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:136: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:139: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:141: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:148: Missing a Javadoc comment. [JavadocType]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:149:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:151:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:151:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:151:29: Parameter first should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:151:40: 'first' hides a field. [HiddenField]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:155:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:159:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:163:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:164: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Stack.java:166: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 29 errors.
