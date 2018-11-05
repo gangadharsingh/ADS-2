@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Arrays;
 // import java.util.equals;
 /**
@@ -10,76 +9,67 @@ class PageRank {
     /**
      * Graph OBJ.
      */
-    private Digraph graph;
-    private Double[] pageranks;
-    private Double[][] tpageranks;
-    private List<Integer> list;
+    private Digraph dg;
+    private Double[] newPR;
+    private Double[][] prevPR;
     private int k;
     PageRank(Digraph digraph) {
-        graph = digraph;
+        dg = digraph;
         k = 0;
-        pageranks = new Double[graph.V()];
-        tpageranks = new Double[1002][graph.V()];
-        Double firstpr = 1.0 / graph.V();
-        for (int i = 0; i < graph.V(); i++) {
-            pageranks[i] = firstpr;
+        newPR = new Double[dg.V()];
+        prevPR = new Double[1002][dg.V()];
+        Double firstpr = 1.0 / dg.V();
+        for (int i = 0; i < dg.V(); i++) {
+            newPR[i] = firstpr;
         }
-        tpageranks[0] = pageranks;
-        // System.out.println(Arrays.toString(pageranks));
-        checkCorner();
-        // graph = new Digraph(graph);
-        compPageRank();
-    }
-
-    public void checkCorner() {
-        for (int i = 0; i < graph.V(); i++) {
-            if (graph.outdegree(i) == 0) {
-                for (int j = 0; j < graph.V(); j++) {
+        prevPR[0] = newPR;
+        for (int i = 0; i < dg.V(); i++) {
+            if (dg.outdegree(i) == 0) {
+                for (int j = 0; j < dg.V(); j++) {
                     if (i != j) {
-                        graph.addEdge(i, j);
+                        dg.addEdge(i, j);
                     }
                 }
             }
         }
+        compPageRank();
     }
 
     public void compPageRank() {
-        int vertex = 0;
-        int outdegree = 0;
+        int v = 0;
+        int outdg = 0;
         Double[] pageranking = null;
         Double[] pageranker = null;
         for (k = 1; k <= 1000; k++) {
-            pageranking = new Double[graph.V()];
-            for (int i = 0; i < graph.V(); i++) {
-                // list = graph.getindegree(i);
+            pageranking = new Double[dg.V()];
+            for (int i = 0; i < dg.V(); i++) {
+                // list = dg.getindegree(i);
                 Double pagerank = 0.0;
-                // System.out.println(graph.indegree(i) + " indegree");
-                pageranker = new Double[graph.V()];
-                pageranker = tpageranks[k - 1];
-                for (int j : graph.reverse().adj(i)) {
-                    vertex = j;
-                    outdegree = graph.outdegree(vertex);
-                    pagerank += (pageranker[vertex] / outdegree);
+                // System.out.println(dg.indegree(i) + " indegree");
+                pageranker = new Double[dg.V()];
+                pageranker = prevPR[k - 1];
+                for (int j : dg.reverse().adj(i)) {
+                    v = j;
+                    outdg = dg.outdegree(v);
+                    pagerank += (pageranker[v] / outdg);
                 }
                 pageranking[i] = pagerank;
             }
-            // System.out.println(Arrays.toString(pageranking));
-            // System.out.println(Arrays.toString(pageranking));
-            tpageranks[k] = pageranking;
+            prevPR[k] = pageranking;
         }
     }
 
     public double getPR(int v) {
-        pageranks = tpageranks[1000];
-        return pageranks[v];
+        newPR = prevPR[1000];
+        return newPR[v];
     }
 
     public String toString() {
-        String str = "";
-        for (int i = 0; i < graph.V(); i++) {
-            str += i + " - " + getPR(i) + "\n";
+        StringBuilder str = new StringBuilder();
+        for (int i = 0; i < dg.V(); i++) {
+            str.append(i + " - " + getPR(i) + "\n");
         }
-        return str;
+        return str.toString();
     }
 }
 
