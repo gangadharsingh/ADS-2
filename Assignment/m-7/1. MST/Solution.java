@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 import java.util.Arrays;
 class Solution {
 	public static void main(String args[]) {
@@ -12,6 +12,6 @@ class Solution {
 		}
 		PrimMST p =  new PrimMST(wtEdge);
 		// System.out.println(p.edges());
-		System.out.println(p.weight());
+		System.out.format("%.5f",p.weight());
 	}
 }

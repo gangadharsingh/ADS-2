@@ -32,6 +32,7 @@ Checkstyle ends with 28 errors.
 Starting audit...
 Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -40,8 +41,9 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:4:44: Array brackets at illegal position. [ArrayTypeStyle]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:11: Line is longer than 80 characters (found 143). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Solution.java:15:42: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:1: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Edge.java:1: Missing a Javadoc comment. [JavadocType]
