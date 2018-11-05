@@ -1,7 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 import java.util.Arrays;
-class Solution {
-	public static void main(String args[]) {
+/**.
+ * Class for solution.
+ */
+public final class Solution {
+	/**.
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**.
+	 * { item_description }
+	 */
+	public static void main(final String args[]) {
 		Scanner in = new Scanner(System.in);
 		int vert = Integer.parseInt(in.nextLine());
 		int testcases = Integer.parseInt(in.nextLine());
@@ -12,6 +22,6 @@ class Solution {
 		}
 		PrimMST p =  new PrimMST(wtEdge);
 		// System.out.println(p.edges());
-		System.out.format("%.5f",p.weight());
+		System.out.format("%.5f", p.weight());
 	}
 }
