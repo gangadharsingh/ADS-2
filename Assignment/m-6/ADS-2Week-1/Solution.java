@@ -1,120 +1,132 @@
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Arrays;
-import java.lang.Math;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
+// import java.util.equals;
+/**
+ * Class for page rank.
+ */
 class PageRank {
-    Digraph dg;
-    double[] prevPR;
-    double[] newPR;
-    PageRank(Digraph g) {
-        dg = new Digraph(g);
-        prevPR = new double[dg.V()];
-        newPR  = new double[dg.V()];
-        for (int j = 0; j < dg.V(); j++) {
-            if (dg.outdegree(j) == 0) {
-                for (int k = 0; k < dg.V(); k++) {
-                    if (k != j) {
-                        dg.addEdge(j, k);
+    /**
+     * Graph OBJ.
+     */
+    private Digraph graph;
+    private Double[] pageranks;
+    private Double[][] tpageranks;
+    private List<Integer> list;
+    private int k;
+    PageRank(Digraph digraph) {
+        graph = digraph;
+        k = 0;
+        pageranks = new Double[graph.V()];
+        tpageranks = new Double[1002][graph.V()];
+        Double firstpr = 1.0 / graph.V();
+        for (int i = 0; i < graph.V(); i++) {
+            pageranks[i] = firstpr;
+        }
+        tpageranks[0] = pageranks;
+        // System.out.println(Arrays.toString(pageranks));
+        checkCorner();
+        // graph = new Digraph(graph);
+        compPageRank();
+    }
+
+    public void checkCorner() {
+        for (int i = 0; i < graph.V(); i++) {
+            if (graph.outdegree(i) == 0) {
+                for (int j = 0; j < graph.V(); j++) {
+                    if (i != j) {
+                        graph.addEdge(i, j);
                     }
                 }
             }
-            prevPR[j] = 1.0 / dg.V();
         }
-        getPR(0);
-        // System.out.println(prevPR[0] + " prevPR[0]");
     }
-    double[] getPR(int v) {
+
+    public void compPageRank() {
         int vertex = 0;
         int outdegree = 0;
-        double[] prevPR = null;
-        double[] pageranker = null;
-        for (int k = 1; k <= 1000; k++) {
-            prevPR = new double[dg.V()];
-            for (int i = 0; i < dg.V(); i++) {
-                // list = dg.getindegree(i);
-                double pagerank = 0.0;
-                // System.out.println(dg.indegree(i) + " indegree");
-                pageranker = new double[dg.V()];
-                pageranker = newPR;
-                for (int j : dg.reverse().adj(i)) {
+        Double[] pageranking = null;
+        Double[] pageranker = null;
+        for (k = 1; k <= 1000; k++) {
+            pageranking = new Double[graph.V()];
+            for (int i = 0; i < graph.V(); i++) {
+                // list = graph.getindegree(i);
+                Double pagerank = 0.0;
+                // System.out.println(graph.indegree(i) + " indegree");
+                pageranker = new Double[graph.V()];
+                pageranker = tpageranks[k - 1];
+                for (int j : graph.reverse().adj(i)) {
                     vertex = j;
-                    outdegree = dg.outdegree(vertex);
+                    outdegree = graph.outdegree(vertex);
                     pagerank += (pageranker[vertex] / outdegree);
                 }
-                prevPR[i] = pagerank;
+                pageranking[i] = pagerank;
             }
-            // System.out.println(Arrays.toString(prevPR));
-            // System.out.println(Arrays.toString(prevPR));
-            newPR[k] = prevPR[k-1];
+            // System.out.println(Arrays.toString(pageranking));
+            // System.out.println(Arrays.toString(pageranking));
+            tpageranks[k] = pageranking;
         }
-        return newPR;
     }
+
+    public double getPR(int v) {
+        pageranks = tpageranks[1000];
+        return pageranks[v];
+    }
+
     public String toString() {
-        StringBuilder str = new StringBuilder();
-        for (int i  = 0 ; i < dg.V() ; i++) {
-            str.append(i + " - " + newPR[i]);
-            str.append("\n");
+        String str = "";
+        for (int i = 0; i < graph.V(); i++) {
+            str += i + " - " + getPR(i) + "\n";
         }
-        str.toString();
-        return str.toString();
+        return str;
     }
+}
+
+class WebSearch {
+
 }
 
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
         // read the first line of the input to get the number of vertices
-        int vert = Integer.parseInt(scan.nextLine());
-        Digraph dig = new Digraph(vert);
+        Scanner sc = new Scanner(System.in);
+        int verticescount = Integer.parseInt(sc.nextLine());
         // iterate count of vertices times
-        double[] d = new double[vert];
-        for (int i = 0; i < vert; i++) {
-            String[] edge = scan.nextLine().split(" ");
-            if (edge.length > 1) {
-                for (int j = 1; j < edge.length; j++) {
-                    dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[j]));
-                }
-            } else if (edge.length == 2) {
-                dig.addEdge(Integer.parseInt(edge[0]), Integer.parseInt(edge[1]));
+        // HashMap<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
+        String[] tokens = null;
+        int first = 0;
+        int second = 0;
+        Digraph digraph = new Digraph(verticescount);
+        for (int i = 0; i < verticescount; i++) {
+            tokens = sc.nextLine().split(" ");
+            first = Integer.parseInt(tokens[0]);
+            // list = new ArrayList<Integer>();
+            for (int j = 1; j < tokens.length; j++) {
+                second = Integer.parseInt(tokens[j]);
+                digraph.addEdge(first, second);
             }
         }
-        // String s =  dig.toString();
-        System.out.println(dig);
-        System.out.println();
-        PageRank pr = new PageRank(dig);
-        System.out.println(pr);
+        System.out.println(digraph);
         // to read the adjacency list from std input
         // and build the graph
-
-
         // Create page rank object and pass the graph object to the constructor
-
+        PageRank probj = new PageRank(digraph);
+        System.out.println(probj);
         // print the page rank object
-
+        
         // This part is only for the final test case
-
+        
         // File path to the web content
-        // String file = "WebContent.txt";
-
+        
         // instantiate web search object
         // and pass the page rank object and the file path to the constructor
-
+        
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
-
-    }
-}
-
-class WebSearch {
-    WebSearch(Double Pr, String filename) {
-
-    }
-    int iAmFeelingLucky(String query) {
-        return 0;
+        
     }
 }
