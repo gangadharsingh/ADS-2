@@ -11,7 +11,7 @@ class Solution {
 			wtEdge.addEdge(new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.valueOf(Integer.parseInt(inp[2]))));
 		}
 		PrimMST p =  new PrimMST(wtEdge);
-		System.out.println(p.edges());
+		// System.out.println(p.edges());
 		System.out.println(p.weight());
 	}
 }
