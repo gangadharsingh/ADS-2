@@ -43,6 +43,7 @@ class DijkstraSP {
 
     // relax edge e and update pq if changed
     private void relax(DirectedEdge e) {
+        System.out.println("RELAX");
         int v = e.from(), w = e.to();
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();

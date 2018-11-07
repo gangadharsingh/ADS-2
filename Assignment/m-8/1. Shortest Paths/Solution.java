@@ -43,6 +43,7 @@ public final class Solution{
 				}
 			}
 			dj = new DijkstraSP(edge, source);
+			System.out.println(dj.pathTo(destination));
 			System.out.println((int)dj.distTo(destination));
 		}
 	}
