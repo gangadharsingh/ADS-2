@@ -1,22 +1,12 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:2:8: Unused import - java.util.Set. [UnusedImports]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:4:28: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:9: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:14: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:29: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:46: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:49: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:51:49: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:3: First sentence should end with a period. [JavadocStyle]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:11: First sentence should end with a period. [JavadocStyle]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/Solution.java:61:49: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -24,11 +14,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:9: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:42: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:121:14: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:121:15: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:143:51: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 Audit done.
-Checkstyle ends with 6 errors.

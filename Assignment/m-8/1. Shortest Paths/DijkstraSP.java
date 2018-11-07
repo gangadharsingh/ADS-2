@@ -6,18 +6,18 @@ class DijkstraSP {
     /**.
      * { var_description }
      */
-    private double[] distTo;          // distTo[v] = distance  of shortest s->v path
+    private double[] distTo;
     /**.
      * { var_description }
      */
-    private Edge[] edgeTo;    // edgeTo[v] = last edge on shortest s->v path
+    private Edge[] edgeTo;
     /**.
      * { var_description }
      */
-    private IndexMinPQ<Double> pq;    // priority queue of vertices
+    private IndexMinPQ<Double> pq;
 
     /**.
-     * Computes a shortest-paths tree from the 
+     * Computes a shortest-paths tree from the
      * source vertex {@code s} to every
      * other vertex in the edge-weighted digraph {@code G}.
      *
@@ -39,8 +39,9 @@ class DijkstraSP {
 
         validateVertex(s);
 
-        for (int v = 0; v < graph.vert(); v++)
+        for (int v = 0; v < graph.vert(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
@@ -118,7 +119,7 @@ class DijkstraSP {
             return null;
         }
         Stack<Edge> path = new Stack<Edge>();
-        int x=v;
+        int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
@@ -135,13 +136,13 @@ class DijkstraSP {
     /**.
      * { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      graph     { parameter_description }
      * @param      s     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean check(final EdgeWeightedGraph G, final int s) {
-        for (Edge e : G.edges()) {
+    private boolean check(final EdgeWeightedGraph graph, final int s) {
+        for (Edge e : graph.edges()) {
             if (e.weight() < 0) {
                 System.err.println("negative edge weight detected");
                 return false;
@@ -153,7 +154,7 @@ class DijkstraSP {
             System.err.println("distTo[s] and edgeTo[s] inconsistent");
             return false;
         }
-        for (int v = 0; v < G.vert(); v++) {
+        for (int v = 0; v < graph.vert(); v++) {
             if (v == s) {
                 continue;
             }
@@ -165,8 +166,8 @@ class DijkstraSP {
 
         // check that all edges e = v-w satisfy
         // distTo[w] <= distTo[v] + e.weight()
-        for (int v = 0; v < G.vert(); v++) {
-            for (Edge e : G.adj(v)) {
+        for (int v = 0; v < graph.vert(); v++) {
+            for (Edge e : graph.adj(v)) {
                 int w = e.other(v);
                 if (distTo[v] + e.weight() < distTo[w]) {
                     System.err.println("edge " + e + " not relaxed");
@@ -177,7 +178,7 @@ class DijkstraSP {
 
         // check that all edges e = v-w on
         // SPT satisfy distTo[w] == distTo[v] + e.weight()
-        for (int w = 0; w < G.vert(); w++) {
+        for (int w = 0; w < graph.vert(); w++) {
             if (edgeTo[w] == null) {
                 continue;
             }

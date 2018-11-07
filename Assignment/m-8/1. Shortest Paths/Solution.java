@@ -1,24 +1,37 @@
 import java.util.Scanner;
-import java.util.Set;
 import java.util.HashMap;
-public final class Solution{
+/**
+ * { item_description }
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() { }
-	public static void main(String[] args) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner in = new Scanner(System.in);
 		String[] rail = in.nextLine().split(" ");
-		HashMap<Integer, String> stationName = new HashMap<Integer, String>();
+		HashMap<Integer, String> stationName =
+		    new HashMap<Integer, String>();
 		String[] station = in.nextLine().split(" ");
 		for (int i = 0; i < Integer.parseInt(rail[0]); i++) {
 			stationName.put(i, station[i]);
 		}
-		EdgeWeightedGraph edge = new EdgeWeightedGraph(Integer.parseInt(rail[0]));
+		EdgeWeightedGraph edge = new EdgeWeightedGraph(
+		    Integer.parseInt(rail[0]));
 		// Set<Integer> a = stationName.keySet();
 		// System.out.println("\nKEy Set "+ a);
 		for (int i = 0; i < Integer.parseInt(rail[1]); i++) {
 			String[] c = in.nextLine().split(" ");
 			int vert1 = 0;
 			int vert2 = 0;
-			for (int j = 0; j < Integer.parseInt(rail[0]); j++) {
+			for (int j = 0; j < Integer.parseInt(
+			            rail[0]); j++) {
 				if (stationName.get(j).equals(c[0])) {
 					vert1 = j;
 				}
@@ -26,7 +39,9 @@ public final class Solution{
 					vert2 = j;
 				}
 			}
-			edge.addEdge(new Edge(vert1, vert2, Double.parseDouble(c[2])));
+			edge.addEdge(new Edge(
+			                 vert1, vert2, Double.parseDouble(
+			                     c[2])));
 		}
 		int queries = Integer.parseInt(in.nextLine());
 		DijkstraSP dj;
@@ -43,11 +58,6 @@ public final class Solution{
 				}
 			}
 			dj = new DijkstraSP(edge, source);
-			// System.out.println("Source: "+stationName.get(source));
-			// for (int k = 0; k < stationName.size(); k++) {
-				// System.out.println(dj.pathTo(k));
-				// System.out.println("Source: "+stationName.get(source));
-			// }
 			System.out.println((int)dj.distTo(destination));
 		}
 	}
