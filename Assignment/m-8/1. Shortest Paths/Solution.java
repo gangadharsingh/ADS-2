@@ -11,7 +11,7 @@ public final class Solution{
 		for (int i = 0; i < Integer.parseInt(rail[0]); i++) {
 			stationName.put(i, station[i]);
 		}
-		EdgeWeightedDigraph edge = new EdgeWeightedDigraph(Integer.parseInt(rail[0]));
+		EdgeWeightedGraph edge = new EdgeWeightedGraph(Integer.parseInt(rail[0]));
 		// Set<Integer> a = stationName.keySet();
 		// System.out.println("\nKEy Set "+ a);
 		for (int i = 0; i < Integer.parseInt(rail[1]); i++) {
@@ -26,7 +26,7 @@ public final class Solution{
 					vert2 = j;
 				}
 			}
-			edge.addEdge(new DirectedEdge(vert1, vert2, Double.parseDouble(c[2])));
+			edge.addEdge(new Edge(vert1, vert2, Double.parseDouble(c[2])));
 		}
 		int queries = Integer.parseInt(in.nextLine());
 		DijkstraSP dj;
@@ -43,7 +43,11 @@ public final class Solution{
 				}
 			}
 			dj = new DijkstraSP(edge, source);
-			System.out.println(dj.pathTo(destination));
+			// System.out.println("Source: "+stationName.get(source));
+			// for (int k = 0; k < stationName.size(); k++) {
+				// System.out.println(dj.pathTo(k));
+				// System.out.println("Source: "+stationName.get(source));
+			// }
 			System.out.println((int)dj.distTo(destination));
 		}
 	}
