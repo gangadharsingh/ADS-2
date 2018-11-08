@@ -15,6 +15,8 @@ public class SeamCarver {
 			for (int j = 0; j < height; j++) {
 				if (i == 0 || j == 0 || i == width-1 || j == height-1) {
 					energy[i][j] = 1000.0;
+				} else {
+					energy[i][j] = Math.sqrt(vertSum(i, j)+horizSum(i, j));
 				}
 			}
 		}
@@ -35,7 +37,6 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		calcEnergy();
 		return energy[x][y];
 	}
 	int getred(int x, int y) {
@@ -66,15 +67,6 @@ public class SeamCarver {
 		int blue2 = getblue(x, y+1);
 		int sum = (red2 - red1)^2 + (green2 - green1)^2 + (blue2 - blue1)^2;
 		return sum;
-	}
-	void calcEnergy() {
-		for (int x = 0; x < width; x++) {
-			for (int y = 0; y < height; y++) {
-				if (x != 0 || y != 0 || x != width-1 || y != height-1) {
-					energy[x][y] = Math.sqrt(vertSum(x, y)+horizSum(x, y));
-				}
-			}
-		}
 	}
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
