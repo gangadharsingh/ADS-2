@@ -40,20 +40,25 @@ public class SeamCarver {
         return energy[x][y];
     }
     public int vertSum(int x, int y) {
+        System.out.println("VERTical");
         Color a = pic.get(x - 1, y);
         Color b = pic.get(x + 1, y);
         int red = b.getRed() - a.getRed();
         int green = b.getGreen() - a.getGreen();
         int blue = b.getBlue() - a.getBlue();
+        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
+        System.out.println(sum);
         return (red ^ 2 + green ^ 2 + blue ^ 2);
     }
     public int horizSum(int x, int y) {
-
+        System.out.println("horizontal");
         Color a = pic.get(x, y - 1);
         Color b = pic.get(x, y + 1);
         int red = b.getRed() - a.getRed();
         int green = b.getGreen() - a.getGreen();
         int blue = b.getBlue() - a.getBlue();
+        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
+        System.out.println(sum);
         return (red ^ 2 + green ^ 2 + blue ^ 2);
     }
     // sequence of indices for horizontal seam
