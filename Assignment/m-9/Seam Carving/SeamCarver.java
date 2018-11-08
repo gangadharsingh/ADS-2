@@ -39,27 +39,36 @@ public class SeamCarver {
     public double energy(int x, int y) {
         return energy[x][y];
     }
-    public int vertSum(int x, int y) {
-        System.out.println("VERTical");
-        Color a = pic.get(x - 1, y);
-        Color b = pic.get(x + 1, y);
-        int red = b.getRed() - a.getRed();
-        int green = b.getGreen() - a.getGreen();
-        int blue = b.getBlue() - a.getBlue();
-        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
-        System.out.println(sum);
-        return (red ^ 2 + green ^ 2 + blue ^ 2);
+    int getred(int x, int y) {
+        return pic.get(x, y).getRed();
     }
-    public int horizSum(int x, int y) {
-        System.out.println("horizontal");
-        Color a = pic.get(x, y - 1);
-        Color b = pic.get(x, y + 1);
-        int red = b.getRed() - a.getRed();
-        int green = b.getGreen() - a.getGreen();
-        int blue = b.getBlue() - a.getBlue();
-        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
-        System.out.println(sum);
-        return (red ^ 2 + green ^ 2 + blue ^ 2);
+    int getgreen(int x, int y) {
+        return pic.get(x, y).getGreen();// My git id is MudugantiShivani , once see in that
+    }
+    int getblue(int x, int y) {
+        return pic.get(x, y).getBlue();
+    }
+    int vertSum(int x, int y) {
+        int red1 = getred(x - 1, y);
+        int green1 = getgreen(x - 1, y);
+        int blue1 = getblue(x - 1, y);
+        int red2 = getred(x + 1, y);
+        int green2 = getgreen(x + 1, y);
+        int blue2 = getblue(x + 1, y);
+        int sum = (int) Math.pow((red2 - red1), 2)
+                  + (int) Math.pow((green2 - green1), 2)
+                  + (int) Math.pow((blue2 - blue1), 2);
+        return sum;
+    }
+    int horizSum(int x, int y) {
+        int red1 = getred(x, y - 1);
+        int green1 = getgreen(x, y - 1);
+        int blue1 = getblue(x, y - 1);
+        int red2 = getred(x, y + 1);
+        int green2 = getgreen(x, y + 1);
+        int blue2 = getblue(x, y + 1);
+        int sum = (red2 - red1) ^ 2 + (green2 - green1) ^ 2 + (blue2 - blue1) ^ 2;
+        return sum;
     }
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
