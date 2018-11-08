@@ -55,8 +55,8 @@ public class SeamCarver {
         int red = b.getRed() - a.getRed();
         int green = b.getGreen() - a.getGreen();
         int blue = b.getBlue() - a.getBlue();
-        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
-        System.out.println(sum);
+        // int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
+        // System.out.println(sum);
         return (red ^ 2 + green ^ 2 + blue ^ 2);
     }
     public int horizSum(int x, int y) {
@@ -66,8 +66,8 @@ public class SeamCarver {
         int red = b.getRed() - a.getRed();
         int green = b.getGreen() - a.getGreen();
         int blue = b.getBlue() - a.getBlue();
-        int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
-        System.out.println(sum);
+        // int sum = (red ^ 2 + green ^ 2 + blue ^ 2);
+        // System.out.println(sum);
         return (red ^ 2 + green ^ 2 + blue ^ 2);
     }
 	// sequence of indices for horizontal seam
