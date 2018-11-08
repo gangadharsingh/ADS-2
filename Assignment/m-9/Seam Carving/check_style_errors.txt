@@ -538,10 +538,22 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:51:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:51:28: Parameter x should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:51:35: Parameter y should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:20: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:21: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:32: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:33: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:45: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:60:46: '*' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:62:5: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'horizSum' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'horizSum' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:62:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:62:25: Parameter x should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:62:32: Parameter y should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:20: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:21: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:32: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:33: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:45: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:71:46: '*' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:74:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:74:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:79:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -551,4 +563,4 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:89:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:89:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 61 errors.
+Checkstyle ends with 73 errors.
