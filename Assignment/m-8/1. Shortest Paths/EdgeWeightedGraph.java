@@ -24,6 +24,7 @@ class EdgeWeightedGraph {
      * Initializes an empty edge-weighted graph with
      * {@code V} vertices and 0
      * edges.
+     * Complexity: O(V).
      *
      * @param      v     { parameter_description }
      * @throws     IllegalArgumentException  if {@code V < 0}
@@ -42,6 +43,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
+     * Complexity: O(V.E.E).
      *
      * @param      graph  The graph
      */
@@ -63,6 +65,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the number of vertices in this edge-weighted graph.
+     * Complexity: O(1).
      *
      * @return the number of vertices in this edge-weighted graph
      */
@@ -72,6 +75,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the number of edges in this edge-weighted graph.
+     * Complexity: O(1).
      *
      * @return the number of edges in this edge-weighted graph
      */
@@ -82,6 +86,7 @@ class EdgeWeightedGraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**.
      * { function_description }
+     * Complexity: O(1).
      *
      * @param      v     { parameter_description }
      */
@@ -94,6 +99,7 @@ class EdgeWeightedGraph {
 
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
+     * Complexity: O(1).
      *
      * @param  e the edge
      * @throws IllegalArgumentException unless both endpoints are
@@ -111,6 +117,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the edges incident on vertex {@code v}.
+     * Complexity: O(E).
      *
      * @param  v the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
@@ -123,6 +130,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the degree of vertex {@code v}.
+     * Complexity: O(1).
      *
      * @param  v the vertex
      * @return the degree of vertex {@code v}
@@ -138,6 +146,7 @@ class EdgeWeightedGraph {
      * To iterate over the edges in this edge-weighted graph,
      *  use foreach notation:
      * {@code for (Edge e : G.edges())}.
+     * Complexity: O(V.E).
      *
      * @return all edges in this edge-weighted graph, as an iterable
      */
@@ -162,6 +171,7 @@ class EdgeWeightedGraph {
     /**
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
+     * Complexity: O(V.E).
      *
      * @return the number of vertices <em>V</em>, followed by
      *          the number of edges <em>E</em>,

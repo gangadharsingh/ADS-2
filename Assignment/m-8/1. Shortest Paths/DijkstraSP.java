@@ -20,6 +20,7 @@ class DijkstraSP {
      * Computes a shortest-paths tree from the
      * source vertex {@code s} to every
      * other vertex in the edge-weighted digraph {@code G}.
+     * Complexity: O(E.log(V)).
      *
      * @param      graph  The graph
      * @param      s      the source vertex
@@ -53,14 +54,12 @@ class DijkstraSP {
                 relax(e, v);
             }
         }
-
-        // check optimality conditions
-        assert check(graph, s);
     }
 
     // relax edge e and update pq if changed
     /**.
      * { function_description }
+     * Complexity: O(1).
      *
      * @param      e     { parameter_description }
      * @param      v     { parameter_description }
@@ -81,6 +80,9 @@ class DijkstraSP {
     /**.
      * Returns the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v}.
+     * 
+     * Complexity: O(1).
+     * 
      * @param  v the destination vertex
      * @return the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v};
@@ -94,6 +96,8 @@ class DijkstraSP {
 
     /**.
      * Returns true if there is a path from the source vertex to vertex
+     * 
+     * Complexity: O(1).
      *
      * @param  v the destination vertex
      * @return {@code true} if there is a path from the source vertex
@@ -107,6 +111,7 @@ class DijkstraSP {
 
     /**.
      * Returns a shortest path from the source vertex to vertex
+     * Complexity: O(log(E)).
      *
      * @param  v the destination vertex
      * @return a shortest path from the source vertex to other vertex
@@ -127,78 +132,10 @@ class DijkstraSP {
         return path;
     }
 
-
-    // check optimality conditions:
-    // (i) for all edges e:
-    // distTo[e.to()] <= distTo[e.from()] + e.weight()
-    // (ii) for all edge e on the SPT:
-    // distTo[e.to()] == distTo[e.from()] + e.weight()
-    /**.
-     * { function_description }
-     *
-     * @param      graph     { parameter_description }
-     * @param      s     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private boolean check(final EdgeWeightedGraph graph, final int s) {
-        for (Edge e : graph.edges()) {
-            if (e.weight() < 0) {
-                System.err.println("negative edge weight detected");
-                return false;
-            }
-        }
-
-        // check that distTo[v] and edgeTo[v] are consistent
-        if (distTo[s] != 0.0 || edgeTo[s] != null) {
-            System.err.println("distTo[s] and edgeTo[s] inconsistent");
-            return false;
-        }
-        for (int v = 0; v < graph.vert(); v++) {
-            if (v == s) {
-                continue;
-            }
-            if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
-                System.err.println("distTo[] and edgeTo[] inconsistent");
-                return false;
-            }
-        }
-
-        // check that all edges e = v-w satisfy
-        // distTo[w] <= distTo[v] + e.weight()
-        for (int v = 0; v < graph.vert(); v++) {
-            for (Edge e : graph.adj(v)) {
-                int w = e.other(v);
-                if (distTo[v] + e.weight() < distTo[w]) {
-                    System.err.println("edge " + e + " not relaxed");
-                    return false;
-                }
-            }
-        }
-
-        // check that all edges e = v-w on
-        // SPT satisfy distTo[w] == distTo[v] + e.weight()
-        for (int w = 0; w < graph.vert(); w++) {
-            if (edgeTo[w] == null) {
-                continue;
-            }
-            Edge e = edgeTo[w];
-            if (w != e.either() && w != e.other(e.either())) {
-                return false;
-            }
-            int v = e.other(w);
-            if (distTo[v] + e.weight() != distTo[w]) {
-                System.err.println(
-                    "edge " + e + " on shortest path not tight");
-                return false;
-            }
-        }
-        return true;
-    }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**.
      * { function_description }
+     * Complexity: O(1).
      *
      * @param      v     { parameter_description }
      */

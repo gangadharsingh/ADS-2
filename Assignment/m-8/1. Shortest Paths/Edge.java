@@ -17,6 +17,7 @@ class Edge implements Comparable<Edge> {
     /**.
      * Initializes an edge between vertices {@code v} and {@code w} of the
      * given {@code weight}.
+     * Complexity: O(1).
      *
      * @param      vert       The vertical
      * @param      otherVert  The other vertical
@@ -43,6 +44,7 @@ class Edge implements Comparable<Edge> {
 
     /**.
      * Returns the weight of this edge.
+     * Complexity: O(1).
      *
      * @return the weight of this edge
      */
@@ -52,6 +54,7 @@ class Edge implements Comparable<Edge> {
 
     /**.
      * Returns either endpoint of this edge.
+     * Complexity: O(1).
      *
      * @return either endpoint of this edge
      */
@@ -62,6 +65,7 @@ class Edge implements Comparable<Edge> {
     /**.
      * Returns the endpoint of this edge that is
      * different from the given vertex.
+     * Complexity: O(1).
      *
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
@@ -83,6 +87,7 @@ class Edge implements Comparable<Edge> {
      * Note that {@code compareTo()} is not consistent with {@code equals()},
      * which uses the reference equality implementation
      *                      inherited from {@code Object}.
+     * Complexity: O(1).
      *
      * @param  that the other edge
      * @return a negative integer, zero, or positive integer
@@ -98,20 +103,11 @@ class Edge implements Comparable<Edge> {
 
     /**.
      * Returns a string representation of this edge.
+     * Complexity: O(1).
      *
      * @return a string representation of this edge
      */
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
     }
-
-    /**.
-     * Unit tests the {@code Edge} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     Edge e = new Edge(12, 34, 5.67);
-    //     System.out.println(e);
-    // }
 }

@@ -11,7 +11,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private Node<Item> first;
     /**.
-     * // number of elements in bag.
+     *  number of elements in bag.
      */
     private int n;
 
@@ -33,6 +33,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Initializes an empty bag.
+     * Complexity: O(1).
      */
     public Bag() {
         first = null;
@@ -41,6 +42,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this bag is empty.
+     * Complexity: O(1).
      *
      * @return {@code true} if this bag is empty;
      *         {@code false} otherwise
@@ -51,6 +53,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this bag.
+     * Complexity: O(1).
      *
      * @return the number of items in this bag
      */
@@ -60,6 +63,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this bag.
+     * Complexity: O(1).
      *
      * @param  item the item to add to this bag
      */
@@ -74,6 +78,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * iterator.
+     * Complexity: O(E).
      *
      * @return     { description_of_the_return_value }
      */

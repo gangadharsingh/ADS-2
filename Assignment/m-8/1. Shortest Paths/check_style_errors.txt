@@ -9,4 +9,8 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:83: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:85: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/DijkstraSP.java:99: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 3 errors.
