@@ -60,7 +60,7 @@ class PageRank {
     }
 
     public double getPR(int v) {
-        newPR = prevPR[1];
+        newPR = prevPR[900];
         return newPR[v];
     }
 

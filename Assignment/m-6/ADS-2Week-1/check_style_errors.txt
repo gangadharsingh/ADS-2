@@ -173,6 +173,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:43:26: '1000' is a magic number. [MagicNumber]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:62:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:62:25: Parameter v should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:63:24: '900' is a magic number. [MagicNumber]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:67:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:76: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:81: Missing a Javadoc comment. [JavadocType]
@@ -186,7 +187,7 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:115: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/Solution.java:120: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-6/ADS-2Week-1/In.java:33: Line has trailing spaces. [RegexpSingleline]
