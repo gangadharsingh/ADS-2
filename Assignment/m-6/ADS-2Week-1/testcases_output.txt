@@ -18,12 +18,10 @@ Your Output:
 2: 0 
 3: 2 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -46,12 +44,10 @@ Your Output:
 2: 3 0 
 3: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -74,12 +70,10 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -114,12 +108,10 @@ Your Output:
 6: 0 
 7: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -148,12 +140,10 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -188,12 +178,10 @@ Your Output:
 6: 
 7: 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -216,12 +204,10 @@ Your Output:
 2: 3 
 3: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -250,12 +236,10 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -278,12 +262,10 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -312,12 +294,10 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -334,12 +314,10 @@ Your Output:
 0: 1 
 1: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -391,11 +369,9 @@ Your Output:
 10: 0 
 11: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1002
-	at PageRank.getPR(Solution.java:62)
-	at PageRank.toString(Solution.java:69)
-	at java.base/java.lang.String.valueOf(String.java:2788)
-	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:105)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000
+	at PageRank.compPageRank(Solution.java:57)
+	at PageRank.<init>(Solution.java:34)
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 

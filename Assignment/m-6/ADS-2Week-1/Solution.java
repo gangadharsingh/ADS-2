@@ -16,7 +16,7 @@ class PageRank {
         dg = digraph;
         k = 0;
         newPR = new Double[dg.V()];
-        prevPR = new Double[1002][dg.V()];
+        prevPR = new Double[1000][dg.V()];
         Double firstpr = 1.0 / dg.V();
         for (int i = 0; i < dg.V(); i++) {
             newPR[i] = firstpr;
@@ -59,7 +59,7 @@ class PageRank {
     }
 
     public double getPR(int v) {
-        newPR = prevPR[1002];
+        newPR = prevPR[1000];
         return newPR[v];
     }
 
