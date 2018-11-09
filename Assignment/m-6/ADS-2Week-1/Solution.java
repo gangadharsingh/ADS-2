@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Arrays;
-// import java.util.equals;
 /**
  * Class for page rank.
  */
@@ -60,7 +59,7 @@ class PageRank {
     }
 
     public double getPR(int v) {
-        newPR = prevPR[1000];
+        newPR = prevPR[1002];
         return newPR[v];
     }
 
