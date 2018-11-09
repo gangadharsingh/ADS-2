@@ -22,7 +22,7 @@ class PrimMST {
             if (!marked[v]) prim(G, v);      // minimum spanning forest
 
         // check optimality conditions
-        assert check(G);
+        // assert check(G);
     }
 
     // run Prim's algorithm in graph G, starting from vertex s
