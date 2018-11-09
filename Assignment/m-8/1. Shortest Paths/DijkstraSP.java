@@ -80,9 +80,9 @@ class DijkstraSP {
     /**.
      * Returns the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v}.
-     * 
+     *
      * Complexity: O(1).
-     * 
+     *
      * @param  v the destination vertex
      * @return the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v};
@@ -96,7 +96,7 @@ class DijkstraSP {
 
     /**.
      * Returns true if there is a path from the source vertex to vertex
-     * 
+     *
      * Complexity: O(1).
      *
      * @param  v the destination vertex
