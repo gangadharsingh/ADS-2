@@ -541,7 +541,6 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:146:36: Parameter a should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:147: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:148: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:149:17: 'pic' hides a field. [HiddenField]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:154: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:165:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:165:29: Parameter a should be final. [FinalParameters]
@@ -559,4 +558,4 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:343: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/SeamCarver.java:362: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 69 errors.
+Checkstyle ends with 68 errors.

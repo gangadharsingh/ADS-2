@@ -146,19 +146,19 @@ public class SeamCarver {
     public void removeVerticalSeam(int[] a) {
         if (width() <= 1 || !isValid(a, height(), width()))
             throw new java.lang.IllegalArgumentException("IllegalArgumentException");
-        Picture pic = new Picture(width() - 1, height());
+        Picture pict = new Picture(width() - 1, height());
         for (int h = 0; h < height(); h++) {
             for (int w = 0; w < a[h]; w++) {
-                pic.set(w, h, pic.get(w, h));
+                pict.set(w, h, pict.get(w, h));
             }
                 
 
             for (int w = a[h] + 1; w < width(); w++) {
-                pic.set(w - 1, h, pic.get(w, h));
+                pict.set(w - 1, h, pict.get(w, h));
             }
 
         }
-        pic = pic;
+        pic = pict;
     }
 
     // return false if two consecutive entries differ by more than 1
