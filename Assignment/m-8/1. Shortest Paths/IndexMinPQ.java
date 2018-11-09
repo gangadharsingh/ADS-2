@@ -144,9 +144,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Removes a minimum key and returns its associated index.
-     * 
+     *
      * Complexity: O(log(E)).
-     * 
+     *
      * @return an index associated with a minimum key
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -169,7 +169,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * Returns the key associated with index {@code i}.
      *
      * Complexity: O(1).
-     * 
+     *
      * @param  i the index of the key to return
      * @return the key associated with index {@code i}
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -191,7 +191,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * Change the key associated with index {@code i} to the specified value.
      *
      * Complexity: O(2log(E)).
-     * 
+     *
      * @param  i the index of the key to change
      * @param  key change the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -227,7 +227,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * Decrease the key associated with index {@code i} to the specified value.
      *
      * Complexity: O(log(E)).
-     * 
+     *
      * @param  i the index of the key to decrease
      * @param  key decrease the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -254,7 +254,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * Increase the key associated with index {@code i} to the specified value.
      *
      * Complexity: O(log(E)).
-     * 
+     *
      * @param  i the index of the key to increase
      * @param  key increase the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -305,7 +305,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * { function_description }
      *
      * Complexity: O(1).
-     * 
+     *
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      *
@@ -319,7 +319,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * { function_description }
      *
      * Complexity: O(1).
-     * 
+     *
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
@@ -334,7 +334,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * { function_description }
      *
      * Complexity: O(log(E)).
-     * 
+     *
      * @param      k     { parameter_description }
      */
     private void swim(final int k) {
@@ -349,7 +349,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * { function_description }
      *
      * Complexity: O(log(E)).
-     * 
+     *
      * @param      k     { parameter_description }
      */
     private void sink(final int k) {
@@ -373,7 +373,7 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      * The iterator doesn't implement {@code remove()} since it's optional.
      *
      * Complexity: O(1).
-     * 
+     *
      * @return an iterator that iterates over the keys in ascending order
      */
     public Iterator<Integer> iterator() {
