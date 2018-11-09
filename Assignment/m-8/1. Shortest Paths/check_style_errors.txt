@@ -5,7 +5,19 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:147: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:149: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:172: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:194: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:230: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:257: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:308: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:322: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:337: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:352: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-8/1. Shortest Paths/IndexMinPQ.java:376: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
