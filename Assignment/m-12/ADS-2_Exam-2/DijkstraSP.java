@@ -120,7 +120,6 @@ class DijkstraSP {
     public void pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) {
-            // return null;
             return;
         }
         Stack<Edge> path = new Stack<Edge>();
@@ -129,19 +128,16 @@ class DijkstraSP {
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
-            // str += () + " ";
             String[] s = e.v1().split(" ");
             if (!str.contains(s[0]) && !str.contains(s[1])) {
                 str += s[0] + " " + s[1] + " ";
             }
-            // System.out.println(str+" bef");
-            // System.out.println(e.v1());
         }
-        // System.out.println(str+" aft");
-        // return path;
     }
     /**.
      * { function_description }
+     *
+     * Complexity: O(1).
      *
      * @return     { description_of_the_return_value }
      */

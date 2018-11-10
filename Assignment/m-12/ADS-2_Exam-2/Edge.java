@@ -113,6 +113,8 @@ class Edge implements Comparable<Edge> {
     /**.
      * { function_description }
      *
+     * Complexity: O(1).
+     *
      * @return     { description_of_the_return_value }
      */
     public String v1() {
