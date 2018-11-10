@@ -8,11 +8,13 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:14: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:31: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:32: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:26: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:28: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:32: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:40: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
 Starting audit...

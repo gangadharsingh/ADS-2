@@ -13,6 +13,7 @@ public class Solution {
 			String[] inp = s.nextLine().split(" ");
 			graph.addEdge(new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.parseDouble(inp[2])));
 		}
+		DijkstraSP shortestPath;
 		String caseToGo = s.nextLine();
 		switch (caseToGo) {
 		case "Graph":
@@ -21,6 +22,13 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+			String[] path = s.nextLine().split(" ");
+			shortestPath = new DijkstraSP(graph, Integer.parseInt(path[0]));
+			if (shortestPath.hasPathTo(Integer.parseInt(path[1]))) {
+				System.out.println(shortestPath.distTo(Integer.parseInt(path[1])));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
