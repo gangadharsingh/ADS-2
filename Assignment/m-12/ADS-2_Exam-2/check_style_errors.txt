@@ -26,7 +26,14 @@ Starting audit...
 Audit done.
 Checkstyle ends with 22 errors.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:113:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:5: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:17: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:18: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:21: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:22: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -38,7 +45,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:132:31: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:132:32: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
