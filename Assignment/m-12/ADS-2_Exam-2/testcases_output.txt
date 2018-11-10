@@ -76,16 +76,7 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
- 1 7  bef
-1 7
- 1 7  bef
-0 7
- 1 7 0 4  bef
-0 4
- 1 7 0 4  bef
-2 4
- 1 7 0 4  aft
-692.0
-5 2[1-7 159.00000, 0-7 221.00000, 0-4 78.00000, 2-4 55.00000]
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
