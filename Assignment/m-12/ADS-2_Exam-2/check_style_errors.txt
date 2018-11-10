@@ -11,10 +11,13 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:26: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:28: Line is longer than 80 characters (found 99). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:32: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:40: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:42: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:45: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:55: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:56: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -36,6 +36,22 @@ public class Solution {
 			break;
 
 		case "ViaPaths":
+			String[] viaPath = s.nextLine().split(" ");
+			double dist = 0.0;
+			boolean flag = true;
+			shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
+			for (int i = 1; i < viaPath.length; i++) {
+				if (shortestPath.hasPathTo(Integer.parseInt(viaPath[i]))) {
+					dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
+				} else {
+					flag = false;
+				}
+			}
+			if (flag) {
+				System.out.println(dist);
+			} else {
+				System.out.println("No Path Found.");
+			}
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
 			// third is the destination.
