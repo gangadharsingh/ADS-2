@@ -134,8 +134,8 @@ class DijkstraSP {
             String[] s = e.v1().split(" ");
             if(!str.contains(s[0]) && !str.contains(s[1]))
             	str += s[0] + " "+s[1]+" ";
-            // System.out.println(str+" bef");
-            // System.out.println(e.v1());
+            System.out.println(str+" bef");
+            System.out.println(e.v1());
         }
         System.out.println(str+" aft");
         return path;
