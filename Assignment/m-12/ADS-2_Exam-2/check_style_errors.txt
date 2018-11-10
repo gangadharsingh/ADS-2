@@ -9,4 +9,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:119: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 1 errors.

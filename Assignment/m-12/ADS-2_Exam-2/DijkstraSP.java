@@ -115,6 +115,8 @@ class DijkstraSP {
     /**.
      * { function_description }
      *
+     * Complexity: O(log(E)).
+     * 
      * @param      v     { parameter_description }
      */
     public void pathTo(final int v) {
