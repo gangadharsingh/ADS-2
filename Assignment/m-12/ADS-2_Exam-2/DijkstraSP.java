@@ -125,13 +125,17 @@ class DijkstraSP {
         }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
-        // String str = " ";
+        String str = " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
             // str += () + " ";
+            String[] s = e.v1().split(" ");
+            if(!str.contains(s[0]) && str.contains(s[1]))
+            	str += s[0] + s[1];
             System.out.println(e.v1());
         }
+        System.out.println(str);
         return path;
     }
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
