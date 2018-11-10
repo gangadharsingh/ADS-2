@@ -43,6 +43,7 @@ public class Solution {
 			for (int i = 1; i < viaPath.length; i++) {
 				if (shortestPath.hasPathTo(Integer.parseInt(viaPath[i]))) {
 					dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
+					System.out.println(dist+" cat");
 					if (i == 2) {
 						shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[1]));
 						dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
