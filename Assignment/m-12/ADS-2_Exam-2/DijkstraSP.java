@@ -126,9 +126,10 @@ class DijkstraSP {
         String s = "";
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
+        s += v + " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+            s += (e.either()+1) + " ";
             path.push(e);
-            s += (e.other(x)+1) + " ";
             x = e.other(x);
         }
         return s;
