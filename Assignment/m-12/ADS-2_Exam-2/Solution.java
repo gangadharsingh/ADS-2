@@ -9,7 +9,7 @@ public class Solution {
 		int cities = Integer.parseInt(s.nextLine());
 		int roadLines = Integer.parseInt(s.nextLine());
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(cities);
-		for (int i = 0; i < cities; i++) {
+		for (int i = 0; i < roadLines; i++) {
 			String[] inp = s.nextLine().split(" ");
 			graph.addEdge(new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]), Double.parseDouble(inp[2])));
 		}
