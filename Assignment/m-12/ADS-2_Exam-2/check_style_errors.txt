@@ -38,7 +38,7 @@ Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:18:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:139:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:140:5: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:138:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:139:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
 Checkstyle ends with 3 errors.

@@ -53,7 +53,6 @@ class DijkstraSP {
             int v = pq.delMin();
             for (Edge e : graph.adj(v)) {
                 relax(e, v);
-                str += v;
             }
         }
     }
@@ -126,13 +125,13 @@ class DijkstraSP {
             return null;
         }
         Stack<Edge> path = new Stack<Edge>();
-        String s = "";
+        str = "";
         int x = v;
         // s += v + " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
-            // s += (e.either()+1)+"either other"+(e.other(x)+1);
+            str += v;
         }
         return path;
     }
