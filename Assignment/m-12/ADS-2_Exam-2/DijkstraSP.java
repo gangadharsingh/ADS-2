@@ -131,7 +131,7 @@ class DijkstraSP {
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
-            str += v;
+            str += e.stringForm();
         }
         return path;
     }
