@@ -118,18 +118,21 @@ class DijkstraSP {
      *         as an iterable of edges, and {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> pathTo(final int v) {
+    public String pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) {
             return null;
         }
         Stack<Edge> path = new Stack<Edge>();
+        String s = "";
         int x = v;
+        s += v + " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
+            s += (e.either()+1)+" ";
         }
-        return path;
+        return s;
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}

@@ -57,7 +57,7 @@ public class Solution {
 				}
 			}
 			if (flag) {
-				System.out.println(shortestPath.pathTo(Integer.parseInt(viaPath[2])));
+				 System.out.println(shortestPath.pathTo(Integer.parseInt(viaPath[2])));
 				System.out.println(dist);
 			} else {
 				System.out.println("No Path Found.");
