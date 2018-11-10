@@ -53,7 +53,7 @@ public class Solution {
 						// System.out.println(dist);
 						shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[1]));
 						dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
-						str += shortestPath.str().trim();
+						str += shortestPath.str();
 					}
 				} else {
 					flag = false;

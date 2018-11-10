@@ -20,11 +20,10 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:49: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:54: Line is longer than 80 characters (found 115). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:55: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:56: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:68: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:69: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 21 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:113:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:5: File contains tab characters (this is the first instance). [FileTabCharacter]
