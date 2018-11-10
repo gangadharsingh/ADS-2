@@ -15,6 +15,7 @@ class DijkstraSP {
      * { var_description }
      */
     private IndexMinPQ<Double> pq;
+    private String str;
 
     /**.
      * Computes a shortest-paths tree from the
@@ -52,6 +53,7 @@ class DijkstraSP {
             int v = pq.delMin();
             for (Edge e : graph.adj(v)) {
                 relax(e, v);
+                str += v;
             }
         }
     }
@@ -126,13 +128,16 @@ class DijkstraSP {
         Stack<Edge> path = new Stack<Edge>();
         String s = "";
         int x = v;
-        s += v + " ";
+        // s += v + " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
-            s += (e.either()+1)+"either other"+(e.other(x)+1);
+            // s += (e.either()+1)+"either other"+(e.other(x)+1);
         }
         return path;
+    }
+    public String path() {
+    	return str;
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}

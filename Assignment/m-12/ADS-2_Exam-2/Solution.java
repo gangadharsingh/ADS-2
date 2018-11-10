@@ -40,10 +40,12 @@ public class Solution {
 			double dist = 0.0;
 			boolean flag = true;
 			shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
+			String str = viaPath[0]+" ";
 			for (int i = 1; i < viaPath.length; i++) {
 				if (shortestPath.hasPathTo(Integer.parseInt(viaPath[i]))) {
 					if(i == 1) {
 						dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
+						str += viaPath[1];
 						// System.out.println(dist+" cat");
 					}
 					if (i == 2) {
@@ -51,6 +53,7 @@ public class Solution {
 						// System.out.println(dist);
 						shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[1]));
 						dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
+						str += shortestPath.path();
 					}
 				} else {
 					flag = false;
@@ -58,8 +61,7 @@ public class Solution {
 			}
 			if (flag) {
 				System.out.println(dist);
-				shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
-				System.out.println(shortestPath.pathTo(Integer.parseInt(viaPath[2])));
+				System.out.println(str);
 			} else {
 				System.out.println("No Path Found.");
 			}
