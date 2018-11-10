@@ -128,7 +128,7 @@ class DijkstraSP {
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
-            s += (e.either()+1) + " ";
+            s += (e.other(x)+1) + " ";
             x = e.other(x);
         }
         return s;
