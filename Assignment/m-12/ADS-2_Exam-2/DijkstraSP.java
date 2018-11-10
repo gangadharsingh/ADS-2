@@ -119,10 +119,11 @@ class DijkstraSP {
      *         as an iterable of edges, and {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> pathTo(final int v) {
+    public void pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) {
-            return null;
+            // return null;
+            return ;
         }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
@@ -134,11 +135,11 @@ class DijkstraSP {
             String[] s = e.v1().split(" ");
             if(!str.contains(s[0]) && !str.contains(s[1]))
             	str += s[0] + " "+s[1]+" ";
-            System.out.println(str+" bef");
-            System.out.println(e.v1());
+            // System.out.println(str+" bef");
+            // System.out.println(e.v1());
         }
-        System.out.println(str+" aft");
-        return path;
+        // System.out.println(str+" aft");
+        // return path;
     }
     String strPath() {
     	return str;
