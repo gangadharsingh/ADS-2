@@ -1,0 +1,29 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:4:33: Parameter args should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:14: Line is longer than 80 characters (found 128). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:31: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:32: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 10 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/EdgeWeightedGraph.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/EdgeWeightedGraph.java:9: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/EdgeWeightedGraph.java:45: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/EdgeWeightedGraph.java:54: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/EdgeWeightedGraph.java:96: Line is longer than 80 characters (found 83). [LineLength]
+Audit done.
+Checkstyle ends with 5 errors.
+Starting audit...
+Audit done.
