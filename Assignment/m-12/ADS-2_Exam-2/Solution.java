@@ -57,8 +57,9 @@ public class Solution {
 				}
 			}
 			if (flag) {
-				 System.out.println(shortestPath.pathTo(Integer.parseInt(viaPath[2])));
 				System.out.println(dist);
+				shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
+				System.out.println(shortestPath.pathTo(Integer.parseInt(viaPath[2])));
 			} else {
 				System.out.println("No Path Found.");
 			}
