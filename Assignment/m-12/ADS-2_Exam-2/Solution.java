@@ -57,7 +57,7 @@ public class Solution {
 						shortestPath.pathTo(Integer.parseInt(viaPath[i]));
 						String spath = shortestPath.strPath();
 						String rev = new StringBuffer(spath).reverse().toString();
-						str += " "+rev;
+						str += rev;
 					}
 				} else {
 					flag = false;

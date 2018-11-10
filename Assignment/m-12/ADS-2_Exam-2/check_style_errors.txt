@@ -24,12 +24,10 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:57: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:58: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:59: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:60:59: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:60:60: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:72: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Solution.java:73: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:113:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/Edge.java:114:5: File contains tab characters (this is the first instance). [FileTabCharacter]
