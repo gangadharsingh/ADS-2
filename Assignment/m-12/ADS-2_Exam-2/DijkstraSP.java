@@ -132,7 +132,7 @@ class DijkstraSP {
             // str += () + " ";
             String[] s = e.v1().split(" ");
             if(!str.contains(s[0]) && str.contains(s[1]))
-            	str += s[0] + s[1];
+            	str += s[0] + " "+s[1]+" ";
             System.out.println(e.v1());
         }
         System.out.println(str);
