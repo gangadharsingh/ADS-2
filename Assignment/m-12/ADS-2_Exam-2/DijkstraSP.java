@@ -28,6 +28,7 @@ class DijkstraSP {
      * @throws     IllegalArgumentException  unless {@code 0 <= s < V}
      */
     DijkstraSP(final EdgeWeightedGraph graph, final int s) {
+    	str = "";
         for (Edge e : graph.edges()) {
             if (e.weight() < 0) {
                 throw new IllegalArgumentException(
@@ -136,10 +137,10 @@ class DijkstraSP {
             // System.out.println(str+" bef");
             // System.out.println(e.v1());
         }
-        // System.out.println(str+" aft");
+        System.out.println(str+" aft");
         return path;
     }
-    String str() {
+    String strPath() {
     	return str;
     }
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
