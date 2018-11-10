@@ -28,7 +28,7 @@ class Edge implements Comparable<Edge> {
     Edge(final int vert, final int otherVert, final double wt) {
         if (vert < 0) {
             throw new IllegalArgumentException(
-            "vertex index must be a nonnegative integer");
+                "vertex index must be a nonnegative integer");
         }
         if (otherVert < 0) {
             throw new IllegalArgumentException(
@@ -110,7 +110,12 @@ class Edge implements Comparable<Edge> {
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
     }
-    String v1() {
-    	return v+" "+w;
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String v1() {
+        return v + " " + w;
     }
 }
