@@ -15,7 +15,6 @@ class DijkstraSP {
      * { var_description }
      */
     private IndexMinPQ<Double> pq;
-    private String str;
 
     /**.
      * Computes a shortest-paths tree from the
@@ -119,26 +118,21 @@ class DijkstraSP {
      *         as an iterable of edges, and {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> pathTo(final int v) {
+    public String pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) {
             return null;
         }
         Stack<Edge> path = new Stack<Edge>();
-        str = "";
         int x = v;
-        // s += v + " ";
+        String str = " ";
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             x = e.other(x);
-            str += (e.either()+1)+"" ;
+            str += (e.other(x)+1) + " ";
         }
-        return path;
+        return str;
     }
-    public String path() {
-    	return str;
-    }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**.
      * { function_description }
