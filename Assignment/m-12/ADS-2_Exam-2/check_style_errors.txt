@@ -34,7 +34,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:131:29: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-12/ADS-2_Exam-2/DijkstraSP.java:131:30: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
