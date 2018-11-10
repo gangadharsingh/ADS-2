@@ -42,8 +42,10 @@ public class Solution {
 			shortestPath = new DijkstraSP(graph, Integer.parseInt(viaPath[0]));
 			for (int i = 1; i < viaPath.length; i++) {
 				if (shortestPath.hasPathTo(Integer.parseInt(viaPath[i]))) {
-					dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
-					System.out.println(dist+" cat");
+					if(i == 1) {
+						dist += shortestPath.distTo(Integer.parseInt(viaPath[i]));
+						System.out.println(dist+" cat");
+					}
 					if (i == 2) {
 						System.out.println("bat");
 						System.out.println(dist);
