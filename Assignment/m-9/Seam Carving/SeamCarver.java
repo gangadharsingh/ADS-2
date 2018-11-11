@@ -1,34 +1,69 @@
 import java.awt.Color;
-
-
+/**.
+ * Class for seam carver.
+ */
 public class SeamCarver {
+    /**.
+     * { var_description }
+     */
     private static final double BORDER = 1000;
+    /**.
+     * { var_description }
+     */
     private Picture picture;
 
-    public SeamCarver(Picture picture) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      picture  The picture
+     */
+    public SeamCarver(final Picture picture) {
         if (picture == null) {
-            throw new java.lang.IllegalArgumentException("picture is null");            
+            throw new java.lang.IllegalArgumentException("picture is null");
         }
         this.picture = new Picture(picture);
     }
 
     // current picture
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Picture picture() {
         return this.picture;
     }
 
     // width of current picture
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int width() {
         return this.picture.width();
     }
 
     // height of current picture
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int height() {
         return this.picture.height();
     }
 
     // energy of pixel at column x and row y
-    public  double energy(int x, int y) {
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     * @param      y     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public  double energy(final int x, final int y) {
         int w = width() - 1, h = height() - 1;
         if (x < 0 || x > w || y < 0 || y > h) {
             throw new java.lang.IllegalArgumentException("IllegalArgumentException");
@@ -40,7 +75,15 @@ public class SeamCarver {
     }
 
     // energy of pixel at column x and row y not on boarder
-    private double internalEnergy(int x, int y) {
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     * @param      y     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private double internalEnergy(final int x, final int y) {
         Color left = this.picture.get(x - 1, y);
         Color right = this.picture.get(x + 1, y);
         Color up = this.picture.get(x, y - 1);
@@ -48,13 +91,26 @@ public class SeamCarver {
         return Math.sqrt(gradient(left, right) + gradient(up, down));
     }
 
-    private double gradient(Color one, Color two) {
+    /**.
+     * { function_description }
+     *
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private double gradient(final Color one, final Color two) {
         double red = one.getRed() - two.getRed();
         double green = one.getGreen() - two.getGreen();
         double blue = one.getBlue() - two.getBlue();
         return red * red + green * green + blue * blue;
     }
 
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private double[][] initEnergies() {
         double[][] energies = new double[height()][width()];
         for (int i = 0; i < height(); i++) {
@@ -66,7 +122,12 @@ public class SeamCarver {
     }
 
     // pass through an array and mark the shorthest distance from top to entry
-    private void topologicalSort(double[][] energies) {
+    /**.
+     * { function_description }
+     *
+     * @param      energies  The energies
+     */
+    private void topologicalSort(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         for (int row = 1; row < h; row++) {
             for (int col = 0; col < w; col++) {
@@ -88,7 +149,14 @@ public class SeamCarver {
         }
 
     }
-    private double[][] transposeGrid(double[][] energies) {
+    /**.
+     * { function_description }
+     *
+     * @param      energies  The energies
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private double[][] transposeGrid(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         double[][] trEnergies = new double[w][h];
         for (int row = 0; row < h; row++) {
@@ -99,7 +167,14 @@ public class SeamCarver {
         return trEnergies;
     }
 
-    private int[] minVerticalPath(double[][] energies) {
+    /**.
+     * { function_description }
+     *
+     * @param      energies  The energies
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int[] minVerticalPath(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         int[] path = new int[h];
 
@@ -108,8 +183,9 @@ public class SeamCarver {
         // find the lowest element in last row
         path[h - 1] = 0;
         for (int i = 0; i < w; i++) {
-            if (energies[h - 1][i] < energies[h - 1][path[h - 1]])
+            if (energies[h - 1][i] < energies[h - 1][path[h - 1]]) {
                 path[h - 1] = i;
+            }
         }
         // trace path back to first row
         // assuming we need the cheapest upper neighboring entry
@@ -124,18 +200,36 @@ public class SeamCarver {
         }
         return path;
     }
+
     // sequence of indices for horizontal seam
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] findHorizontalSeam() {
         double[][] transposeEnergies = transposeGrid(initEnergies());
         return minVerticalPath(transposeEnergies);
     }
+
     // sequence of indices for vertical seam
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] findVerticalSeam() {
         double[][] normalEnergies = initEnergies();
         return minVerticalPath(normalEnergies);
     }
+
     // remove horizontal seam from picture
-    public void removeHorizontalSeam(int[] a) {
+    /**.
+     * Removes a horizontal seam.
+     *
+     * @param      a     { parameter_description }
+     */
+    public void removeHorizontalSeam(final int[] a) {
         if (height() <= 1 || !isValid(a, width(), height() - 1))
             throw new java.lang.IllegalArgumentException("IllegalArgumentException");
         Picture pic = new Picture(width(), height() - 1);
@@ -153,7 +247,12 @@ public class SeamCarver {
     }
 
     // remove vertical seam from picture
-    public void removeVerticalSeam(int[] a) {
+    /**.
+     * Removes a vertical seam.
+     *
+     * @param      a     { parameter_description }
+     */
+    public void removeVerticalSeam(final int[] a) {
         if (width() <= 1 || !isValid(a, height(), width()))
             throw new java.lang.IllegalArgumentException("IllegalArgumentException");
         Picture pic = new Picture(width() - 1, height());
@@ -161,7 +260,7 @@ public class SeamCarver {
             for (int w = 0; w < a[h]; w++) {
                 pic.set(w, h, this.picture.get(w, h));
             }
-                
+
 
             for (int w = a[h] + 1; w < width(); w++) {
                 pic.set(w - 1, h, this.picture.get(w, h));
@@ -172,7 +271,16 @@ public class SeamCarver {
     }
 
     // return false if two consecutive entries differ by more than 1
-    private boolean isValid(int[] a, int len, int range) {
+    /**.
+     * Determines if valid.
+     *
+     * @param      a      { parameter_description }
+     * @param      len    The length
+     * @param      range  The range
+     *
+     * @return     True if valid, False otherwise.
+     */
+    private boolean isValid(final int[] a, final int len, final int range) {
         if (a == null) {
             return false;
         }
