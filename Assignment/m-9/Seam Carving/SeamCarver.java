@@ -17,11 +17,11 @@ public class SeamCarver {
      *
      * @param      picture  The picture
      */
-    public SeamCarver(final Picture picture) {
-        if (picture == null) {
+    public SeamCarver(final Picture pict) {
+        if (pict == null) {
             throw new java.lang.IllegalArgumentException("picture is null");
         }
-        this.picture = new Picture(picture);
+        this.picture = new Picture(pict);
     }
 
     // current picture
@@ -66,7 +66,8 @@ public class SeamCarver {
     public  double energy(final int x, final int y) {
         int w = width() - 1, h = height() - 1;
         if (x < 0 || x > w || y < 0 || y > h) {
-            throw new java.lang.IllegalArgumentException("IllegalArgumentException");
+            throw new java.lang.IllegalArgumentException(
+                "IllegalArgumentException");
         }
         if (x == 0 || x == w ||  y == 0 || y == h) {
             return BORDER;
@@ -193,10 +194,14 @@ public class SeamCarver {
             int col = path[row + 1];
             // three neighboring, priority to center
             path[row] = col;
-            if (col > 0 && energies[row][col - 1] < energies[row][path[row]])
+            if (col > 0 && energies[row][col - 1]
+                    < energies[row][path[row]]) {
                 path[row] = col - 1;
-            if (col < (w - 2) && energies[row][col + 1] < energies[row][path[row]])
+            }
+            if (col < (w - 2) && energies[row][col + 1]
+                    < energies[row][path[row]]) {
                 path[row] = col + 1;
+            }
         }
         return path;
     }
@@ -230,8 +235,11 @@ public class SeamCarver {
      * @param      a     { parameter_description }
      */
     public void removeHorizontalSeam(final int[] a) {
-        if (height() <= 1 || !isValid(a, width(), height() - 1))
-            throw new java.lang.IllegalArgumentException("IllegalArgumentException");
+        if (height() <= 1 || !isValid(
+                    a, width(), height() - 1)) {
+            throw new java.lang.IllegalArgumentException(
+                "IllegalArgumentException");
+        }
         Picture pic = new Picture(width(), height() - 1);
         for (int w = 0; w < width(); w++) {
             for (int h = 0; h < a[w]; h++) {
@@ -253,8 +261,11 @@ public class SeamCarver {
      * @param      a     { parameter_description }
      */
     public void removeVerticalSeam(final int[] a) {
-        if (width() <= 1 || !isValid(a, height(), width()))
-            throw new java.lang.IllegalArgumentException("IllegalArgumentException");
+        if (width() <= 1 || !isValid(
+                    a, height(), width())) {
+            throw new java.lang.IllegalArgumentException(
+                "IllegalArgumentException");
+        }
         Picture pic = new Picture(width() - 1, height());
         for (int h = 0; h < height(); h++) {
             for (int w = 0; w < a[h]; w++) {
@@ -288,8 +299,10 @@ public class SeamCarver {
             return false;
         }
         for (int i = 1; i < len; i++) {
-            if (a[i] < Math.max(0, a[i - 1] - 1) || a[i] > Math.min(range, a[i - 1] + 1))
+            if (a[i] < Math.max(0, a[i - 1] - 1) || a[i]
+                    > Math.min(range, a[i - 1] + 1)) {
                 return false;
+            }
         }
         return true;
     }
