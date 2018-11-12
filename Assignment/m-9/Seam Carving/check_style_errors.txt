@@ -1,8 +1,7 @@
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/Picture.java:99: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/Picture.java:421:47: '0xFFFFFF' is a magic number. [MagicNumber]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-9/Seam Carving/Picture.java:43:5: Missing a Javadoc comment. [JavadocVariable]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

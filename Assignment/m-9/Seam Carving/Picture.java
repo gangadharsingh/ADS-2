@@ -40,7 +40,7 @@ public final class Picture implements ActionListener {
      * { var_description }
      */
     private final int width, height;           // width and height
-
+    public static final int NUM = 0xFFFFFF;
     /**.
       * Creates a {@code width}-by-{@code height} picture,
       * with {@code width} columns
@@ -96,7 +96,8 @@ public final class Picture implements ActionListener {
       *
       * @param      filenm  the name of the file (.png, .gif, or .jpg) or URL.
       * @throws     IllegalArgumentException  if cannot read image
-      * @throws     IllegalArgumentException  if {@code filename} is {@code null}
+      * @throws     IllegalArgumentException  if {@code filename}
+      * is {@code null}
       */
     public Picture(final String filenm) {
         if (filenm == null) {
@@ -418,7 +419,7 @@ public final class Picture implements ActionListener {
                               col, height - row - 1);
                 }
                 sb.append(String.format(
-                              "#%06X ", rgb & 0xFFFFFF));
+                              "#%06X ", rgb & NUM));
             }
             sb.append("\n");
         }
