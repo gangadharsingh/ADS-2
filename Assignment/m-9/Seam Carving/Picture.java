@@ -40,6 +40,9 @@ public final class Picture implements ActionListener {
      * { var_description }
      */
     private final int width, height;           // width and height
+    /**.
+     * { var_description }
+     */
     public static final int NUM = 0xFFFFFF;
     /**.
       * Creates a {@code width}-by-{@code height} picture,
