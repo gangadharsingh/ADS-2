@@ -17,12 +17,12 @@ public class SeamCarver {
      *
      * @param      picture  The picture
      */
-    public SeamCarver(final Picture picture) {
-        if (picture == null) {
+    public SeamCarver(final Picture pic) {
+        if (pic == null) {
             throw new java.lang.IllegalArgumentException(
                 "picture is null");
         }
-        this.picture = new Picture(picture);
+        this.picture = new Picture(pic);
     }
 
     // current picture
@@ -189,8 +189,9 @@ public class SeamCarver {
         // find the lowest element in last row
         path[h - 1] = 0;
         for (int i = 0; i < w; i++) {
-            if (energies[h - 1][i] < energies[h - 1][path[h - 1]])
+            if (energies[h - 1][i] < energies[h - 1][path[h - 1]]) {
                 path[h - 1] = i;
+            }
         }
         // trace path back to first row
         // assuming we need the cheapest upper neighboring entry
@@ -303,8 +304,8 @@ public class SeamCarver {
             return false;
         }
         for (int i = 1; i < len; i++) {
-            if (a[i] < Math.max(0, a[i - 1] - 1) ||
-                    a[i] > Math.min(range, a[i - 1] + 1)) {
+            if (a[i] < Math.max(0, a[i - 1] - 1)
+                    || a[i] > Math.min(range, a[i - 1] + 1)) {
                 return false;
             }
         }
