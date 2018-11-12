@@ -12,10 +12,10 @@ public class SeamCarver {
      */
     private Picture picture;
 
-    /**.
-     * Constructs the object.
+    /**
+     * . Constructs the object.
      *
-     * @param      picture  The picture
+     * @param      pic   The picture
      */
     public SeamCarver(final Picture pic) {
         if (pic == null) {

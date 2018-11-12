@@ -15,7 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 /**.
  *class Picture
@@ -47,8 +46,8 @@ public final class Picture implements ActionListener {
       * with {@code width} columns
       * and {@code height} rows, where each pixel is black.
       *
-      * @param width the width of the picture
-      * @param height the height of the picture
+      * @param w the width of the picture
+      * @param h the height of the picture
       * @throws IllegalArgumentException if {@code width} is negative
       * @throws IllegalArgumentException if {@code height} is negative
       */
@@ -72,8 +71,8 @@ public final class Picture implements ActionListener {
     /**.
       * Creates a new picture that is a deep copy of the argument picture.
       *
-      * @param  picture the picture to copy
-      * @throws IllegalArgumentException if {@code picture} is {@code null}
+      * @param      pic   the picture to copy
+      * @throws     IllegalArgumentException  if {@code picture} is {@code null}
       */
     public Picture(final Picture pic) {
         if (pic == null) {
@@ -95,25 +94,22 @@ public final class Picture implements ActionListener {
     /**.
       * Creates a picture by reading an image from a file or URL.
       *
-      * @param  filename the name of the file (.png, .gif, or .jpg) or URL.
-      * @throws IllegalArgumentException if cannot read image
-      * @throws IllegalArgumentException if {@code filename} is {@code null}
+      * @param      filenm  the name of the file (.png, .gif, or .jpg) or URL.
+      * @throws     IllegalArgumentException  if cannot read image
+      * @throws     IllegalArgumentException  if {@code filename} is {@code null}
       */
-    public Picture(final String filename) {
-        if (filename == null) {
+    public Picture(final String filenm) {
+        if (filenm == null) {
             throw new IllegalArgumentException(
                 "constructor argument is null");
         }
-        this.filename = filename;
+        this.filename = filenm;
         try {
             // try to read from file in working directory
             File file = new File(filename);
             if (file.isFile()) {
                 image = ImageIO.read(file);
-            }
-
-            // now try to read from file in same directory as this .class file
-            else {
+            } else {
                 URL url = getClass().getResource(filename);
                 if (url == null) {
                     url = new URL(filename);
@@ -142,8 +138,10 @@ public final class Picture implements ActionListener {
       * @throws IllegalArgumentException if {@code file} is {@code null}
       */
     public Picture(final File file) {
-        if (file == null) throw new IllegalArgumentException(
+        if (file == null) {
+            throw new IllegalArgumentException(
                 "constructor argument is null");
+        }
 
         try {
             image = ImageIO.read(file);
@@ -168,7 +166,9 @@ public final class Picture implements ActionListener {
       * @return the {@code JLabel}
       */
     public JLabel getJLabel() {
-        if (image == null) return null;         // no image available
+        if (image == null) {
+            return null;         // no image available
+        }
         ImageIcon icon = new ImageIcon(image);
         return new JLabel(icon);
     }
@@ -248,6 +248,11 @@ public final class Picture implements ActionListener {
         return width;
     }
 
+    /**.
+     * { function_description }
+     *
+     * @param      row   The row
+     */
     private void validateRowIndex(final int row) {
         if (row < 0 || row >= height()) {
             throw new IllegalArgumentException(
@@ -256,7 +261,12 @@ public final class Picture implements ActionListener {
         }
     }
 
-    private void validateColumnIndex(int col) {
+    /**.
+     * { function_description }
+     *
+     * @param      col   The col
+     */
+    private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
             throw new IllegalArgumentException(
                 "column index must be between 0 and " + (
@@ -341,8 +351,11 @@ public final class Picture implements ActionListener {
     public void setRGB(final int col, final int row, final int rgb) {
         validateColumnIndex(col);
         validateRowIndex(row);
-        if (isOriginUpperLeft) image.setRGB(col, row, rgb);
-        else                   image.setRGB(col, height - row - 1, rgb);
+        if (isOriginUpperLeft) {
+            image.setRGB(col, row, rgb);
+        } else {
+            image.setRGB(col, height - row - 1, rgb);
+        }
     }
 
     /**.
@@ -354,7 +367,7 @@ public final class Picture implements ActionListener {
       *         and if all pixels have the same color;
       *         {@code false} otherwise
       */
-    public boolean equals(Object other) {
+    public boolean equals(final Object other) {
         if (other == this) {
             return true;
         }
@@ -452,7 +465,9 @@ public final class Picture implements ActionListener {
                 "argument to save() is null");
         }
         filename = file.getName();
-        if (frame != null) frame.setTitle(filename);
+        if (frame != null) {
+            frame.setTitle(filename);
+        }
         String suffix = filename.substring(filename.lastIndexOf('.') + 1);
         if ("jpg".equalsIgnoreCase(suffix) || "png".equalsIgnoreCase(suffix)) {
             try {
