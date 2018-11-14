@@ -7,7 +7,18 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:27: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:49: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:72: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:83: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:109: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:128: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:142: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:156: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:158: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/EdgeWeightedGraph.java:186: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
