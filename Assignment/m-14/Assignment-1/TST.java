@@ -13,10 +13,10 @@ public class TST<Value> {
      */
     private Node<Value> root;
     // root of TST
-/**
- * Node class.
- * @param <Value> tag.
- */
+    /**
+     * Node class.
+     * @param <Value> tag.
+     */
     private static class Node<Value> {
         /**
          * char c.
@@ -77,7 +77,7 @@ public class TST<Value> {
      */
     public Value get(final String key) {
         if (key == null) {
-        throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException("calls get() with null argument");
         }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
@@ -88,15 +88,15 @@ public class TST<Value> {
         }
         return x.val;
     }
-/**
- * Complexity is O(M).
- * Where M is the length of String.
- * get method.
- * @param x Node.
- * @param key String.
- * @param d int
- * @return Node.
- */
+    /**
+     * Complexity is O(M).
+     * Where M is the length of String.
+     * get method.
+     * @param x Node.
+     * @param key String.
+     * @param d int
+     * @return Node.
+     */
     private Node<Value> get(final Node<Value> x,
                             final String key, final int d) {
         if (x == null) {
