@@ -13,7 +13,8 @@ public class SeamCarver {
     private Picture picture;
 
     /**
-     * . Constructs the object.
+     * Constructs the object.
+     * Complexity: 1
      *
      * @param      pic   The picture
      */
@@ -28,6 +29,7 @@ public class SeamCarver {
     // current picture
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @return     { description_of_the_return_value }
      */
@@ -38,6 +40,7 @@ public class SeamCarver {
     // width of current picture
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @return     { description_of_the_return_value }
      */
@@ -48,6 +51,7 @@ public class SeamCarver {
     // height of current picture
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @return     { description_of_the_return_value }
      */
@@ -58,6 +62,7 @@ public class SeamCarver {
     // energy of pixel at column x and row y
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @param      x     { parameter_description }
      * @param      y     { parameter_description }
@@ -79,6 +84,7 @@ public class SeamCarver {
     // energy of pixel at column x and row y not on boarder
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @param      x     { parameter_description }
      * @param      y     { parameter_description }
@@ -96,6 +102,7 @@ public class SeamCarver {
 
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @param      one   One
      * @param      two   Two
@@ -111,6 +118,7 @@ public class SeamCarver {
 
     /**.
      * { function_description }
+     * Complexity: height*width
      *
      * @return     { description_of_the_return_value }
      */
@@ -127,6 +135,7 @@ public class SeamCarver {
     // pass through an array and mark the shorthest distance from top to entry
     /**.
      * { function_description }
+     * Complexity: height*width  (of energy 2-d array)
      *
      * @param      energies  The energies
      */
@@ -157,6 +166,7 @@ public class SeamCarver {
 
     /**.
      * { function_description }
+     * Complexity: height*width  (of energy 2-d array)
      *
      * @param      energies  The energies
      *
@@ -175,6 +185,7 @@ public class SeamCarver {
 
     /**.
      * { function_description }
+     * Complexity: height+width  (of energy 2-d array)
      *
      * @param      energies  The energies
      *
@@ -214,6 +225,7 @@ public class SeamCarver {
     // sequence of indices for horizontal seam
     /**.
      * { function_description }
+     * Complexity: 1
      *
      * @return     { description_of_the_return_value }
      */
@@ -228,6 +240,8 @@ public class SeamCarver {
     /**.
      * { function_description }
      *
+     * Complexity: 1
+
      * @return     { description_of_the_return_value }
      */
     public int[] findVerticalSeam() {
@@ -239,6 +253,7 @@ public class SeamCarver {
     // remove horizontal seam from picture
     /**.
      * Removes a horizontal seam.
+     * Complexity: height(width+height)  (of energy 2-d array)
      *
      * @param      a     { parameter_description }
      */
@@ -265,6 +280,7 @@ public class SeamCarver {
     // remove vertical seam from picture
     /**.
      * Removes a vertical seam.
+     * Complexity: height(width+height)  (of energy 2-d array)
      *
      * @param      a     { parameter_description }
      */
@@ -289,6 +305,7 @@ public class SeamCarver {
     // return false if two consecutive entries differ by more than 1
     /**.
      * Determines if valid.
+     * Complexity: height
      *
      * @param      a      { parameter_description }
      * @param      len    The length

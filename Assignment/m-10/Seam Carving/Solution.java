@@ -32,6 +32,7 @@ final class Solution {
     }
     /**
      * printSeam method.
+     * Complexity: height*width
      * @param carver seamCarver.
      * @param seam int[].
      * @param direction boolean.
