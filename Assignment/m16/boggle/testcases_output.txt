@@ -227,7 +227,7 @@ Expected Output:
 Score = 32175
 
 Your Output: 
-
+Score = 0
 ----------------------------------------
 
 ########## Testcase 29: Failed ##########
