@@ -1,18 +1,18 @@
 import java.util.Arrays;
 
-/**
+/**.
  * Class for solution.
  */
 public class Solution {
 
-	/**
+	/**.
 	 * Constructs the object.
 	 */
 	private Solution() {
 		// empty constructor
 	}
 
-	/**
+	/**.
 	 * Main method.
 	 *
 	 * @param      args  The arguments
@@ -34,9 +34,9 @@ public class Solution {
 			}
 			StdOut.println("Score = " + score);
 			break;
-			case "dictionary-zingarelli2005.txt":
-            	System.out.println("board is null");
-            break;
+		case "dictionary-zingarelli2005.txt":
+			System.out.println("board is null");
+			break;
 
 		default:
 			try {
