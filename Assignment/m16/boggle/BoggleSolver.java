@@ -31,9 +31,10 @@ public class BoggleSolver {
 		} else {
 			word += letter;
 		}
-		if (!suffix.hasPrefix(word) && word.length() < 2) {
+		if (!suffix.hasPrefix(word)) {
 			return;
-		} else if (suffix.contains(word)) {
+		}
+		if (suffix.contains(word) && word.length() > 2) {
 			set.add(word);
 		}
 		mark[row][col] = true;
