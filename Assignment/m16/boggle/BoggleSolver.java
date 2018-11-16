@@ -15,9 +15,10 @@ public class BoggleSolver {
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
 				boolean[][] mark = new boolean[board.rows()][board.cols()];
+				collect(board, i, j, mark, "", valid);
 			}
 		}
-		return new Bag<String>();
+		return valid;
 	}
 	void collect(BoggleBoard board, int row, int col, boolean[][] mark, String pref, SET<String> set) {
 		if (mark[row][col]) {
@@ -32,10 +33,10 @@ public class BoggleSolver {
 		}
 		if (!suffix.hasPrefix(word) && word.length() < 2) {
 			return;
-		} else {
+		} else if (suffix.contains(word)) {
 			set.add(word);
-			mark[row][col] = true;
 		}
+		mark[row][col] = true;
 		for (int i = -1; i <= 1; i++) {
 			for (int j = -1; j <= 1; j++) {
 				if (i == 0 && j == 0) {
@@ -46,7 +47,7 @@ public class BoggleSolver {
 				}
 			}
 		}
-
+		mark[row][col] = false;
 	}
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
@@ -67,8 +68,6 @@ public class BoggleSolver {
 				return 3;
 			case 7:
 				return 5;
-			case 8:
-				return 11;
 			default:
 				return 11;
 			}
