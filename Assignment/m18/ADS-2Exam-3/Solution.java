@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.HashMap;
-
+import java.util.Arrays;
 public class Solution {
 
 	// Don't modify this method.
@@ -88,6 +88,16 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
+		String[] read = toReadFile(file);
+		for (int j = 0; j <read.length; j++) {
+			if (!st.contains(read[j])) {
+				st.put(read[j], 1);
+			} else {
+				int i = st.get(read[j]);
+				// System.out.println(read[j]+" read, i:"+i);
+				st.put(read[j], i+1);
+			}
+		}
 		return st;
 	}
 
@@ -98,6 +108,9 @@ class T9 {
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		map = new HashMap<String, Integer>();
+		// for (String s: st.) {
+
+		// }
 	}
 
 	// get all the prefixes that match with given prefix.
