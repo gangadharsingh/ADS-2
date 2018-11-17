@@ -90,12 +90,13 @@ public class Solution {
 		// your code goes here
 		String[] read = toReadFile(file);
 		for (int j = 0; j <read.length; j++) {
-			if (!st.contains(read[j])) {
-				st.put(read[j], 1);
+			// String s = read[j];
+			String inp = read[j].toLowerCase();
+			if (!st.contains(inp)) {
+				st.put(inp, 1);
 			} else {
-				int i = st.get(read[j]);
-				// System.out.println(read[j]+" read, i:"+i);
-				st.put(read[j], i+1);
+				int i = st.get(inp);
+				st.put(inp, i+1);
 			}
 		}
 		return st;
