@@ -89,14 +89,14 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] read = toReadFile(file);
-		for (int j = 0; j <read.length; j++) {
+		for (int j = 0; j < read.length; j++) {
 			// String s = read[j];
 			String inp = read[j].toLowerCase();
 			if (!st.contains(inp)) {
 				st.put(inp, 1);
 			} else {
 				int i = st.get(inp);
-				st.put(inp, i+1);
+				st.put(inp, i + 1);
 			}
 		}
 		return st;
@@ -106,27 +106,27 @@ public class Solution {
 
 class T9 {
 	private final TST<Integer> tst;
-	private HashMap<Integer, String> map;
+	private HashMap<String, String> map;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST<Integer>();
 		Iterable<String> s = st.keys();
-		for (String str: s) {
+		for (String str : s) {
 			tst.put(str, st.get(str));
 		}
-		map = new HashMap<Integer, String>();
-		map.put(1, "");
-		map.put(2, "abc");
-		map.put(3, "def");
-		map.put(4, "ghi");
-		map.put(5, "jkl");
-		map.put(6, "mno");
-		map.put(7, "pqrs");
-		map.put(8, "tuv");
-		map.put(9, "wxyz");
-		map.put(0, "*");
-		map.put(0, " ");
-		map.put(0, "#");
+		map = new HashMap<String, String>();
+		map.put("1", "");
+		map.put("2", "abc");
+		map.put("3", "def");
+		map.put("4", "ghi");
+		map.put("5", "jkl");
+		map.put("6", "mno");
+		map.put("7", "pqrs");
+		map.put("8", "tuv");
+		map.put("9", "wxyz");
+		map.put("*", "*");
+		map.put(" ", " ");
+		map.put("#", "#");
 	}
 
 	// get all the prefixes that match with given prefix.
@@ -142,24 +142,33 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		String[] pattern = t9Signature.split("");
-
+		StringBuilder concat = new StringBuilder();
+		for (int i = 0; i < pattern.length; i++) {
+			String[] inp = map.get(pattern[i]).split("");
+			for (String s : inp) {
+				if (tst.hasPrefix(s)) {
+					concat.append(s);
+				}
+			}
+		}
+		System.out.println(concat);
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		BinarySearchST<Integer, String> st =new BinarySearchST<Integer, String>();
-		for (String s: words) {
+		BinarySearchST<Integer, String> bst = new BinarySearchST<Integer, String>();
+		for (String s : words) {
 			Integer freq = tst.get(s);
-			st.put(freq, s);
+			bst.put(freq, s);
 		}
 		Bag<String> b = new Bag<String>();
 		String[] arr = new String[k];
 		for (int j = 0; j < k; j++) {
-			Integer i = st.max();
-			arr[j] = st.get(i);
-			st.deleteMax();
+			Integer i = bst.max();
+			arr[j] = bst.get(i);
+			bst.deleteMax();
 		}
 		Arrays.sort(arr);
 		for (int m = k; m > 0; m--) {
