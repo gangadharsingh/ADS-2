@@ -105,13 +105,14 @@ public class Solution {
 }
 
 class T9 {
-	private final HashMap<String, Integer> map;
+	private final TST<Integer> prefix;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		map = new HashMap<String, Integer>();
-		// for (String s: st.) {
-
-		// }
+		prefix = new TST<Integer>();
+		System.out.println(st.keys());
+		for (int i = 0; i < st.size(); i++) {
+			// prefix.put(st.)
+		}
 	}
 
 	// get all the prefixes that match with given prefix.

@@ -229,6 +229,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 95 errors.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:2:8: Unused import - java.util.HashMap. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:4: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -251,18 +252,20 @@ Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:109:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:109:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:109:19: Parameter st should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:118:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:118:45: Parameter prefix should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:123:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:123:48: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:129:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:129:48: Parameter words should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:129:72: Parameter k should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:136:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:136:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:136:56: Parameter k should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:113:53: Must have at least one statement. [EmptyBlock]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:119:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:119:45: Parameter prefix should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:119:52: 'prefix' hides a field. [HiddenField]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:124:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:124:48: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:130:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:130:48: Parameter words should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:130:72: Parameter k should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:137:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:137:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/Solution.java:137:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 35 errors.
 Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/MaxPQ.java:35: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m18/ADS-2Exam-3/MaxPQ.java:36: Line is longer than 80 characters (found 83). [LineLength]
