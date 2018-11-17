@@ -159,7 +159,7 @@ seeking
 Your Output: 
 ghidefjkljklmno
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:38)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -227,8 +227,8 @@ keep
 Your Output: 
 tuvpqrsdefabctuvdef
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:162)
-	at T9.t9(Solution.java:183)
-	at Solution.main(Solution.java:70)
+	at T9.getSuggestions(Solution.java:220)
+	at T9.t9(Solution.java:250)
+	at Solution.main(Solution.java:78)
 ----------------------------------------
 
