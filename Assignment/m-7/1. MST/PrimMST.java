@@ -34,7 +34,7 @@ class PrimMST {
      *
      * Complexity: O(E*log(V))
      */
-    public PrimMST(final EdgeWeightedGraph graph) {
+    PrimMST(final EdgeWeightedGraph graph) {
         edgeTo = new Edge[graph.vert()];
         distTo = new double[graph.vert()];
         marked = new boolean[graph.vert()];
@@ -86,8 +86,11 @@ class PrimMST {
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
                 edgeTo[w] = e;
-                if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-                else                pq.insert(w, distTo[w]);
+                if (pq.contains(w)) {
+                    pq.decreaseKey(w, distTo[w]);
+                } else {
+                    pq.insert(w, distTo[w]);
+                }
             }
         }
     }

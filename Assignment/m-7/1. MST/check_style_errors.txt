@@ -9,12 +9,9 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:37:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:89: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:90: 'else' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
