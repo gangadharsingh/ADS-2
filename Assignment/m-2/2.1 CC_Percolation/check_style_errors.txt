@@ -14,22 +14,6 @@ Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:25: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:25:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:30: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:32: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:39: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:40:28: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:45: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:64: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:75: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Percolation.java:76: Line has trailing spaces. [RegexpSingleline]
-Audit done.
-Checkstyle ends with 13 errors.
-Starting audit...
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:25: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:27: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:43: Line has trailing spaces. [RegexpSingleline]
