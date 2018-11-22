@@ -26,13 +26,13 @@ class PrimMST {
      */
     private IndexMinPQ<Double> pq;
 
-    /**.
-     * Compute a minimum spanning tree (or forest)
-     * of an edge-weighted graph.
-     * @param G the edge-weighted graph
+    /**
+     * . Compute a minimum spanning tree (or forest) of an edge-weighted graph.
+     *
+
+     * @param      graph  The graph
      *
      * Complexity: O(E*log(V))
-     *
      */
     public PrimMST(final EdgeWeightedGraph graph) {
         edgeTo = new Edge[graph.vert()];
@@ -49,16 +49,15 @@ class PrimMST {
             }
         }
     }
-
     // run Prim's algorithm in graph G, starting from vertex s
-    /**.
-     * { function_description }
+
+    /**
+     * . { function_description }
      *
      * Complexity: O(E*log(V))
      *
-     *
-     * @param      G     { parameter_description }
-     * @param      s     { parameter_description }
+     * @param      graph  The graph
+     * @param      s      { parameter_description }
      */
     private void prim(final EdgeWeightedGraph graph,
                       final int s) {
@@ -70,14 +69,14 @@ class PrimMST {
         }
     }
     // scan vertex v
-    /**.
-     * { function_description }
+
+    /**
+     * . { function_description }
      *
      * Complexity: O(E)
      *
-     *
-     * @param      graph     { parameter_description }
-     * @param      v     { parameter_description }
+     * @param      graph  The graph
+     * @param      v      { parameter_description }
      */
     private void scan(final EdgeWeightedGraph graph, final int v) {
         marked[v] = true;
@@ -129,12 +128,12 @@ class PrimMST {
         return weight / 1.0000;
     }
 
-
     // check optimality conditions (takes time proportional to E V lg* V)
-    /**.
-     * { function_description }
+
+    /**
+     * . { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      graph  The graph
      *
      * @return     { description_of_the_return_value }
      */
@@ -173,7 +172,8 @@ class PrimMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a minimal spanning forest
+        //(cut optimality conditions)
         for (Edge e : edges()) {
 
             // all edges in MST except e
