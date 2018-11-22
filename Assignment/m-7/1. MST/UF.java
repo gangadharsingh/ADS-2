@@ -1,28 +1,28 @@
-/**
+/**.
  * Class for uf.
  */
 class UF {
-    /**
+    /**.
      * { var_description }
      */
     private int[] parent;  // parent[i] = parent of i
-    /**
+    /**.
      * { var_description }
      */
     private byte[] rank;   // rank[i] = rank of subtree
-                           //rooted at i (never more than 31)
-    /**
+    //rooted at i (never more than 31)
+    /**.
      * { var_description }
      */
     private int count;     // number of components
 
-    /**
+    /**.
      * Initializes an empty union–find data structure with {@code n} sites
-     * {@code 0} through {@code n-1}. Each site is initially in its own 
+     * {@code 0} through {@code n-1}. Each site is initially in its own
      * component.
-     * 
+     *
      * Complexity: O(N)
-     * 
+     *
      * @param  n the number of sites
      * @throws IllegalArgumentException if {@code n < 0}
      */
@@ -37,14 +37,16 @@ class UF {
         }
     }
 
-    /**
-     * Returns the component identifier for the component containing site {@code p}.
+    /**.
+     * Returns the component identifier for the component containing site {@code
+     * p}.
      *
      * Complexity: O(path), path denotes paths.
-     * 
-     * @param  p the integer representing one site
-     * @return the component identifier for the component containing site {@code p}
-     * @throws IllegalArgumentException unless {@code 0 <= p < n}
+     *
+     * @param      path  The path
+     * @return     the component identifier for the component containing site
+     *             {@code p}
+     * @throws     IllegalArgumentException  unless {@code 0 <= p < n}
      */
     public int find(final int path) {
         int p = path;
@@ -56,22 +58,22 @@ class UF {
         return p;
     }
 
-    /**
+    /**.
      * Returns the number of components.
      *
      * Complexity: O(1)
-     * 
+     *
      * @return the number of components (between {@code 1} and {@code n})
      */
     public int count() {
         return count;
     }
-  
-    /**
+
+    /**.
      * Returns true if the the two sites are in the same component.
      *
      * Complexity: O(1)
-     * 
+     *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
      * @return {@code true} if the two sites {@code p} and {@code q} are in the same component;
@@ -82,13 +84,13 @@ class UF {
     public boolean connected(final int p, final int q) {
         return find(p) == find(q);
     }
-  
-    /**
-     * Merges the component containing site {@code p} with the 
+
+    /**.
+     * Merges the component containing site {@code p} with the
      * the component containing site {@code q}.
      *
      * Complexity: O(1)
-     * 
+     *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
      * @throws IllegalArgumentException unless
@@ -100,9 +102,11 @@ class UF {
         if (rootP == rootQ) return;
 
         // make root of smaller rank point to root of larger rank
-        if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
-        else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
-        else {
+        if (rank[rootP] < rank[rootQ]) {
+            parent[rootP] = rootQ;
+        } else if (rank[rootP] > rank[rootQ]) {
+            parent[rootQ] = rootP;
+        } else {
             parent[rootQ] = rootP;
             rank[rootP]++;
         }
@@ -111,17 +115,18 @@ class UF {
 
 
     // validate that p is a valid index
-    /**
+    /**.
      * { function_description }
      *
      * Complexity: O(1)
-     * 
+     *
      * @param      p     { parameter_description }
      */
     private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));  
+            throw new IllegalArgumentException(
+                "index " + p + " is not between 0 and " + (n - 1));
         }
     }
 }
