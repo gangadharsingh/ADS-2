@@ -34,6 +34,9 @@ class Percolation {
     private int opencount;
     /**
      * Constructs the object.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param      n1     { parameter_description }
      */
@@ -48,6 +51,9 @@ class Percolation {
     }
     /**
      * open.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param      row   The row
      * @param      col   The col
@@ -90,6 +96,9 @@ class Percolation {
     /**
      * Determines if full.
      *
+     * 
+     *Complexity: O(1)
+     *
      * @param      row   The row
      * @param      col   The col
      *
@@ -104,6 +113,9 @@ class Percolation {
     /**
      * opensites.
      *
+     * 
+     *Complexity: O(1)
+     *
      * @return     { description_of_the_return_value }
      */
     public int numberOfOpenSites() {
@@ -111,6 +123,9 @@ class Percolation {
     }
     /**
      * percolates.
+     *
+     * 
+     *Complexity: O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -120,6 +135,9 @@ class Percolation {
     }
     /**
      * getInex.
+     *
+     * 
+     *Complexity: O(1)
      *
      * @param      row   The row
      * @param      col   The col
@@ -142,6 +160,9 @@ public final class Solution {
     }
     /**
      * main.
+     *
+     * 
+     *Complexity: O(N+(E + V))
      *
      * @param      args  The arguments
      */

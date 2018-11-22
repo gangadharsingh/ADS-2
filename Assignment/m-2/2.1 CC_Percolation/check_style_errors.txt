@@ -1,28 +1,25 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:44: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:67: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:81: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:93: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:145: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:110: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:130: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/CC.java:154: Line is longer than 80 characters (found 102). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:37: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:54: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:99: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:116: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:127: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:139: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Solution.java:164: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 7 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:27: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:43: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:55: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:67: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:82: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:101: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:103: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:121: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:136: Line has trailing spaces. [RegexpSingleline]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:8: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-2/2.1 CC_Percolation/Graph.java:76: Line is longer than 80 characters (found 108). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 3 errors.
