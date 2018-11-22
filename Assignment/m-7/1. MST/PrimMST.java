@@ -1,31 +1,62 @@
+/**
+ * Class for primitive mst.
+ */
 class PrimMST {
+    /**
+     * { var_description }
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private Edge[] edgeTo;        // edgeTo[v] = shortest edge from tree vertex to non-tree vertex
+    /**
+     * { var_description }
+     */
+    private Edge[] edgeTo;        // edgeTo[v] = shortest edge
+    //from tree vertex to non-tree vertex
+    /**
+     * { var_description }
+     */
     private double[] distTo;      // distTo[v] = weight of shortest such edge
+    /**
+     * { var_description }
+     */
     private boolean[] marked;     // marked[v] = true if v on tree, false otherwise
+    /**
+     * { var_description }
+     */
     private IndexMinPQ<Double> pq;
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
+     *
+     * Complexity: O(E*log(V))
+     *
      */
-    public PrimMST(EdgeWeightedGraph G) {
+    public PrimMST(final EdgeWeightedGraph G) {
         edgeTo = new Edge[G.vert()];
         distTo = new double[G.vert()];
         marked = new boolean[G.vert()];
         pq = new IndexMinPQ<Double>(G.vert());
-        for (int v = 0; v < G.vert(); v++)
+        for (int v = 0; v < G.vert(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
 
-        for (int v = 0; v < G.vert(); v++)      // run from each vertex to find
-            if (!marked[v]) prim(G, v);      // minimum spanning forest
-
-        // check optimality conditions
-        // assert check(G);
+        for (int v = 0; v < G.vert(); v++) {     // run from each vertex to find
+            if (!marked[v]) {
+                prim(G, v);      // minimum spanning forest
+            }
+        }
     }
 
     // run Prim's algorithm in graph G, starting from vertex s
+    /**
+     * { function_description }
+     *
+     * Complexity: O(E*log(V))
+     *
+     *
+     * @param      G     { parameter_description }
+     * @param      s     { parameter_description }
+     */
     private void prim(EdgeWeightedGraph G, int s) {
         distTo[s] = 0.0;
         pq.insert(s, distTo[s]);
@@ -34,8 +65,16 @@ class PrimMST {
             scan(G, v);
         }
     }
-
     // scan vertex v
+    /**
+     * { function_description }
+     *
+     * Complexity: O(E)
+     *
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void scan(EdgeWeightedGraph G, int v) {
         marked[v] = true;
         for (Edge e : G.adj(v)) {
@@ -52,6 +91,9 @@ class PrimMST {
 
     /**
      * Returns the edges in a minimum spanning tree (or forest).
+     *
+     * Complexity: O(E)
+     *
      * @return the edges in a minimum spanning tree (or forest) as
      *    an iterable of edges
      */
@@ -68,6 +110,9 @@ class PrimMST {
 
     /**
      * Returns the sum of the edge weights in a minimum spanning tree (or forest).
+     *
+     * Complexity: O(E)
+     *
      * @return the sum of the edge weights in a minimum spanning tree (or forest)
      */
     public double weight() {
@@ -79,7 +124,14 @@ class PrimMST {
 
 
     // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph G) {
+    /**
+     * { function_description }
+     *
+     * @param      G     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check(final EdgeWeightedGraph G) {
 
         // check weight
         double totalWeight = 0.0;

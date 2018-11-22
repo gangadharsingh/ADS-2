@@ -33,6 +33,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Initializes an empty bag.
+     * Complexity: O(1)
      */
     public Bag() {
         first = null;
@@ -41,6 +42,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this bag is empty.
+     *
+     * Complexity: O(1)
      *
      * @return {@code true} if this bag is empty;
      *         {@code false} otherwise
@@ -52,6 +55,8 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * Returns the number of items in this bag.
      *
+     * Complexity: O(1)
+     *
      * @return the number of items in this bag
      */
     public int size() {
@@ -60,6 +65,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this bag.
+     *
+     * Complexity: O(1)
      *
      * @param  item the item to add to this bag
      */
@@ -74,6 +81,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * iterator.
+     *
+     * Complexity: O(E), where E is the edge of graph
      *
      * @return     { description_of_the_return_value }
      */
@@ -93,6 +102,8 @@ public class Bag<Item> implements Iterable<Item> {
         private Node<Item> current;
         /**
          * Constructs the object.
+        *
+        * Complexity: O(1)
          *
          * @param      firs The first
          */
@@ -101,6 +112,8 @@ public class Bag<Item> implements Iterable<Item> {
         }
         /**
          * Determines if it has next.
+        *
+        * Complexity: O(1)
          *
          * @return     True if has next, False otherwise.
          */
@@ -109,6 +122,8 @@ public class Bag<Item> implements Iterable<Item> {
         }
         /**
          * remove function.
+        *
+        * Complexity: O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
@@ -116,6 +131,8 @@ public class Bag<Item> implements Iterable<Item> {
 
         /**
          * next to iterate.
+        *
+        * Complexity: O(1)
          *
          * @return      Item
          */
