@@ -34,7 +34,7 @@ class Percolation {
     private int opencount;
     /**
      * Constructs the object.
-     * 
+     *
      *Complexity: O(1)
      *
      *
@@ -51,7 +51,7 @@ class Percolation {
     }
     /**
      * open.
-     * 
+     *
      *Complexity: O(1)
      *
      *
@@ -96,7 +96,7 @@ class Percolation {
     /**
      * Determines if full.
      *
-     * 
+     *
      *Complexity: O(1)
      *
      * @param      row   The row
@@ -113,7 +113,7 @@ class Percolation {
     /**
      * opensites.
      *
-     * 
+     *
      *Complexity: O(1)
      *
      * @return     { description_of_the_return_value }
@@ -124,7 +124,7 @@ class Percolation {
     /**
      * percolates.
      *
-     * 
+     *
      *Complexity: O(1)
      *
      * @return     { description_of_the_return_value }
@@ -136,7 +136,7 @@ class Percolation {
     /**
      * getInex.
      *
-     * 
+     *
      *Complexity: O(1)
      *
      * @param      row   The row
@@ -161,7 +161,7 @@ public final class Solution {
     /**
      * main.
      *
-     * 
+     *
      *Complexity: O(N+(E + V))
      *
      * @param      args  The arguments
@@ -173,7 +173,7 @@ public final class Solution {
         while (sc.hasNext()) {
             String[] tokens = sc.nextLine().split(" ");
             p.open(Integer.parseInt(tokens[0]),
-                    Integer.parseInt(tokens[1]));
+                   Integer.parseInt(tokens[1]));
         }
         System.out.println(p.percolates());
     }
