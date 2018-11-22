@@ -82,7 +82,9 @@ class PrimMST {
         marked[v] = true;
         for (Edge e : graph.adj(v)) {
             int w = e.other(v);
-            if (marked[w]) continue;         // v-w is obsolete edge
+            if (marked[w]) {
+                continue;         // v-w is obsolete edge
+            }
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
                 edgeTo[w] = e;
