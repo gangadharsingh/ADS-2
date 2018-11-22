@@ -72,8 +72,10 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException(
+        if (isEmpty()) {
+            throw new NoSuchElementException(
                 "Queue underflow");
+        }
         return first.item;
     }
 
@@ -87,8 +89,11 @@ public class Queue<Item> implements Iterable<Item> {
         last = new Node<Item>();
         last.item = item;
         last.next = null;
-        if (isEmpty()) first = last;
-        else           oldlast.next = last;
+        if (isEmpty()) {
+            first = last;
+        } else {
+            oldlast.next = last;
+        }
         n++;
     }
 
@@ -100,12 +105,16 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
-        if (isEmpty()) throw new NoSuchElementException(
+        if (isEmpty()) {
+            throw new NoSuchElementException(
                 "Queue underflow");
+        }
         Item item = first.item;
         first = first.next;
         n--;
-        if (isEmpty()) last = null;   // to avoid loitering
+        if (isEmpty()) {
+        last = null;   // to avoid loitering
+        }
         return item;
     }
 
@@ -149,10 +158,10 @@ public class Queue<Item> implements Iterable<Item> {
         /**.
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      f  The first
          */
-        public ListIterator(final Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> f) {
+            current = f;
         }
 
         /**.

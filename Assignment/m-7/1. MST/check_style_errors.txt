@@ -9,49 +9,20 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:5: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:21: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:22: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:34:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:34:44: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:51: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:60:23: Parameter G should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:60:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:60:44: Parameter s should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:69: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:78:23: Parameter G should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:78:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:78:44: Parameter v should be final. [FinalParameters]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:82: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:32:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:37:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:37:44: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:60:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:63:47: Expected @param tag for 'graph'. [JavadocMethod]
 [ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:86: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:87: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:112: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:116: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:120: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:127: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:134:51: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:142: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:166: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:184: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:90: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:91: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:137:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:141:51: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/PrimMST.java:176: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:75: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:90: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:91: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:103: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:108: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:154:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/Queue.java:154:46: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/UF.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/UF.java:30: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/UF.java:79: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-7/1. MST/UF.java:102: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.

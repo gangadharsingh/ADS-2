@@ -26,8 +26,10 @@ class UF {
      * @param  n the number of sites
      * @throws IllegalArgumentException if {@code n < 0}
      */
-    public UF(final int n) {
-        if (n < 0) throw new IllegalArgumentException();
+    UF(final int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException();
+        }
         count = n;
         parent = new int[n];
         rank = new byte[n];
@@ -76,7 +78,8 @@ class UF {
      *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
-     * @return {@code true} if the two sites {@code p} and {@code q} are in the same component;
+     * @return {@code true} if the two sites
+     * {@code p} and {@code q} are in the same component;
      *         {@code false} otherwise
      * @throws IllegalArgumentException unless
      *         both {@code 0 <= p < n} and {@code 0 <= q < n}
@@ -99,7 +102,9 @@ class UF {
     public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
-        if (rootP == rootQ) return;
+        if (rootP == rootQ) {
+            return;
+        }
 
         // make root of smaller rank point to root of larger rank
         if (rank[rootP] < rank[rootQ]) {
