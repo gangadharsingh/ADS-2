@@ -21,6 +21,8 @@ public class CC {
 
     /**
      * Computes the connected components of the undirected graph {@code G}.
+     * 
+     *Complexity: O(E + V)
      *
      * @param g the undirected graph
      */
@@ -38,6 +40,9 @@ public class CC {
 
     /**
      * depth first search.
+     *
+     * 
+     *Complexity: O(E + V)
      *
      * @param      g     { graph g
      * @param      v     { vertex }
@@ -59,6 +64,9 @@ public class CC {
      *
      * @param      v     { parameter_description }
      *
+     * 
+     *Complexity: O(1)
+     *
      * @return     { description_of_the_return_value }
      */
     public int id(final int v) {
@@ -70,6 +78,8 @@ public class CC {
      * size function.
      *
      * @param      v     { parameter_description }
+     * 
+     *Complexity: O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -80,6 +90,8 @@ public class CC {
 
     /**
      * Returns the number of connected components in the graph {@code G}.
+     * 
+     *Complexity: O(1)
      *
      * @return the number of connected components in the graph {@code G}
      */
@@ -90,6 +102,8 @@ public class CC {
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
+     * 
+     *Complexity: O(1)
      *
      * @param  v one vertex
      * @param  w the other vertex
@@ -107,6 +121,9 @@ public class CC {
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param  v one vertex
      * @param  w the other vertex
@@ -125,6 +142,8 @@ public class CC {
 
     /**
      * validate vertex.
+     * 
+     *Complexity: O(1)
      *
      * @param      v     { int }
      */

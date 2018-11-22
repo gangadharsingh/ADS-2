@@ -22,6 +22,9 @@ public class Graph {
     /**
      * Initializes an empty graph with {@code V} vertices and 0 edges.
      * param V the number of vertices
+     * 
+     *Complexity: O(V)
+     * 
      *
      * @param  v number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
@@ -37,6 +40,9 @@ public class Graph {
 
     /**
      * Returns the number of vertices in this graph.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @return the number of vertices in this graph
      */
@@ -46,6 +52,9 @@ public class Graph {
 
     /**
      * Returns the number of edges in this graph.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @return the number of edges in this graph
      */
@@ -55,6 +64,9 @@ public class Graph {
 
     /**
      * validating Vertex.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param      v     { parameter_description }
      */
@@ -67,6 +79,9 @@ public class Graph {
 
     /**
      * Adds the undirected edge v-w to this graph.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
@@ -83,6 +98,9 @@ public class Graph {
 
     /**
      * Determines if it has edge.
+     * 
+     *Complexity: O(E)
+     * 
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
@@ -100,6 +118,9 @@ public class Graph {
 
     /**
      * Returns the vertices adjacent to vertex {@code v}.
+     * 
+     *Complexity: O(E + V)
+     *
      *
      * @param  v the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
@@ -112,6 +133,9 @@ public class Graph {
 
     /**
      * Returns the degree of vertex {@code v}.
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param  v the vertex
      * @return the degree of vertex {@code v}

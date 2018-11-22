@@ -6,8 +6,22 @@ class Percolation {
      * boolean string 2d array.
      */
     private boolean[][] grid;
+    /**
+     * { var_description }
+     */
     private Uf uf;
+    /**
+     * { var_description }
+     */
     private int size;
+    /**
+     * Constructs the object.
+     * 
+     *Complexity: O(1)
+     *
+     *
+     * @param      n     { parameter_description }
+     */
     public Percolation(final int n) { // create n-by-n grid, with all sites blocked.
         grid = new boolean[n][n];
         uf = new Uf(n * n + 2);  // to create the one dimension array of size +
@@ -15,6 +29,9 @@ class Percolation {
     }
     /**
      * { function_description }
+     * 
+     *Complexity: O(1)
+     *
      *
      * @param      row   The row
      * @param      col   The col
@@ -44,6 +61,8 @@ class Percolation {
     }
     /**
      * { function_description }.
+     * 
+     *Complexity: O(1)
      *
      * @param      row   The row
      * @param      col   The col
@@ -54,7 +73,8 @@ class Percolation {
         return row * size + col;
     }
     /**
-     * {}.
+     * 
+     *Complexity: O(1)
      *
      * @return     { description_of_the_return_value }
      */
