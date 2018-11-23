@@ -1,6 +1,5 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 /**.
  * List of .
  *
@@ -48,7 +47,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Returns true if this queue is empty.
-     *
+     * Complexity: O(1)
      * @return {@code true} if this queue is empty;
      * {@code false} otherwise
      */
@@ -58,7 +57,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Returns the number of items in this queue.
-     *
+     * Complexity: O(1)
      * @return the number of items in this queue
      */
     public int size() {
@@ -67,7 +66,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Returns the item least recently added to this queue.
-     *
+     * Complexity: O(1)
      * @return the item least recently added to this queue
      * @throws NoSuchElementException if this queue is empty
      */
@@ -81,7 +80,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Adds the item to this queue.
-     *
+     * Complexity: O(1)
      * @param  item the item to add
      */
     public void enqueue(final Item item) {
@@ -100,7 +99,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**.
      * Removes and returns the item on this queue
      * that was least recently added.
-     *
+     * Complexity: O(1)
      * @return the item on this queue that was least recently added
      * @throws NoSuchElementException if this queue is empty
      */
@@ -120,7 +119,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**.
      * Returns a string representation of this queue.
-     *
+     * Complexity: O(1)
      * @return the sequence of items in FIFO order,
      * separated by spaces
      */
@@ -136,7 +135,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**.
      * Returns an iterator that iterates over the items
      * in this queue in FIFO order.
-     *
+     * Complexity: O(1)
      * @return an iterator that iterates over the items
      * in this queue in FIFO order
      */
