@@ -167,6 +167,8 @@ public final class Picture implements ActionListener {
       * for embedding in a {@link JPanel},
       * {@link JFrame} or other GUI widget.
       *
+      * Complexity: O(1)
+      * 
       * @return the {@code JLabel}
       */
     public JLabel getJLabel() {
@@ -179,6 +181,9 @@ public final class Picture implements ActionListener {
 
     /**.
       * Sets the origin to be the upper left pixel. This is the default.
+      * 
+      * Complexity: O(1)
+      * 
       */
     public void setOriginUpperLeft() {
         isOriginUpperLeft = true;
@@ -193,6 +198,9 @@ public final class Picture implements ActionListener {
 
     /**.
       * Displays the picture in a window on the screen.
+      * 
+      * Complexity: O(1)
+      * 
       */
     public void show() {
 
@@ -237,6 +245,8 @@ public final class Picture implements ActionListener {
     /**.
       * Returns the height of the picture.
       *
+      * Complexity: O(1)
+      * 
       * @return the height of the picture (in pixels)
       */
     public int height() {
@@ -246,6 +256,8 @@ public final class Picture implements ActionListener {
     /**.
       * Returns the width of the picture.
       *
+      * Complexity: O(1)
+      * 
       * @return the width of the picture (in pixels)
       */
     public int width() {
@@ -255,6 +267,8 @@ public final class Picture implements ActionListener {
     /**.
      * { function_description }
      *
+      * Complexity: O(1)
+      * 
      * @param      row   The row
      */
     private void validateRowIndex(final int row) {
@@ -268,6 +282,8 @@ public final class Picture implements ActionListener {
     /**.
      * { function_description }
      *
+      * Complexity: O(1)
+      * 
      * @param      col   The col
      */
     private void validateColumnIndex(final int col) {
@@ -282,6 +298,8 @@ public final class Picture implements ActionListener {
       * Returns the color of pixel ({@code col}, {@code row})
       * as a {@link java.awt.Color}.
       *
+      * Complexity: O(1)
+      * 
       * @param col the column index
       * @param row the row index
       * @return the color of pixel ({@code col}, {@code row})
@@ -302,6 +320,8 @@ public final class Picture implements ActionListener {
       * {@link #get(int, int)} because
       * it does not create a {@code Color} object.
       *
+      * Complexity: O(1)
+      * 
       * @param col the column index
       * @param row the row index
       * @return the integer representation of the color
@@ -323,6 +343,8 @@ public final class Picture implements ActionListener {
       * Sets the color of pixel ({@code col},
       * {@code row}) to given color.
       *
+      * Complexity: O(1)
+      * 
       * @param col the column index
       * @param row the row index
       * @param color the color
@@ -346,6 +368,8 @@ public final class Picture implements ActionListener {
       * Sets the color of pixel ({@code col}, {@code row})
       * to given color.
       *
+      * Complexity: O(1)
+      * 
       * @param col the column index
       * @param row the row index
       * @param rgb the integer representation of the color
@@ -365,6 +389,8 @@ public final class Picture implements ActionListener {
     /**.
       * Returns true if this picture is equal to the argument picture.
       *
+      * Complexity: O(width*height)
+      * 
       * @param other the other picture
       * @return {@code true} if this picture is the same
       * dimension as {@code other}
@@ -406,6 +432,8 @@ public final class Picture implements ActionListener {
       * where the color of a pixel is represented using 6 hex digits to encode
       * the red, green, and blue components.
       *
+      * Complexity: O(width*height)
+      * 
       * @return a string representation of this picture
       */
     public String toString() {
@@ -432,6 +460,8 @@ public final class Picture implements ActionListener {
     /**.
      * This operation is not supported because pictures are mutable.
      *
+      * Complexity: O(1)
+      * 
      * @return does not return a value
      * @throws UnsupportedOperationException if called
      */
@@ -443,6 +473,8 @@ public final class Picture implements ActionListener {
     /**.
       * Saves the picture to a file in either PNG or JPEG format.
       * The filetype extension must be either .png or .jpg.
+      *
+      * Complexity: O(1)
       *
       * @param name the name of the file
       * @throws IllegalArgumentException if
@@ -459,6 +491,8 @@ public final class Picture implements ActionListener {
 
     /**.
       * Saves the picture to a file in a PNG or JPEG image format.
+      *
+      * Complexity: O(1)
       *
       * @param  file the file
       * @throws IllegalArgumentException if {@code file} is {@code null}
@@ -487,6 +521,9 @@ public final class Picture implements ActionListener {
 
     /**.
       * Opens a save dialog box when the user selects "Save As" from the menu.
+      * 
+      * Complexity: O(1)
+      *
       */
     @Override
     public void actionPerformed(final ActionEvent e) {
