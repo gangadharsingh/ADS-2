@@ -87,7 +87,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * iterator.
      *
-     *Complexity: O(E)
+     *Complexity: O(E), E is edge of graph
      *
      *
      * @return     { description_of_the_return_value }
@@ -109,7 +109,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
         *
-        *Complexity: O(E)
+        *Complexity: O(E), E is edge of graph
         *
          *
          * @param      firs The first

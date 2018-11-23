@@ -104,7 +104,6 @@ public class Graph {
      *
      *Complexity: O(E)
      *
-     *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
