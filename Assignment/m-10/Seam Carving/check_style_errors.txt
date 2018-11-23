@@ -1,23 +1,5 @@
 Starting audit...
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:171: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:184: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:186: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:201: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:203: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:249: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:260: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:271: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:286: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:302: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:324: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:347: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:372: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:393: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:436: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:464: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/gsingh/Documents/ADS-2/Assignment/m-10/Seam Carving/Picture.java:524: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 17 errors.
 Starting audit...
 Audit done.
 Starting audit...
